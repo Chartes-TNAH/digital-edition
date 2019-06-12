@@ -1,4 +1,5 @@
 {
+  "title": "Exercices TEI du master Technologies Numériques Appliquées à l'Histoire",
   "creators": [
     {
       "affiliation": "École nationale des chartes, Université Lyon 3",
@@ -58,11 +59,11 @@
       "affiliation": "École nationale des chartes"
     }
   ],
-  "description": "This corpus contains courses evaluation written by students of different promotions of the <a href='http://www.chartes.psl.eu/fr/cursus/master-technologies-numeriques-appliquees-histoire'>TNAH master (Paris)</a>.",
+  "description": "This corpus contains courses evaluation written by students of different promotions of the TNAH master (Ecole nationale des Chartes, Paris) : http://www.chartes.psl.eu/fr/cursus/master-technologies-numeriques-appliquees-histoire",
   "keywords": [
     "old french", "xml/tei", "digital edition", "george sand"
   ],
   "access_right": "open",
-  "license": "cc-by-nc",
+  "license": "cc-by-sa",
   "upload_type": "dataset"
 }
