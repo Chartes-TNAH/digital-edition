@@ -1,62 +1,62 @@
 {
-  "title": "Exercices TEI du master Technologies Numériques Appliquées à l'Histoire",
+  "title": "Exercices TEI du master Technologies Num\u00e9riques Appliqu\u00e9es \u00e0 l'Histoire",
   "creators": [
     {
-      "affiliation": "École nationale des chartes, Université Lyon 3",
+      "affiliation": "Ecole nationale des chartes, Universit\u00e9 Lyon 3",
       "name": "Ariane Pinche",
       "orcid": "0000-0002-7843-5050"
     },
     {
       "name": "JACQUOT Olivier",
-      "affiliation": "École nationale des chartes, Bibliothèque nationale de France"
+      "affiliation": "Ecole nationale des chartes, Biblioth\u00e8que nationale de France"
     },
     {
       "name": "MORILLON Marie",
-      "affiliation": "École nationale des chartes"
+      "affiliation": "Ecole nationale des chartes"
     },
     {
-      "name": "DARTOIS Hélène",
-      "affiliation": "École nationale des chartes"
+      "name": "DARTOIS H\u00e9l\u00e8ne",
+      "affiliation": "Ecole nationale des chartes"
     },
     {
       "name": "SCHMIED Marie-Caroline",
-      "affiliation": "École nationale des chartes"
+      "affiliation": "Ecole nationale des chartes"
     },
     {
       "name": "FREY Marine",
-      "affiliation": "École nationale des chartes"
+      "affiliation": "Ecole nationale des chartes"
     },
     {
       "name": "VIEILLON Lucie",
-      "affiliation": "École nationale des chartes"
+      "affiliation": "Ecole nationale des chartes"
     },
     {
-      "name": "ALBOUY Ségolène",
-      "affiliation": "École nationale des chartes"
+      "name": "ALBOUY S\u00e9gol\u00e8ne",
+      "affiliation": "Ecole nationale des chartes"
     },
     {
-      "name": "ANDRIEUX Clément",
-      "affiliation": "École nationale des chartes"
+      "name": "ANDRIEUX Cl\u00e9ment",
+      "affiliation": "Ecole nationale des chartes"
     },
     {
       "name": "Emilie Blotiere",
-      "affiliation": "École nationale des chartes"
+      "affiliation": "Ecole nationale des chartes"
     },
     {
       "name": "LEMOSQUET Lauryne",
-      "affiliation": "École nationale des chartes"
+      "affiliation": "Ecole nationale des chartes"
     },
     {
-      "name": "Caroline Méot",
-      "affiliation": "École nationale des chartes"
+      "name": "Caroline M\u00e9ot",
+      "affiliation": "Ecole nationale des chartes"
     },
     {
-      "name": "Céline Champcourt",
-      "affiliation": "École nationale des chartes"
+      "name": "C\u00e9line Champcourt",
+      "affiliation": "Ecole nationale des chartes"
     },
     {
       "name": "Victoria LE FOURNER",
-      "affiliation": "École nationale des chartes"
+      "affiliation": "Ecole nationale des chartes"
     }
   ],
   "description": "This corpus contains courses evaluation written by students of different promotions of the TNAH master (Ecole nationale des Chartes, Paris).",
