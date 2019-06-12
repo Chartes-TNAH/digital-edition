@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Je commente ici l'ensemble du corpus encodé
+Excellent travail de structuration d'une correspondance, index soignés, bonne maitrise de TEI (maitrise et recherche d'éléments propres à la correspondance) et très bons réflexes pour l'ajout d'informations via des urn pérennes-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Correspondance de George Sand : Lettres XXX à XXXVI.</title>
+            <title type="subtitle">Edition électronique d'après l'édition de C. Lévy, 1883</title>
+            <author><persName ref="#sand">George Sand</persName></author>
+            <respStmt>
+               <resp>Edition numérique réalisée dans le cadre d'un excercice du Master 2
+                  Technologies numériques appliquées à l'histoire de l'Ecole nationale des
+                  chartes.</resp>
+               <persName>
+                  <surname type="birth">Lemosquet</surname><forename>Lauryne</forename>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher><orgName>Ecole nationale des Chartes</orgName></publisher>
+            <pubPlace>65 rue de Richelieu, Paris</pubPlace>
+            <date when-iso="2018-2019">2018-2019</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons : Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title type="main">Correspondance</title>
+                  <title type="subtitle">1812-1876</title>
+                  <author><addName ref="#sand">George Sand</addName></author>
+               </titleStmt>
+               <editionStmt>
+                  <edition>Quatrième édition</edition>
+               </editionStmt>
+               <publicationStmt>
+                  <publisher>Calman Lévy</publisher>
+                  <publisher>Imprimerie Ph. Bosc</publisher>
+                  <pubPlace>3, rue Auber Paris</pubPlace>
+                  <date when-iso="1883-1884">1883-1884</date>
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k2065433/f77.image"
+                     >Gallica, Bibliothèque nationale de France</distributor>
+                  <availability>
+                     <licence>Domaine Public</licence>
+                  </availability>
+               </publicationStmt>
+               <seriesStmt>
+                  <title type="main">Correspondance 1812-1876 I</title>
+                  <biblScope unit="volume" n="1">Livre I</biblScope>
+                  <biblScope unit="letter" from="30" to="36">Lettres XXX à XXXVI</biblScope>
+                  <biblScope unit="page" from="74" to="87">pp.74-87</biblScope>
+               </seriesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Edition électronique de <emph rend="italic">Correspondance</emph> édité en 1883-1884
+               par Calmann Lévy.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Suppression des notes de base de page pour éviter les répétitions. Les informations
+               se trouvent désormais dans l'index des personnages, plus complet.</p> <!-- Bien -->  
+            <p><lb/>Modification du système de titre des lettres afin de leur attribuer un titre composé
+               du chiffre attribué par l'édition C. Lévy ainsi que les informations concernant
+               l'expéditeur, le destinataire et la date. Ainsi, « XXX » devient « Lettre XXX :
+               Lettre de George Sand à Jules Boucoiran [05/09/1829] ».<lb/>Cette modification a pour
+               but de simplifier la navigation dans le corpus.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc> <!-- Très bien -->
+         <correspDesc xml:id="letter30">
+            <correspAction type="sent">
+               <persName ref="#sand">George Sand</persName>
+               <placeName ref="#Nohant">Nohant</placeName>
+               <date when="1829-09-05">5 septembre 1829</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#boucoiran_jules">Jules Boucoiran</persName>
+               <placeName ref="#Paris">Paris</placeName>
+            </correspAction>
+         </correspDesc>
+         <correspDesc xml:id="letter31">
+            <correspAction type="sent">
+               <persName ref="#sand">George Sand</persName>
+               <placeName ref="#Nohant">Nohant</placeName>
+               <date when="1829-10-01">1er octobre 1829</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#caron">M. Caron</persName>
+               <placeName ref="#Paris">Paris</placeName>
+            </correspAction>
+         </correspDesc>
+         <correspDesc xml:id="letter32">
+            <correspAction type="sent">
+               <persName ref="#sand">George Sand</persName>
+               <placeName ref="#Perigueux">Périgeux</placeName>
+               <date when="1829-11-10">10 novembre 1829</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#boucoiran_jules">Jules Boucoiran</persName>
+               <placeName ref="#Nohant">Nohant</placeName>
+            </correspAction>
+         </correspDesc>
+         <correspDesc xml:id="letter33">
+            <correspAction type="sent">
+               <persName ref="#sand">George Sand</persName>
+               <placeName ref="#Perigueux">Périgueux</placeName>
+               <date when="1829-12-08">8 décembre 1829</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#boucoiran_jules">Jules Boucoiran</persName>
+               <placeName ref="#Nohant">Nohant</placeName>
+            </correspAction>
+         </correspDesc>
+         <correspDesc xml:id="letter34">
+            <correspAction type="sent">
+               <persName ref="#sand">George Sand</persName>
+               <placeName ref="#Nohant">Nohant</placeName>
+               <date when="1829-12-29">29 décembre 1829</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#delaborde">Sopihie-Victoire Dupin dite Madame Maurice
+                  Dupin</persName>
+               <placeName ref="#Paris">Paris</placeName>
+            </correspAction>
+         </correspDesc>
+         <correspDesc xml:id="letter35">
+            <correspAction type="sent">
+               <persName ref="#sand">George Sand</persName>
+               <date when="1830-02-01">1er février 1830</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#delaborde">Sopihie-Victoire Dupin dite Madame Maurice
+                  Dupin</persName>
+               <placeName ref="#Paris">Paris</placeName>
+            </correspAction>
+         </correspDesc>
+         <correspDesc xml:id="letter36">
+            <correspAction type="sent">
+               <persName ref="#sand">George Sand</persName>
+               <placeName ref="#Nohant">Nohant</placeName>
+               <date when="1829-02">Février 1830</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#delaborde">Sopihie-Victoire Dupin dite Madame Maurice
+                  Dupin</persName>
+               <placeName ref="#Paris">Paris</placeName>
+            </correspAction>
+         </correspDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="Nohant" corresp="https://catalogue.bnf.fr/ark:/12148/cb15257447p">
+                  <placeName>Nohant</placeName>
+                  <location>
+                     <geo>46.6393757, 1.9563289999999824</geo>
+                  </location>
+                  <note><p>Ancienne commune située dans l\'actuel département de l\'Indre (Centre-Val de Loire, France). Les anciens territoires de Nohant font aujourd\'hui partie de la commune de Nohant-Vic.</p>
+                  </note>
+               </place>
+               <place xml:id="Paris" corresp="https://catalogue.bnf.fr/ark:/12148/cb11932931q">
+                  <placeName>Paris</placeName>
+                  <location>
+                     <geo>48.856614, 2.3522219000000177</geo>
+                  </location>
+                  <note>Capitale de la France</note>
+               </place>
+               <place xml:id="Perigueux" corresp="https://catalogue.bnf.fr/ark:/12148/cb11962455z">
+                  <placeName>Périgueux</placeName>
+                  <location>
+                     <geo>45.184029, 0.721114899999975</geo>
+                  </location>
+                  <note><p>Commune située dans la Dordogne (Nouvelle-Aquitaine, France). George Sand y séjourne quelques jours durant l\'automne 1829.</p></note>
+               </place>
+            </listPlace>
+         </settingDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="boucoiran_jules">
+                  <persName><surname type="birth">Boucoiran</surname>
+                     <forename type="first">Jules</forename></persName>
+                  <birth when="1808">1808</birth>
+                  <death when="1875">1875</death>
+                  <occupation>Précepteur</occupation>
+                  <note>Ami proche de la famille et précepteur de <persName ref="#dudevant_maurice"
+                        >Maurice</persName>, fils de <persName ref="#sand">George Sand</persName>.
+                     Plus tard, rédacteur pour le courier du Gard.</note>
+               </person>
+               <person xml:id="caillaud_andre">
+                  <persName>
+                     <surname type="birth">Caillaud</surname>
+                     <forename type="first">André</forename>
+                  </persName>
+                  <birth when="1799">1799</birth>
+                  <death when="1837">1837</death>
+                  <occupation>Domestique</occupation>
+                  <note>Domestique du Château de <placeName ref="#Nohant">Nohant</placeName>. Marié
+                     en 1827 à <persName ref="#meillant_francoise">Françoise
+                     Maillant</persName>.</note>
+               </person>
+               <person xml:id="caron">
+                  <persName>
+                     <surname type="birth">Caron</surname>
+                     <forename type="first">Louis-Nicolas</forename>
+                     <addName>Le vieux Caron</addName>
+                  </persName>
+                  <birth when="1778">1778</birth>
+                  <death when="1847">1847</death>
+                  <occupation>Homme d'affaire</occupation>
+                  <note><persName ref="#sand">George Sand</persName> le décrit comme une vieil ami
+                     de la famille. Elle lui adresse déjà des lettres à l'âge de onze ans.</note>
+               </person>
+               <person xml:id="chatiron_emilie">
+                  <persName>
+                     <surname type="birth">Devilleneuve</surname>
+                     <surname type="married">Chatiron</surname>
+                     <forename type="first">Marguerite-Emilie</forename>
+                     <addName>Mme Hippolyte Chatiron</addName>
+                  </persName>
+                  <birth when="1793">1793</birth>
+                  <death when="1870">1870</death>
+                  <note>Belle-soeur de <persName ref="#sand">George Sand</persName>. En 1823, elle
+                     épouse <persName ref="#chatiron_hippolyte">Hippolyte Chatiron</persName>. De
+                     leur union nait <persName ref="#chatiron_leontine">Léontine
+                     Chatiron</persName>.</note>
+               </person>
+               <person xml:id="chatiron_leontine">
+                  <persName><surname type="birth">Chatiron</surname>
+                     <forename type="first">Marie-Léontine</forename>
+                  </persName>
+                  <birth when="1823">1823</birth>
+                  <death when="1900">1900</death>
+                  <note>Nièce de <persName ref="#sand">George Sand</persName>. Fille de <persName
+                        ref="#chatiron_emilie">Émilie Chatiron</persName> et de <persName
+                        ref="#chatiron_hippolyte">Hippolyte Chatiron</persName>.</note>
+               </person>
+               <person xml:id="courier_louis-paul"
+                  corresp="https://catalogue.bnf.fr/ark:/12148/cb12338809t">
+                  <persName>
+                     <surname type="birth">Courier de Méré</surname>
+                     <forename type="first">Paul-Louis</forename>
+                     <addName>Louis Paul</addName>
+                  </persName>
+                  <birth when="1772">1772</birth>
+                  <death when="1825">1825</death>
+                  <occupation>Auteur</occupation>
+                  <note>Pamphlétaire français</note>
+               </person>
+               <person xml:id="de_seze" corresp="https://catalogue.bnf.fr/ark:/12148/cb131846450">
+                  <persName>
+                     <surname type="birth">de Sèze</surname>
+                     <forename type="first">Jean-Pierre</forename>
+                     <forename>Aurélien de Sèze</forename>
+                  </persName>
+                  <birth when="1799">1799</birth>
+                  <death when="1870">1870</death>
+                  <occupation>Avocat</occupation>
+                  <note>Ami puis amant de <persName ref="#sand">George Sand</persName> qu'il
+                     rencontre en 1825 à Cauterets dans les Pyrénées. Ils vivent une courte histoire
+                     platonique qui détache un peu plus <persName ref="#sand">George Sand</persName>
+                     de sa relation avec <persName ref="#dudevant_françois">son
+                     époux</persName>.</note>
+               </person>
+               <person xml:id="dudevant_maurice"
+                  corresp="https://catalogue.bnf.fr/ark:/12148/cb11923603p">
+                  <persName>
+                     <surname type="birth">Dudevant</surname>
+                     <forename type="first">Maurice</forename>
+                     <addName>Maurice Sand</addName>
+                  </persName>
+                  <birth when="1823">1823</birth>
+                  <death when="1889">1889</death>
+                  <note>Fils de l'union de <persName ref="#sand">George Sand</persName> et de son
+                     époux <persName ref="#dudevant_françois">François Casimir
+                     Dudevant</persName>.</note>
+               </person>
+               <person xml:id="dudevant_solange"
+                  corresp="https://catalogue.bnf.fr/ark:/12148/cb12437446v">
+                  <persName>
+                     <surname type="birth">Dudevant</surname>
+                     <surname type="birth">Clésinger</surname>
+                     <forename type="first">Solange</forename>
+                     <addName>Solange Sand</addName>
+                     <addName>Solange Clésinger-Sand</addName>
+                  </persName>
+                  <birth when="1828">1828</birth>
+                  <death when="1899">1899</death>
+                  <occupation>Autrice</occupation>
+                  <note>Fille de l'union de <persName ref="#sand">George Sand</persName> et de son
+                     époux <persName ref="#dudevant_françois">François Casimir
+                     Dudevant</persName>.</note>
+               </person>
+               <person xml:id="dudevant_françois"
+                  corresp="https://catalogue.bnf.fr/ark:/12148/cb13184642z">
+                  <persName>
+                     <surname type="birth">Dudevant</surname>
+                     <forename type="first">François</forename>
+                     <addName>Casimir</addName>
+                     <roleName>Baron</roleName>
+                  </persName>
+                  <birth when="1795">1795</birth>
+                  <death when="1871">1871</death>
+                  <occupation>Officier militaire</occupation>
+                  <note>Epoux de <persName ref="#sand">George Sand</persName>. L'union est prononcée
+                     le <date when="1882-10-05">5 octobre 1822</date>. Après le mariage, les jeunes
+                     époux s'installent au <placeName ref="#Nohant">Château de Nohant</placeName>.
+                     De cette union naissent deux enfants : <persName ref="#dudevant_maurice"
+                        >Maurice</persName> et <persName ref="#dudevant_solange">Solange
+                        Dudevant</persName>. Le couple se sépare en 1835.</note>
+               </person>
+               <person xml:id="sand" corresp="https://catalogue.bnf.fr/ark:/12148/cb119236010">
+                  <persName>
+                     <surname type="birth">Dupin</surname>
+                     <surname type="married">Dudevant</surname>
+                     <forename type="first">Amantine</forename>
+                     <forename type="middle">Aurore</forename>
+                     <forename type="middle">Lucile</forename>
+                     <addName>George Sand</addName>
+                     <roleName>Baronne</roleName>
+                  </persName>
+                  <birth when="1804">1804</birth>
+                  <death when="1876">1876</death>
+                  <occupation>Autrice</occupation>
+                  <note>Romancière française, autrice des présentes lettres. Fille de Maurice Dupin
+                     et de <persName ref="#delaborde">Victoire Delaborde</persName>, elle épouse, en
+                     1822, <persName ref="#dudevant_françois">François Casimir Dudevant</persName>.
+                     De leur union naissent <persName ref="#dudevant_maurice">Maurice</persName> et
+                        <persName ref="#dudevant_solange">Solange Dudevant</persName>. En 1835 le
+                     couple se sépare officiellement.</note>
+               </person>
+               <person xml:id="delaborde">
+                  <persName>
+                     <surname type="birth">Delaborde</surname>
+                     <surname type="married">Dupin</surname>
+                     <forename type="first">Sophie-Victoire-Antoinette</forename>
+                     <addName>Mme Maurice Dupin</addName>
+                  </persName>
+                  <birth when="1773">1773</birth>
+                  <death when="1837">1837</death>
+                  <note>Mère de <persName ref="#sand">George Sand</persName>. En 1804, elle épouse
+                     Maurice Dupin. De cette union nait <persName ref="#sand">Aurore Dupin (George
+                        Sand)</persName>.</note>
+               </person>
+               <person xml:id="duris">
+                  <persName>
+                     <surname type="birth">Duris-Dufresne</surname>
+                     <forename type="married">François</forename>
+                  </persName>
+                  <birth when="1769">1769</birth>
+                  <death when="1837">1837</death>
+                  <note>Homme politique, député de l'Indre (1827-1834)</note>
+               </person>
+               <person xml:id="saint-agnan_felicie">
+                  <persName>
+                     <surname type="birth">Gondoüin Saint-Agnan</surname>
+                     <forename type="first">Alexandrine-Félicité</forename>
+                     <addName>Félicie</addName>
+                  </persName>
+                  <birth when="1810">1810</birth>
+                  <death when="1843">1843</death>
+                  <note>Fille de <persName ref="#goudouin-saint-agnan">Mme Saint-Agnan</persName>,
+                     amie de <persName ref="#sand">George Sand</persName>.</note>
+               </person>
+               <person xml:id="goudouin-saint-agnan">
+                  <persName>
+                     <surname type="birth">Roëttiers de Montaleau</surname>
+                     <surname type="married">Gondoüin Saint-Agnan</surname>
+                     <forename type="first">Julie-Justine</forename>
+                  </persName>
+                  <note>Amie proche de <persName ref="#sand">George Sand</persName>.</note>
+               </person>
+               <person xml:id="chatiron_hippolyte"
+                  corresp="https://catalogue.bnf.fr/ark:/12148/cb170582777">
+                  <persName>
+                     <surname type="birth">Laverdure</surname>
+                     <forename type="first">Pierre</forename>
+                     <addName>Hippolyte Chatiron</addName>
+                  </persName>
+                  <birth when="1799">1799</birth>
+                  <death when="1848">1848</death>
+                  <occupation>Maréchal des logis</occupation>
+                  <note>Demi-frère de <persName>George Sand</persName> (fils bâtard de Maurice Dupin
+                     et de Catherine Chatiron) il se marie, en 1823, à <persName
+                        ref="#chatiron_emilie">Emilie Devilleneuve</persName>. De cette union nait
+                        <persName ref="#chatiron_leontine">Léontine Chatiron</persName>, sa
+                     fille.</note>
+               </person>
+               <person xml:id="fanchon">
+                  <persName>
+                     <surname type="birth">Maillant</surname>
+                     <forename type="first">Françoise</forename>
+                     <addName>Fanchon</addName>
+                  </persName>
+                  <birth when="1810">1810</birth>
+                  <death notBefore="1837">18..</death>
+                  <occupation>Femme de chambre</occupation>
+                  <note>Françoise Maillant épouse <persName ref="#caillaud_andre">André
+                        Caillaud</persName> en 1827 et se met au service de <persName ref="#sand"
+                        >George Sand</persName> à <placeName ref="#Nohant">Nohant</placeName> la
+                     même année.</note>
+               </person>
+               <person xml:id="puget_loisa"
+                  corresp="https://catalogue.bnf.fr/ark:/12148/cb17025956v">
+                  <persName>
+                     <surname type="birth">Puget</surname>
+                     <forename type="first">Loïsa</forename>
+                  </persName>
+                  <birth when="1810">1810</birth>
+                  <death when="1889">1889</death>
+                  <occupation>Autrice, compositrice, interprète</occupation>
+                  <note>Amie de jeunesse de <persName ref="#sand">George Sand</persName>.</note>
+               </person>
+
+               <person xml:id="pauline">
+                  <persName>
+                     <forename type="first">Pauline</forename>
+                  </persName>
+                  <note>Pauline est la nièce de <persName ref="#caron">M. Caron</persName>, vieil
+                     ami de la famille. Il est probable, néanmoins, qu'elle soit la fille cachée de
+                     ce dernier.</note>
+               </person>
+               <person xml:id="pepita">
+                  <persName>
+                     <addName>Pepita</addName>
+                  </persName>
+                  <occupation>Femme de chambre</occupation>
+                  <note>Bonne castillanne qui s'occope de <persName ref="#dudevant_solange"
+                        >Solange</persName>, la fille de <persName ref="#sand">George
+                        Sand</persName>, avant de se faire remercier en 1830.</note>
+               </person>
+            </listPerson>
+         </particDesc>
+         <!-- Les index sont vraiment très bien réalisés -->
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div decls="#letter30" type="letter" n="30" xml:lang="fr">
+            <head>Lettre XXX : Lettre de George Sand à Jules Boucoiran [05/09/1829]</head>
+            <opener>A <persName ref="#boucoiran_jules">M. JULES BOUCOIRAN</persName>, A
+               <placeName ref="#Paris">PARIS</placeName>
+               <lb/><dateline><placeName ref="#Nohant">Nohant</placeName>, <date
+                  when="1829-09-05">5 septembre 1829</date>.</dateline></opener>
+            <p><persName ref="#duris">M. Duris-Dufresne</persName> m'a fait passer, monsieur,
+               votre réponse aux propositions dont il a bien voulu se charger de ma part auprès
+               de vous. Nous sommes d'accord dès ce moment, et, si mon offre vous convient
+               toujours, je vous attendrai au commencement d'octobre. Le bien que <persName
+                  ref="#duris">M. Duris-Dufresne</persName> nous a dit et de la méthode et du
+               professeur nous donne un vif désir de connaître l'un et l'autre, et nous nous
+               efforcerons de vous rendre agréable le séjour que vous ferez parmi nous.</p>
+            <p>Si, dans votre méthode, il est quelque préparation préalable qu'il soit à ma
+               portée de donner à <persName ref="#dudevant_maurice">mon fils</persName>,
+               veuillez me l'indiquer, afin de rendre votre travail plus facile ; sinon, je le
+               disposerai toujours à vous montrer de la docilité et de la reconnaissance, et,
+               ce dernier sentiment, ses parents le partageront, n'en doutez pas.</p>
+            <closer><salute>Agréez, <persName ref="#boucoiran_jules">monsieur</persName>, l'assurance de la considération distinguée avec
+               laquelle j'ai l'honneur de vous saluer.</salute>
+               <lb/><signed><persName ref="#sand">AURORE DUDEVANT</persName>.</signed></closer>
+         </div>
+         <div decls="#letter31" type="letter" n="31" xml:lang="fr">
+            <head>Lettre XXXI : Lettre de George Sand à M. Caron [01/10/182]</head>
+            <opener>A <persName ref="#caron">M. CARON</persName>, A <placeName ref="#Paris"
+               >PARIS</placeName>
+               <lb/><dateline><placeName ref="#Nohant">Nohant</placeName>, <date when="1829-10-01">1er
+                  octobre 1829</date>.</dateline>
+               <lb/><salute>Mon cher <persName ref="#caron">Caron</persName>,</salute></opener>
+            <p>Je suis bien votre servante. Je vous salue et vous embrasse de tout mon cœur.
+               Maintenant, dites-moi ce que vous avez fait d'une certaine lettre de <persName
+                  ref="#saint-agnan_felicie">Félicie</persName> que vous m'annoncez et que vous ne
+               m'avez pas envoyée ? Tête de linotte! à votre âge! fi! Cherchez sur votre bureau et
+               réparez votre oubli en me la renvoyant bientôt et m'écrivant aussi, pour votre part,
+               une longue lettre.</p>
+            <p>Permettez-moi de vous donner quelques commissions. Il y a longtemps que je ne vous ai
+               <hi rend="italic">embété</hi>, comme dit <persName ref="#pauline"
+                  >Pauline</persName>, et ce serait dommage d'en perdre l'habitude. Ayez la bonté de
+               m'acheter trois ou quatre petites boîtes de poudre de corail pour les dents, comme
+               celle que vous m'avez donnée une fois ; plus une aune de lévantine noire au grand
+               large : c'est pour faire un tablier <hi rend="italic">sans couture</hi>. En
+               expliquant l'affaire, vous trouverez cela dans un bon magasin de soieries. Plus, j'ai
+               une guitare chez <persName ref="#puget_loisa">Puget</persName> que je désirerais
+               ravoir (la guitare, s'entend). Veuillez la faire redemander par <persName
+                  ref="#goudouin-saint-agnan">madame Saint-Agnan</persName>, et, s'il n'y a pas de
+               boîte, veuillez la faire emballer et tenir ces choses prêtes chez vous, où <persName
+                  ref="#de_seze">M. de Sèze</persName> les ira prendre pour me les apporter. Cela
+               lui procurera le plaisir de vous voir, dont il est fort désireux. Il nous a demandé
+               votre adresse.</p>
+            <p>Remettez-lui aussi le volume de <persName ref="#courier_louis-paul">Paul-Louis
+               Courier</persName>, et recevez tous mes remerciements.</p>
+         </div>
+         <div decls="#letter32" type="letter" n="32" xml:lang="fr">
+            <head>Lettre XXXII : Lettre de George Sand à Jules Boucoiran [30/11/1829]</head>
+            <opener>A <persName ref="#boucoiran_jules">M. JULES BOUCOIRAN</persName>, A
+               <placeName ref="#Nohant">NOHANT</placeName>
+               <lb/><dateline><placeName ref="#Perigueux">Périgueux</placeName>, <date
+                  when="1829-11-30">30 novembre 1829</date>.</dateline>
+               <lb/><salute>Mon cher <persName ref="#boucoiran_jules"
+                  >Jules</persName>,</salute></opener>
+            <p>Comment vont mes <persName ref="#dudevant_maurice #dudevant_solange"
+               >enfants</persName>? et vous ? et tous les miens? Je suis impatiente d'avoir
+               de vos nouvelles et des leurs. Je n'en ai pas encore reçu et je suis bien près
+               de m'en tourmenter.</p>
+            <p>Vous étiez de retour à <placeName ref="#Nohant">Nohant</placeName> vendredi soir,
+               vous auriez dû m'écrire le lendemain ; peut-être demain matin aurai-je une
+               lettre de vous ou de <persName ref="#chatiron_hippolyte">mon frère</persName>.
+               J'en ai besoin pour être tout à fait contente ; car, à <hi rend="italic">tous
+                  autres égards</hi> (vous prétendez que c'est mon mot), je suis bien de corps
+               et d'esprit.</p>
+            <p>Mon voyage a été sinon rapide, du moins heureux. Ma santé est fort bonne et mon
+               cœur assez content. Hâtez-vous donc de me dire que ma famille va bien aussi ;
+               mon <persName ref="#dudevant_maurice">Maurice</persName> surtout, mon méchant
+               drôle, que j'aime pourtant plus que tout au monde, et sans lequel je n'aurais
+               pas de bonheur. Dort-il? mange-t-il ? est-il gai? est-il bien? Ne soyez pas trop
+               indulgent pour lui, et, pourtant, le plus que vous pourrez, faites-lui aimer le
+               travail. Je sais bien que ce n'est pas chose aisée. Quand je suis là pour sécher
+               ses pleurs et le voir ensuite dormir dans son berceau, je ne m'en inquiète guère
+               ; mais, de loin, ma faiblesse de mère se réveille, et je ne sens plus que de la
+               douleur, en songeant qu'il est peut-être à se lamenter devant son livre. Sotte
+               chose que l'enfance de l'homme, sotte chose que sa vie tout entière!</p>
+            <p>Enfin, mon cher enfant, faites pour lui ce que vous feriez, ce que vous ferez un
+               jour pour votre propre fils. Suivez son éducation ; mais, avant tout, surveillez
+               sa santé. Ayez aussi l'œil sur <persName ref="#dudevant_solange">ma petite
+                  pataude</persName> et l'oreille à ses cris. Je vous ai déjà dit tout cela.
+               Je suis rabâcheuse et ennuyeuse comme toutes les vieilles. Vous me le
+               pardonnerez ; car vous avez une mère aussi, et, si vous étiez malade chez moi,
+               je vous soignerais comme elle-même. Je vous ai confié mon bien le plus précieux,
+               vous m'avez promis d'en être responsable.</p>
+            <p>Répondez bien à toutes mes questions, répétez dix fois la même chose sans vous
+               lasser, et ne laissez pas passer deux jours sans me tenir au courant. Vous me
+               prouverez ainsi que vous avez autant d'amitié pour moi que j'en ai pour
+               vous.</p>
+            <p>Je pense repartir vers le milieu de la semaine prochaine. Écrivez jusqu'à ce que
+               je vous avertisse.</p>
+            <closer><salute>Adieu.</salute></closer>
+            <postscript> <!-- très bien -->
+               <p>Soignez aussi mon bengali, et dites-moi s'il n'était pas mort de soif quand
+                  vous êtes arrivé. Tenez un peu compagnie à ma pauvre <persName
+                     ref="#chatiron_emilie">Emilie</persName>, qui s'ennuie souvent. Je sais
+                  que vous êtes bon, attentif et obligeant.</p>
+               <p>Je compte sur vous pour me remplacer en toute chose.</p>
+            </postscript>
+            <lb/><signed><persName ref="#sand">AURORE DUDEVANT</persName>.</signed>
+         </div>
+         <div decls="#letter33" type="letter" n="33" xml:lang="fr">
+            <head>Lettre XXXIII : Lettre de George Sand à Jules Boucoiran [08/12/1829]</head>
+            <opener>AU <persName ref="#boucoiran_jules">MÊME</persName>
+               <lb/><dateline><placeName ref="#Perigueux">Périgueux</placeName>, <date
+                  when="1829-12-08">8 décembre 1829</date>.</dateline>
+               <lb/><salute>Mon cher <persName ref="#boucoiran_jules"
+                  >Jules</persName>,</salute></opener>
+            <p>J'ai reçu trois lettres de vous. J'ai écrit ce matin à <persName
+               ref="#chatiron_hippolyte">mon frère</persName> pour lui recommander de vous
+               donner ma clef tant que vous voudriez. On n'a pas compris que je le recommandais
+               en partant, ou, dans l'agitation de ce moment, je ne me suis peut-être pas bien
+               expliquée. C'était pourtant mon intention, recevez-en mes excuses. Du reste,
+               vous avez eu, j'espère, à votre disposition la clef de <placeName ref="#Nohant"
+                  >la grande bibliothèque</placeName> vous avez pu lire à votre aise. Si l'on
+               n'a pas fait de feu dans votre chambre, c'est bien votre faute. Il tenait qu'à
+               vous d'en allumer, et vous n'êtes pas si niais, je pense, que d'y mettre de la
+               discrétion.</p>
+            <p>Recommandez donc bien mon bengali et veillez à ce qu'il soit bien tenu ; car, si
+               je le retrouve mal soigné, je ferai un train du diable à <persName
+                  ref="#caillaud_andre">André</persName>. Faites faire du feu tous les jours
+               dans mon petit réduit, afin qu'en y rentrant, ce qui aura lieu à ta fin de la
+               semaine, je ne le trouve pas froid comme glace. Priez aussi <persName
+                  ref="#chatiron_hippolyte">mon frère</persName> de monter souvent Liska1<note
+                     n="2" anchored="true" type="gloss" place="end">1- Jument de selle de George
+                     Sand.</note>.</p>
+            <p>J'ai commencé par o<!--n-->ù je voulais finir ; mais j'ai bien fait, car les petites
+               choses qu'on remet, on les oublie, et les grandes ne sont pas pressées, vu qu'on
+               ne les oubliera pas. Parlons donc de <persName
+                  ref="#dudevant_maurice #dudevant_solange">mes enfants</persName>. <persName
+                     ref="#dudevant_solange">Ma fille</persName> est enrhumée, dites-vous ? Si
+               elle l'était trop, faites-lui le soir un lait d'amande, vous avez ce petit
+               talent ; mettez-y quelques gouttes d'eau de fleurs d'oranger, et une demi-once
+               de sirop de gomme. <persName ref="#dudevant_maurice">Maurice</persName> lit donc
+               bien ? Cela me fait plaisir, c'est pourquoi je lui écris. Je ne peux vous en dire
+               davantage, le temps me presse.</p>
+            <p>Ma santé se maintient bonne, et, d'ailleurs, je suis en humeur de chanter le
+               <emph rend="italic" xml:lang="la">Nunc dimittis</emph>. Vous ne savez pas,
+               hérétique, ce que cela signine ? Je vous le dirai. Bonsoir. Merci de votre
+               exactitude, merci du fond du cœur. Rien ne m'est si doux que de recevoir des
+               nouvelles de ma chère famille. Soignez toujours mon <persName
+                  ref="#dudevant_maurice">Maurice</persName>.</p>
+            <closer><salute>Adieu ; ne m'écrivez plus, je pars incessamment.</salute>
+               <lb/><signed><persName ref="#sand">AURORE DUDEVANT</persName>.</signed></closer>
+         </div>
+         <div decls="#letter34" type="letter" n="34" xml:lang="fr">
+            <head>Lettre XXXIV : Lettre de George Sand à Mme Maurice Dupin [29/12/1829]</head>
+            <opener>A <persName ref="#delaborde">MADAME MAURICE DUPIN</persName>, A <placeName
+               ref="#Paris">PARIS</placeName>
+               <lb/><dateline><placeName ref="#Nohant">Nohant</placeName>, <date
+                  when="1829-12-29">29 décembre 1829</date>.</dateline>
+               <lb/><salute>Ma chère <persName ref="#delaborde">petite
+                  maman</persName>,</salute></opener>
+            <p>Je viens vous souhaiter une bonne santé et tout ce qu'on peut souhaiter de
+               meilleur pour tout le courant de l'année où nous entrons et pour toutes celles
+               de votre vie ; faites qu'il y en ait beaucoup. Pour cela, soignez-vous bien et
+               menez joyeuse vie.</p>
+            <p>Que faites-vous de <persName ref="#dudevant_françois">mon mari</persName> ? vous
+               mène-t-il au spectacle ? est-il gai ? est-il bon enfant ? Il nous a mandé qu'il
+               serait de retour cette semaine ; mais je doute que ses affaires lui permettent
+               de tenir cet engagement. Profitez de son bras. pendant que vous l'avez,
+               faites-le rire ; car il est toujours triste comme un bonnet de nuit quand il est
+               à <placeName ref="#Paris">Paris</placeName>. Faites-vous promener, si le temps
+               le permet toutefois. Ici, nous sommes sous la neige comme des marmottes. Nous
+               passons notre vie à nous chauffer et à dire des folies. Nous ne faisons rien, et
+               pourtant les journées sont encore trop courtes. <persName
+                  ref="#chatiron_hippolyte">Hippolyte</persName> est d'une gaieté intarissable
+               ; <persName ref="#chatiron_emilie">sa femme</persName> se porte assez bien ici,
+               et <persName ref="#chatiron_leontine"><persName ref="#dudevant_solange"><persName ref="#dudevant_maurice">nos
+                  enfants</persName></persName></persName> nous occupent beaucoup. Ils lisent parfaitement.
+               <persName ref="#chatiron_hippolyte">Hippolyte</persName> est maître
+               d'écriture ; moi, je suis maîtresse de musique.</p>
+            <p><persName ref="#dudevant_solange">Ma fille</persName> n'est pas tout à fait aussi
+               avancée ; mais elle commence à parler anglais et à marcher. Elle a <persName
+                  ref="#pepita">une bonne</persName> qui lui parle espagnol et anglais. Si
+               cela pouvait continuer, elle apprendrait plusieurs langues sans s'en apercevoir.
+               Mais je ne suis pas très contente de mademoiselle <hi rend="italic"><persName
+                  ref="#pepita">Pepita</persName></hi> (c'est ainsi que se nomme
+               l'héroïne), et je ne sais si je la garderai longtemps. Elle est sale et
+               paresseuse comme une véritable Castillane. <persName
+                  ref="#dudevant_solange">Ma petite Solange</persName> est pourtant bien fraîche et bien
+               portante. Elle sera, je crois, très jolie ; elle ressemble, dit-on, à <persName
+                  ref="#dudevant_maurice">Maurice</persName> ; elle a de plus que lui une peau
+               blanche comme la neige. On ne peut pas trouver, par le temps qui court, une
+               comparaison plus palpable.</p>
+            <closer><salute>Adieu, <persName ref="#delaborde">chère petite maman</persName> ;
+               j'ai les doigts tout gelés. Je vous embrasse tendrement et laisse la place à
+               <persName ref="#chatiron_hippolyte"
+                  >Hippolyte</persName>.</salute></closer>
+         </div>
+         <div decls="#letter35" type="letter" n="35" xml:lang="fr">
+            <head>Lettre XXXV : Lettre de George Sand à Mme Maurice Dupin [01/02/1830]</head>
+            <opener>A <persName ref="#delaborde">LA MÊME</persName>
+               <lb/><dateline><date when="1830-02-01">1er février 1830</date>.</dateline>
+               <lb/><salute><persName ref="#delaborde">Ma chère maman</persName>,</salute></opener>
+            <p>Si je n'avais reçu de vos nouvelles par <persName ref="#dudevant_françois">mon
+               mari</persName> et par <persName ref="#chatiron_hippolyte">mon
+                  frère</persName>, qui vient d'arriver, je serais inquiète de votre santé ;
+               car il y a bien longtemps que vous ne m'avez écrit. Depuis plusieurs jours, je
+               me disposais à vous en gronder. J'en ai été empêchée par de vives alarmes sur la
+               santé de <persName ref="#dudevant_maurice">Maurice</persName>.</p>
+            <p>J'ai été bien malheureuse pendant quelques jours. Heureusement les soins assidus,
+               les sangsues, les cataplasmes ont adouci cette crise. Il a même été plus
+               promptement rétabli que je n'osais l'espérer. Il va bien maintenant et reprend
+               ses leçons, qui sont pour moi une grande occupation. Il me reste à peine
+               quelques heures par jour pour faire un peu d'exercice et jouer avec <persName ref="#dudevant_solange">ma petite
+               Solange</persName>, qui est belle comme un
+               ange, blanche comme un cygne et douce comme un agneau. Elle avait <persName
+                  ref="#pepita">une bonne étrangère</persName> qui lui eut été fort utile pour
+               apprendre les langues, mais qui était un si pitoyable sujet sous tous les
+               rapports, que, après bien des indulgences mal placées, j'ai fini par la mettre à
+               la porte ce matin, pour avoir mené <persName ref="#dudevant_maurice"
+                  >Maurice</persName> (à peine sorti de son lit à la suite de cette affreuse
+               indigestion) dans le village, se bourrer de pain chaud et de vin du cru.</p>
+            <p>J'ai confié <persName ref="#dudevant_solange">Solange</persName> aux soins de la
+               <persName ref="#fanchon">femme d'André</persName>, que j'ai depuis
+               deux ans. Je vous envoie le portrait de <persName ref="#dudevant_maurice"
+                  >Maurice</persName>, que j'ai essayé le soir même où il est tombé malade. Je
+               n'ose pas vous dire qu'il ressemble beaucoup ; j'ai eu peu de temps pour le
+               regarder, parce qu'il s'endormait sur sa chaise. Je croyais seulement au besoin de
+               sommeil après avoir joué, tandis que c'était le mal de tête et la fièvre qui
+               s'emparaient de lui. Depuis, je n'ai pas osé le <hi rend="italic">faire
+                  poser</hi>, dans la crainte de le fatiguer.</p>
+            <p>J'ai cherché autant que possible, en retouchant mon ébauche, de me pénétrer de sa
+               physionomie espiègle et décidée. Je crois que l'expression y est bien ;
+               seulement le portrait le peint plus âgé d'un an ou deux. La distance des narines
+               à l'oeil est un peu exagérée, et la bouche n'est pas assez froncée dans le genre
+               de la mienne. En vous représentant les traits de cette figure un peu plus
+               rapprochés, de très longs cils que le dessin ne peut pas bien rendre et qui
+               donnent au regard beaucoup d'agrément, de très vives couleurs roses avec un
+               teint demi-brun, demi-clair, les prunelles d'un noir orangé, c'est-à-dire d'un
+               moins beau noir que les vôtres, mais presque aussi grandes ; enfin, en faisant
+               un effort d'imagination, vous pourrez prendre une idée de sa petite mine, qui
+               sera, je crois, par la suite, plutôt belle que jolie.</p>
+            <p>La taille est sans défauts : svelte, droite comme un palmier, souple et gracieuse
+               ; les pieds et les mains sont très petits ; le caractère est un peu emporté, un
+               peu volontaire, un peu têtu. Cependant le cœur est excellent, et l'intelligence
+               très susceptible de développement. Il lit très bien et commence à écrire ; il
+               commence aussi la musique, l'orthographe et la géographie ; cette dernière
+               étude est pour lui un plaisir.</p>
+            <p>Voilà bien des bavardages de mère mais vous ne m'en ferez pas de reproches, vous
+               savez ce que c'est. Pour moi, je n'ai pas autre chose dans l'esprit que mes
+               leçons, et j'y sacrifie mes anciens plaisirs. Voici le moment où tous mes soins
+               deviennent nécessaires. L'éducation d'un garçon n'est pas une chose à négliger.
+               Je m'applaudis plus que jamais d'être forcée de vivre à la <placeName
+                  ref="#Nohant">campagne</placeName>, où je puis me livrer entièrement à
+               l'instruction.</p>
+            <p>Je n'ai aucun regret aux plaisirs de <placeName ref="#Paris">Paris</placeName> ;
+               j'aime bien le spectacle et les courses quand j'y suis ; mais heureusement je
+               sais aussi n'y pas penser quand je n'y suis pas et quand je ne peux pas y aller.
+               Il y a une chose sur laquelle je ne prends pas aussi facilement mon parti c'est
+               d'être éloignée de vous, à qui je serais si heureuse de présenter <persName
+                  ref="#dudevant_maurice"><persName ref="#dudevant_solange">mes enfants</persName></persName>, et que je
+               voudrais pouvoir entourer de soins et de bonheur. Vous m'affligez vivement en me
+               refusant sans cesse le moyen de m'acquitter d'un devoir qui me serait si doux à
+               remplir. Moi-même, j'ose à peine vous presser, dans la crainte de ne pouvoir
+               vous offrir ici les plaisirs que vous trouvez à <placeName ref="#Paris"
+                  >Paris</placeName>, et que la campagne ne peut fournir. Je suis pourtant
+               bien sûre intérieurement que, si la tendresse et les attentions suffisaient pour
+               vous rendre la vie agréable, vous goûteriez celle que je voudrais vous créer
+               ici.</p>
+            <closer><salute>Adieu, <persName ref="#delaborde">ma chère maman</persName> ; nous
+               vous embrassons tous, les grands comme les petits.</salute></closer>
+            <postscript>
+               <p>Écrivez-moi donc ! ce n'est pas assez pour moi d'apprendre que vous vous
+                  portez bien, je veux encore que vous me le disiez et que vous me donniez une
+                  bénédiction.</p>
+            </postscript>
+         </div>
+         <div decls="#letter36" type="letter" n="36" xml:lang="fr">
+            <head>Lettre XXXVI : Lettre de George Sand à Mme Maurice Dupin [02/1830]</head>
+            <opener>A <persName ref="#delaborde">LA MÊME</persName>
+               <lb/><dateline><placeName ref="#Nohant">Nohant</placeName>, <date when="1830-02"
+                  >février 1830</date>.</dateline>
+               <lb/><salute><persName ref="#delaborde">Ma chère petite
+                  maman</persName>,</salute></opener>
+            <p>J'ai reçu votre lettre depuis quelques jours, et j'y aurais répondu tout de
+               suite, sans un nouveau dérangement de santé qui m'a mis assez bas. Il faudra que
+               je songe sérieusement à me mettre en état de grâce ; chose qu'on fait toujours
+               le plus tard qu'on peut, et si tard, que j'ai de la peine à croire que cela
+               serve à quelque chose.</p>
+            <p>« Voilà, direz-vous, de beaux. sentiments! » Vous savez que je plaisante, et
+               qu'en état de santé ou de maladie, je suis toujours la même, quant au moral ; ma
+               gaieté n'en est même pas altérée. Je prends le temps comme il vient, comptant
+               sur l'avenir, sur mes forces physiques, sur la bonne envie que j'ai de vivre
+               longtemps pour vous aimer et vous soigner.</p>
+            <p>Heureusement vous êtes toujours jeune et vous pouvez encore mener longtemps la
+               vie de garçon ; mais un jour viendra, <persName ref="#delaborde">madame ma chère
+                  mère</persName>, où vous n'aurez plus de si beaux yeux, ni de si bonnes
+               dents : il faudra bien alors que vous reveniez à nous. C'est là que je vous
+               attends, au coin du feu de <placeName ref="#Nohant">Nohant</placeName>,
+               enveloppée de bonnes couvertures et enseignant à lire aux enfants de <persName
+                  ref="#dudevant_maurice">Maurice</persName> et à ceux de <persName
+                     ref="#dudevant_solange">Solange</persName> ; moi même, je ne serai plus
+               alors très allante, et, si ma pauvre santé détraquée me mène jusque-là, je ne
+               serai pas fâchée d'accaparer l'autre chenet ; c'est alors que nous raconterons
+               de belles histoires qui n'en finiront pas et nous endormiront alternativement.
+               Je serai, moi, beaucoup plus vieille que mon âge ; car déjà, avec une dose de
+               sciatique et de douleurs comme celles qui me pèsent sur les épaules, je gagerais
+               que vous êtes plus jeune que moi.</p>
+            <p>Ainsi donc, <persName ref="#delaborde">chère mère</persName>, comptez que nous
+               vieillirons ensemble et que nous serons juste au même point. Puissions-nous
+               finir de même et nous en aller de compagnie là-bas, le même jour !</p>
+            <closer><salute>Adieu, <persName ref="#delaborde">chère maman</persName> ; je laisse
+               la plume à <persName ref="#chatiron_hippolyte">Hippolyte</persName> ; je ne
+               puis pas écrire sans me fatiguer beaucoup. <persName
+                  ref="#chatiron_hippolyte">Mon étourdi</persName> se charge de vous
+               raconter nos amusements.</salute></closer>
+         </div>
+      </body>
+   </text>
+</TEI>

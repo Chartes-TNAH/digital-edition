@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="out/ODDsainteP.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<!DOCTYPE texte [
+<!ENTITY p_barre "<choice><abbr>&#58981;</abbr><expan>par</expan></choice>">
+<!ENTITY et_tironien "<choice><abbr>&#8266;</abbr><expan>et</expan></choice>">
+<!ENTITY et_tironien_maj "<choice><abbr>&#8266;</abbr><expan>Et</expan></choice>">
+<!ENTITY neuf_tironien "<choice><abbr>&#42863;</abbr><expan>com</expan></choice>">
+<!ENTITY e_suscrit "<choice><abbr>e</abbr><expan>re</expan></choice>">
+<!ENTITY a_tilde "<choice><abbr>ã</abbr><expan>an</expan></choice>">
+<!ENTITY d_tilde "<choice><abbr>d'</abbr><expan>dre</expan></choice>">
+<!ENTITY e_tilde "<choice><abbr>ẽ</abbr><expan>em</expan></choice>">
+<!ENTITY i_tilde "<choice><abbr>ĩ</abbr><expan>in</expan></choice>">
+<!ENTITY m_tilde "<choice><abbr>m'</abbr><expan>men</expan></choice>">
+<!ENTITY n_tilde "<choice><abbr>ñ</abbr><expan>an</expan></choice>">
+<!ENTITY o_tilde "<choice><abbr>õ</abbr><expan>on</expan></choice>">
+<!ENTITY q_tilde "<choice><abbr>q&#771;</abbr><expan>que</expan></choice>">
+<!ENTITY v_tilde "<choice><abbr>ṽ</abbr><expan>ver</expan></choice>">
+<!ENTITY aigu "<choice><orig>e</orig><reg>é</reg></choice>"> 
+<!ENTITY esp "<choice><orig></orig><reg> </reg></choice>">
+<!ENTITY ap  "<choice><orig></orig><reg>'</reg></choice>">
+<!ENTITY virg "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY colon "<choice><orig>.</orig><reg>:</reg></choice>"> 
+<!ENTITY i_diplo "<choice><orig>i</orig><reg>j</reg></choice>">
+<!ENTITY i_diplo_maj "<choice><orig>i</orig><reg>J</reg></choice>">
+<!ENTITY u_diplo "<choice><orig>u</orig><reg>v</reg></choice>">
+<!ENTITY amaj "<choice><orig>a</orig><reg>A</reg></choice>">
+<!ENTITY mmaj "<choice><orig>m</orig><reg>M</reg></choice>">
+<!ENTITY nmaj "<choice><orig>n</orig><reg>N</reg></choice>">
+<!ENTITY pmaj "<choice><orig>p</orig><reg>P</reg></choice>">
+<!ENTITY rmaj "<choice><orig>r</orig><reg>R</reg></choice>"> 
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vie de Sainte Pélagie</title>
+            <author>Anonyme</author>
+            <respStmt>
+               <resp>Encodage réalisé dans le cadre d'un devoir de M2 "Technologies numériques
+                  appliquées à l'histoire"</resp>
+               <persName>
+                  <forename>Marie-Caroline</forename>
+                  <surname>Schmied</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Bibliothèque nationale de France</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when="1285">1285</date>
+            <distributor facs="gallica">Bibliothèque nationale de France</distributor>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <repository xml:lang="fr">Bibliotheque nationale de France. Département des
+                     manuscrits</repository>
+                  <idno> Français 412 </idno>
+                  <altIdentifier>
+                     <idno>Lancelot 135</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno> Regius 7019(3)</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <head>
+                  <title>Recueil de textes, Vie de saints</title>
+                  <origDate>1285</origDate>
+               </head>
+               <msContents>
+                  <msItem>
+                     <locus from="214" to="215">Folios 214 à 215</locus>
+                     <author>Anonyme</author>
+                     <title> De seinte Pelage</title>
+                     <incipit>Ici coumence la vie seinte Pelage</incipit>
+                     <explicit>si grant vertu de si grant abstinence</explicit>
+                     <textLang mainLang="fro">ancien français</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Vélin</support>
+                        <foliation>
+                           <p>Deux foliations différentes en haut à droite de la page. La première
+                              est faite à l'encre, la seconde un peu plus haut et un peu plus à
+                              droite, au crayon de papier.</p>
+                           <p>Les cahiers sont des senions</p>
+                        </foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="46"/>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="1">
+                     <handNote>Il n'y a qu'une seule main pour les folios qui nous
+                        concerne.</handNote>
+                  </handDesc>
+                  <scriptDesc>
+                     <scriptNote> lisible</scriptNote>
+                  </scriptDesc>
+                  <decoDesc>
+                     <decoNote>Enluminure pour chaque début de vie de saint</decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <p>Reliure marron</p>
+                  </bindingDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <creation>
+            <date>1285</date>
+            <country>France</country>
+         </creation>
+         <particDesc>
+            <listPerson type="personnages">
+               <person xml:id="pelagie">
+                  <persName>Sainte Pélagie</persName>
+               </person>
+               <person xml:id="nomnus">
+                  <persName>L'évêque Nomnus</persName>
+               </person>
+               <person xml:id="eveque">
+                  <persName>L'évêque d'Antioche</persName>
+               </person>
+               <person xml:id="jacques">
+                  <persName>Frère Jacques</persName>
+               </person>
+               <person xml:id="romaine">
+                  <persName>Romaine</persName>
+               </person>
+               <person xml:id="diable">
+                  <persName>Le diable</persName>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place>
+                  <placeName xml:id="antioche"> Antioche </placeName>
+                  <country>Turquie</country>
+               </place>
+               <place>
+                  <placeName xml:id="saint_julien"> L'église de Saint-Julien </placeName>
+                  <country>Turquie</country>
+                  <settlement>Antioche</settlement>
+               </place>
+               <place>
+                  <placeName xml:id="jerusalem"> Jérusalem </placeName>
+                  <country>Israël</country>
+               </place>
+               <place>
+                  <placeName xml:id="mont"> Mont des Oliviers </placeName>
+                  <country>Israël</country>
+                  <settlement>Jérusalem</settlement>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f437" width="1023px"
+            height="1566px"/>
+         <zone xml:id="segment_1" points="749,877 463,882 461,862 709,854 710,836 750,835"/>
+         <zone xml:id="segment_2" ulx="667" uly="888" lrx="760" lry="905"/>
+         <zone xml:id="segment_3" ulx="667" uly="907" lrx="765" lry="920"/>
+         <zone xml:id="segment_4" ulx="669" uly="923" lrx="767" lry="946"/>
+         <zone xml:id="segment_5" ulx="671" uly="947" lrx="763" lry="966"/>
+         <zone xml:id="segment_6" ulx="669" uly="970" lrx="763" lry="990"/>
+         <zone xml:id="segment_7" ulx="668" uly="989" lrx="757" lry="1010"/>
+         <zone xml:id="segment_8" ulx="667" uly="1014" lrx="763" lry="1034"/>
+         <zone xml:id="segment_9" ulx="669" uly="1034" lrx="766" lry="1056"/>
+         <zone xml:id="segment_10" ulx="668" uly="1059" lrx="757" lry="1080"/>
+         <zone xml:id="segment_11" ulx="670" uly="1078" lrx="761" lry="1098"/>
+         <zone xml:id="segment_12" ulx="462" uly="1097" lrx="762" lry="1126"/>
+         <zone xml:id="segment_13" ulx="456" uly="1125" lrx="729" lry="1140"/>
+         <zone xml:id="segment_14" points="768,1118 768,1155 465,1171 461,1149 709,1138 709,1114 "/>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface>
+         <graphic url="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f438" width="1023px"
+            height="1566px"/>
+         <zone xml:id="segment_15" ulx="268" uly="151" lrx="598" lry="189"/>
+         <zone xml:id="segment_16" ulx="271" uly="184" lrx="588" lry="202"/>
+         <zone xml:id="segment_17" ulx="272" uly="208" lrx="589" lry="226"/>
+         <zone xml:id="segment_18" ulx="270" uly="230" lrx="598" lry="246"/>
+         <zone xml:id="segment_19" ulx="272" uly="247" lrx="587" lry="264"/>
+         <zone xml:id="segment_20" ulx="272" uly="268" lrx="598" lry="286"/>
+         <zone xml:id="segment_21" ulx="270" uly="281" lrx="597" lry="315"/>
+         <zone xml:id="segment_22" ulx="273" uly="310" lrx="594" lry="330"/>
+         <zone xml:id="segment_23" ulx="273" uly="332" lrx="591" lry="352"/>
+         <zone xml:id="segment_24" ulx="274" uly="355" lrx="591" lry="375"/>
+         <zone xml:id="segment_25" ulx="271" uly="377" lrx="586" lry="395"/>
+         <zone xml:id="segment_26" ulx="273" uly="399" lrx="588" lry="420"/>
+         <zone xml:id="segment_27" ulx="273" uly="420" lrx="584" lry="438"/>
+         <zone xml:id="segment_28" ulx="267" uly="428" lrx="596" lry="460"/>
+         <zone xml:id="segment_29" ulx="270" uly="454" lrx="582" lry="483"/>
+         <zone xml:id="segment_30" ulx="269" uly="473" lrx="597" lry="506"/>
+         <zone xml:id="segment_31" ulx="270" uly="497" lrx="591" lry="526"/>
+         <zone xml:id="segment_32" ulx="267" uly="521" lrx="592" lry="551"/>
+         <zone xml:id="segment_33" ulx="272" uly="543" lrx="583" lry="570"/>
+         <zone xml:id="segment_34" ulx="272" uly="571" lrx="583" lry="591"/>
+         <zone xml:id="segment_35" ulx="271" uly="592" lrx="595" lry="617"/>
+         <zone xml:id="segment_36" ulx="270" uly="613" lrx="588" lry="635"/>
+         <zone xml:id="segment_37" ulx="273" uly="635" lrx="597" lry="661"/>
+         <zone xml:id="segment_38" ulx="271" uly="660" lrx="597" lry="681"/>
+         <zone xml:id="segment_39" ulx="271" uly="679" lrx="597" lry="703"/>
+         <zone xml:id="segment_40" ulx="271" uly="705" lrx="484" lry="722"/>
+         <zone xml:id="segment_41" points="593,702 598,742 271,745 270,725 483,724 481,703"/>
+         <zone xml:id="segment_42" ulx="273" uly="743" lrx="600" lry="764"/>
+         <zone xml:id="segment_43" ulx="274" uly="765" lrx="598" lry="788"/>
+         <zone xml:id="segment_44" ulx="270" uly="785" lrx="597" lry="809"/>
+         <zone xml:id="segment_45" ulx="270" uly="810" lrx="595" lry="835"/>
+         <zone xml:id="segment_46" ulx="272" uly="832" lrx="598" lry="857"/>
+         <zone xml:id="segment_47" ulx="272" uly="854" lrx="599" lry="877"/>
+         <zone xml:id="segment_48" ulx="272" uly="876" lrx="597" lry="898"/>
+         <zone xml:id="segment_49" ulx="272" uly="897" lrx="595" lry="920"/>
+         <zone xml:id="segment_50" ulx="269" uly="920" lrx="602" lry="944"/>
+         <zone xml:id="segment_51" ulx="274" uly="942" lrx="592" lry="967"/>
+         <zone xml:id="segment_52" ulx="271" uly="964" lrx="588" lry="993"/>
+         <zone xml:id="segment_53" ulx="269" uly="989" lrx="593" lry="1011"/>
+         <zone xml:id="segment_54" ulx="270" uly="1010" lrx="594" lry="1031"/>
+         <zone xml:id="segment_55" ulx="270" uly="1032" lrx="590" lry="1057"/>
+         <zone xml:id="segment_56" ulx="269" uly="1055" lrx="585" lry="1077"/>
+         <zone xml:id="segment_57" ulx="270" uly="1076" lrx="595" lry="1097"/>
+         <zone xml:id="segment_58" points="272,1099 273,1137 343,1135 343,1118 590,1118 590,1100 "/>
+         <zone xml:id="segment_59" ulx="344" uly="1118" lrx="588" lry="1138"/>
+         <zone xml:id="segment_60" ulx="269" uly="1138" lrx="594" lry="1163"/>
+         <zone xml:id="segment_61" ulx="654" uly="150" lrx="899" lry="169"/>
+         <zone xml:id="segment_62" points="969,153 974,191 657,192 656,171 903,170 903,147"/>
+         <zone xml:id="segment_63" ulx="656" uly="190" lrx="966" lry="219"/>
+         <zone xml:id="segment_64" ulx="656" uly="214" lrx="962" lry="238"/>
+         <zone xml:id="segment_65" ulx="654" uly="233" lrx="959" lry="263"/>
+         <zone xml:id="segment_66" ulx="659" uly="256" lrx="871" lry="275"/>
+         <zone xml:id="segment_67" points="956,263 961,296 657,300 656,277 871,273 871,257"/>
+         <zone xml:id="segment_68" ulx="661" uly="302" lrx="865" lry="317"/>
+         <zone xml:id="segment_69" points="959,305 958,343 659,344 659,322 862,318 862,300"/>
+         <zone xml:id="segment_70" ulx="655" uly="343" lrx="959" lry="366"/>
+         <zone xml:id="segment_71" ulx="656" uly="365" lrx="970" lry="390"/>
+         <zone xml:id="segment_72" ulx="655" uly="390" lrx="964" lry="411"/>
+         <zone xml:id="segment_73" ulx="652" uly="411" lrx="963" lry="433"/>
+         <zone xml:id="segment_74" ulx="656" uly="437" lrx="960" lry="457"/>
+         <zone xml:id="segment_75" ulx="654" uly="457" lrx="966" lry="478"/>
+         <zone xml:id="segment_76" ulx="656" uly="482" lrx="963" lry="500"/>
+         <zone xml:id="segment_77" ulx="656" uly="498" lrx="961" lry="524"/>
+         <zone xml:id="segment_78" ulx="657" uly="527" lrx="964" lry="542"/>
+         <zone xml:id="segment_79" ulx="656" uly="542" lrx="964" lry="565"/>
+         <zone xml:id="segment_80" ulx="656" uly="566" lrx="968" lry="591"/>
+         <zone xml:id="segment_81" ulx="656" uly="588" lrx="971" lry="612"/>
+         <zone xml:id="segment_82" ulx="654" uly="613" lrx="967" lry="636"/>
+         <zone xml:id="segment_83" ulx="656" uly="633" lrx="969" lry="655"/>
+         <zone xml:id="segment_84" ulx="655" uly="658" lrx="965" lry="677"/>
+         <zone xml:id="segment_85" ulx="654" uly="677" lrx="962" lry="699"/>
+         <zone xml:id="segment_86" ulx="654" uly="696" lrx="962" lry="722"/>
+         <zone xml:id="segment_87" ulx="651" uly="718" lrx="959" lry="744"/>
+         <zone xml:id="segment_88" ulx="655" uly="741" lrx="967" lry="764"/>
+         <zone xml:id="segment_89" ulx="655" uly="760" lrx="964" lry="787"/>
+         <zone xml:id="segment_90" ulx="653" uly="785" lrx="960" lry="808"/>
+         <zone xml:id="segment_91" ulx="652" uly="807" lrx="969" lry="832"/>
+         <zone xml:id="segment_92" ulx="650" uly="831" lrx="962" lry="854"/>
+         <zone xml:id="segment_93" ulx="653" uly="853" lrx="961" lry="872"/>
+         <zone xml:id="segment_94" ulx="655" uly="874" lrx="964" lry="899"/>
+         <zone xml:id="segment_95" ulx="654" uly="898" lrx="967" lry="915"/>
+         <zone xml:id="segment_96" ulx="654" uly="918" lrx="963" lry="939"/>
+         <zone xml:id="segment_97" ulx="657" uly="942" lrx="961" lry="962"/>
+         <zone xml:id="segment_98" ulx="654" uly="961" lrx="958" lry="988"/>
+         <zone xml:id="segment_99" ulx="652" uly="982" lrx="961" lry="1011"/>
+         <zone xml:id="segment_100" ulx="652" uly="1006" lrx="958" lry="1034"/>
+         <zone xml:id="segment_101" ulx="656" uly="1034" lrx="928" lry="1046"/>
+         <zone xml:id="segment_102" points="959,1032 966,1071 659,1074 658,1053 932,1047 931,1032"/>
+         <zone xml:id="segment_103" ulx="655" uly="1071" lrx="971" lry="1099"/>
+         <zone xml:id="segment_104" ulx="654" uly="1091" lrx="965" lry="1118"/>
+         <zone xml:id="segment_105" ulx="653" uly="1113" lrx="958" lry="1141"/>
+         <zone xml:id="segment_106" ulx="651" uly="1133" lrx="962" lry="1165"/>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface>
+         <graphic url="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f439" width="1023px"
+            height="1566px"/>
+         <zone xml:id="segment_107" ulx="72" uly="164" lrx="371" lry="176"/>
+         <zone xml:id="segment_108" ulx="73" uly="185" lrx="372" lry="199"/>
+         <zone xml:id="segment_109" ulx="72" uly="204" lrx="370" lry="216"/>
+         <zone xml:id="segment_110" ulx="74" uly="227" lrx="371" lry="239"/>
+         <zone xml:id="segment_111" ulx="70" uly="248" lrx="370" lry="263"/>
+         <zone xml:id="segment_112" points="71,266 69,309 100,307 101,290 370,282 370,264 "/>
+         <zone xml:id="segment_113" ulx="100" uly="289" lrx="379" lry="304"/>
+         <zone xml:id="segment_114" ulx="71" uly="311" lrx="378" lry="325"/>
+         <zone xml:id="segment_115" ulx="69" uly="334" lrx="376" lry="351"/>
+         <zone xml:id="segment_116" ulx="70" uly="356" lrx="370" lry="369"/>
+         <zone xml:id="segment_117" ulx="70" uly="379" lrx="372" lry="392"/>
+         <zone xml:id="segment_118" ulx="68" uly="401" lrx="378" lry="418"/>
+         <zone xml:id="segment_119" ulx="69" uly="424" lrx="247" lry="438"/>
+         <zone xml:id="segment_120" points="245,418 38!1,418 384,462 67,466 67,445 245,440"/>
+         <zone xml:id="segment_121" ulx="65" uly="466" lrx="379" lry="484"/>
+         <zone xml:id="segment_122" ulx="67" uly="488" lrx="380" lry="508"/>
+         <zone xml:id="segment_123" points="70,513 64,551 168,550 167,530 377,530 378,509"/>
+         <zone xml:id="segment_124" ulx="167" uly="528" lrx="381" lry="554"/>
+         <zone xml:id="segment_125" ulx="68" uly="557" lrx="383" lry="574"/>
+         <zone xml:id="segment_126" ulx="69" uly="580" lrx="379" lry="598"/>
+         <zone xml:id="segment_127" ulx="69" uly="602" lrx="385" lry="621"/>
+         <zone xml:id="segment_128" ulx="69" uly="625" lrx="393" lry="641"/>
+         <zone xml:id="segment_129" ulx="71" uly="651" lrx="390" lry="661"/>
+         <zone xml:id="segment_130" ulx="71" uly="675" lrx="390" lry="683"/>
+         <zone xml:id="segment_131" ulx="71" uly="692" lrx="401" lry="708"/>
+         <zone xml:id="segment_132" ulx="73" uly="716" lrx="379" lry="727"/>
+         <zone xml:id="segment_133" ulx="71" uly="735" lrx="385" lry="750"/>
+         <zone xml:id="segment_134" points="73,757 71,796 259,795 260,778 398,774 399,753"/>
+         <zone xml:id="segment_135" points=" 264,774 266,794 67,797 65,816 393,815 391,772 "/>
+         <zone xml:id="segment_136" ulx="74" uly="819" lrx="384" lry="841"/>
+         <zone xml:id="segment_137" ulx="76" uly="844" lrx="389" lry="869"/>
+         <zone xml:id="segment_138" ulx="71" uly="871" lrx="385" lry="888"/>
+         <zone xml:id="segment_139" ulx="72" uly="892" lrx="381" lry="902"/>
+         <zone xml:id="segment_140" ulx="73" uly="912" lrx="323" lry="928"/>
+         <zone xml:id="segment_141" points=" 392,908 391,952 68,955 67,932 319,931 314,909 "/>
+         <zone xml:id="segment_142" ulx="73" uly="956" lrx="314" lry="975"/>
+         <zone xml:id="segment_143" points=" 394,957 394,995 70,1001 70,978 312,976 311,955 "/>
+         <zone xml:id="segment_144" ulx="70" uly="1000" lrx="391" lry="1023"/>
+         <zone xml:id="segment_145" ulx="72" uly="1026" lrx="389" lry="1041"/>
+         <zone xml:id="segment_146" ulx="77" uly="1047" lrx="383" lry="1062"/>
+         <zone xml:id="segment_147" ulx="77" uly="1072" lrx="397" lry="1087"/>
+         <zone xml:id="segment_148" ulx="79" uly="1090" lrx="389" lry="1104"/>
+         <zone xml:id="segment_149" points=" 79,1115 78,1148 141,1152 142,1137 408,1130 408,1110 "/>
+         <zone xml:id="segment_150" ulx="141" uly="1131" lrx="402" lry="1150"/>
+         <zone xml:id="segment_151" ulx="75" uly="1154" lrx="307" lry="1172"/>
+         <zone xml:id="segment_152" ulx="305" uly="1155" lrx="404" lry="1173"/>
+         <zone xml:id="segment_153" ulx="440" uly="158" lrx="544" lry="177"/>
+         <zone xml:id="segment_154" ulx="545" uly="158" lrx="744" lry="186"/>
+         <zone xml:id="segment_155" points=" 545,161 740,165 743,209 444,203 443,177 545,182 "/>
+         <zone xml:id="segment_156" ulx="445" uly="202" lrx="733" lry="224"/>
+         <zone xml:id="segment_157" ulx="520" uly="223" lrx="619" lry="242"/>
+         <zone xml:id="segment_158" ulx="621" uly="226" lrx="735" lry="244"/>
+         <zone xml:id="segment_159" ulx="445" uly="246" lrx="738" lry="267"/>
+         <zone xml:id="segment_160" ulx="448" uly="267" lrx="734" lry="282"/>
+         <zone xml:id="segment_161" ulx="449" uly="286" lrx="742" lry="305"/>
+         <zone xml:id="segment_162" ulx="447" uly="310" lrx="743" lry="329"/>
+         <zone xml:id="segment_163" ulx="450" uly="332" lrx="745" lry="347"/>
+         <zone xml:id="segment_164" ulx="448" uly="350" lrx="750" lry="370"/>
+         <zone xml:id="segment_165" ulx="447" uly="375" lrx="827" lry="397"/>
+         <zone xml:id="segment_166" ulx="449" uly="401" lrx="600" lry="415"/>
+         <zone xml:id="segment_167" points="601,395 599,414 447,418 450,437 762,433 760,399"/>
+         <zone xml:id="segment_168" ulx="446" uly="442" lrx="763" lry="460"/>
+         <zone xml:id="segment_169" ulx="451" uly="461" lrx="762" lry="480"/>
+         <zone xml:id="segment_170" ulx="451" uly="485" lrx="757" lry="503"/>
+         <zone xml:id="segment_171" ulx="454" uly="507" lrx="741" lry="519"/>
+         <zone xml:id="segment_172" ulx="452" uly="530" lrx="742" lry="548"/>
+         <zone xml:id="segment_173" ulx="454" uly="553" lrx="623" lry="570"/>
+         <zone xml:id="segment_174"
+            points="753,550 755,571 492,575 496,595 453,592 453,571 621,574 621,556"/>
+         <zone xml:id="segment_175" ulx="493" uly="575" lrx="740" lry="591"/>
+         <zone xml:id="segment_176" ulx="456" uly="596" lrx="751" lry="614"/>
+         <zone xml:id="segment_177" ulx="456" uly="620" lrx="758" lry="634"/>
+         <zone xml:id="segment_178" ulx="454" uly="643" lrx="749" lry="658"/>
+         <zone xml:id="segment_179" ulx="456" uly="665" lrx="749" lry="677"/>
+         <zone xml:id="segment_180" ulx="460" uly="681" lrx="750" lry="698"/>
+         <zone xml:id="segment_181" points="456,707 454,744 504,745 504,726 751,720 749,701"/>
+         <zone xml:id="segment_182" ulx="502" uly="730" lrx="758" lry="743"/>
+         <zone xml:id="segment_183" points="454,752 457,788 587,786 585,769 767,765 767,746"/>
+         <zone xml:id="segment_184" points="587,765 588,789 451,794 452,815 761,811 758,767"/>
+         <zone xml:id="segment_185" ulx="458" uly="817" lrx="626" lry="833"/>
+         <zone xml:id="segment_186" points="629,816 629,832 457,843 458,862 759,855 756,815"/>
+         <zone xml:id="segment_187" ulx="458" uly="866" lrx="759" lry="878"/>
+         <zone xml:id="segment_188" ulx="457" uly="884" lrx="768" lry="898"/>
+         <zone xml:id="segment_189" ulx="463" uly="910" lrx="764" lry="921"/>
+         <zone xml:id="segment_190" ulx="463" uly="931" lrx="763" lry="942"/>
+         <zone xml:id="segment_191" ulx="460" uly="951" lrx="755" lry="967"/>
+         <zone xml:id="segment_192" ulx="463" uly="975" lrx="753" lry="987"/>
+         <zone xml:id="segment_193" ulx="467" uly="993" lrx="755" lry="1011"/>
+         <zone xml:id="segment_194" ulx="464" uly="1024" lrx="764" lry="1033"/>
+         <zone xml:id="segment_195" ulx="466" uly="1041" lrx="752" lry="1053"/>
+         <zone xml:id="segment_196" ulx="464" uly="1066" lrx="755" lry="1074"/>
+         <zone xml:id="segment_197" ulx="468" uly="1085" lrx="755" lry="1098"/>
+         <zone xml:id="segment_198" ulx="467" uly="1105" lrx="766" lry="1119"/>
+         <zone xml:id="segment_199" ulx="465" uly="1129" lrx="620" lry="1140"/>
+      </surface>
+   </facsimile>
+
+   <text>
+      <body>
+         <div type="section">
+            <head>
+               <seg facs="#segment_1"><hi rend="red">Ici coumence la &u_diplo;ie seinte <persName
+                        ref="#pelagie">&pmaj;elage</persName>.</hi></seg>
+            </head>
+            <p>
+               <seg facs="#segment_2"><hi rend="initiale">N</hi>ous de&u_diplo;ons</seg>
+               <seg facs="#segment_3"> toz &i_diplo;ors ren&d_tilde;</seg>
+               <seg facs="#segment_4"> graces a&esp;nost&e_suscrit;</seg>
+               <seg facs="#segment_5"> seignor&virg; qi ne</seg>
+               <seg facs="#segment_6"> &u_diplo;eut pas qe</seg>
+               <seg facs="#segment_7"> li pecheor pe</seg><seg facs="#segment_8">rissent<choice>
+                     <orig>:</orig>
+                     <reg>,</reg>
+                  </choice> mes</seg>
+               <seg facs="#segment_9"> qe il soient c&o_tilde;</seg><seg facs="#segment_10">vertiz
+                  a&esp;peni</seg><seg facs="#segment_11">tance&virg; por ce</seg>
+               <seg facs="#segment_12"> que il aient &u_diplo;ie pardurable. Et pour ce
+                  &u_diplo;os</seg>
+               <seg facs="#segment_13"> dirons un miracle qi a&u_diplo;int pieca en </seg>
+               <seg facs="#segment_14"><placeName ref="#antioche">&amaj;ntioche</placeName>&virg;
+                  por ce que &u_diplo;os i&esp;preigniez bon example<pc type="reg">.</pc></seg>
+            </p>
+            <pb n="1"/>
+            <cb n="1"/>
+            <p>
+               <seg facs="#segment_15">Li <persName ref="#eveque">e&u_diplo;esques <placeName
+                        ref="#antioche">d&ap;&amaj;ntioche</placeName></persName> fist &u_diplo;enir
+                  un &i_diplo;or de&u_diplo;&a_tilde;t </seg>
+               <seg facs="#segment_16"> lui .VIII. e&u_diplo;esqes<pc type="reg">,</pc> qi estoient
+                  soz lui car il a</seg><seg facs="#segment_17">&u_diplo;oit besoing d&ap;eus. Il en
+                  iot un qi ot non </seg>
+               <seg facs="#segment_18">
+                  <persName ref="#nomnus">&nmaj;omnus</persName><pc>,</pc> molt seinz hom de grant
+                  abstinen</seg><seg facs="#segment_19">ce &et_tironien; de grant religion. Li
+                     <persName ref="#eveque">e&u_diplo;esques de la cit&aigu;</persName>
+               </seg>
+               <seg facs="#segment_20"> fist les .VIII. e&u_diplo;esqes herbergier en une
+                  me</seg><seg facs="#segment_21">son lez <placeName ref="#saint_julien">l&ap;eglyse
+                     seint Julien</placeName>. Un &i_diplo;or entrerent </seg>
+               <seg facs="#segment_22"> li e&u_diplo;esqe et por ce de&esp;l&ap;eglyse &et_tironien;
+                  se sistrent ens&e_tilde;</seg><seg facs="#segment_23">ble &et_tironien; prierent
+                  celui qi a&u_diplo;oit non <persName ref="#nomnus">&nmaj;omnus</persName>
+               </seg>
+               <seg facs="#segment_24"> qe il lor deist tel chose qi fust proufitable a lor </seg>
+               <seg facs="#segment_25"> ames. Qant il lor sermonoit<pc type="reg">,</pc> par
+                  de&u_diplo;ant </seg>
+               <seg facs="#segment_26"> eus passa une <persName ref="#pelagie">feme</persName> de
+                  trop grant beaute </seg>
+               <seg facs="#segment_27"> qi estoit soudoiere<pc type="orig">.</pc> &et_tironien;
+                  estoit seur un che&u_diplo;al </seg>
+               <seg facs="#segment_28"> &et_tironien; estoit &u_diplo;estue de dras de soie trop
+                  riche&m_tilde;t </seg>
+               <seg facs="#segment_29"> &et_tironien; ele s&ap;apareilloit einsint por pleire
+                  a&esp;ceus </seg>
+               <seg facs="#segment_30"> a&esp;qui ele cuidoit gaaignier. Qant li
+                  e&u_diplo;es</seg><seg facs="#segment_31">qe la &u_diplo;irent en tel ator
+                  &et_tironien; qe ele ot einsint </seg>
+               <seg facs="#segment_32"> honte perdue qe ele ne descendi onqes por </seg>
+               <seg facs="#segment_33"> la re&u_diplo;erence d&ap;eus&virg; <choice>
+                     <orig>I</orig>
+                     <reg>i</reg>
+                  </choice>l tornerent lor chies </seg>
+               <seg facs="#segment_34"> de li aussint come de&esp;pechie&virg; mes cil qi ot </seg>
+               <seg facs="#segment_35"> non <persName ref="#nomnus">&nmaj;omnus</persName> la
+                  regarda tant com il pot.</seg>
+            </p>
+            <p>
+               <seg facs="#segment_36">Qant il ne la peut plus &u_diplo;eoir<pc type="reg">,</pc> il
+                  mist sa </seg>
+               <seg facs="#segment_37"> chiere seur ses genouz &et_tironien; &neuf_tironien;enca si
+                  for&m_tilde;t </seg>
+               <seg facs="#segment_38"> a&esp;plorer qe uns li&u_diplo;res que il tenoit
+                  &et_tironien; toz </seg>
+               <seg facs="#segment_39"> ses genous de&u_diplo;ant li fu moilliez de ses
+                  ler</seg><seg facs="#segment_40">mes. Apr&aigu;s il se dreca &et_tironien;
+                  dist&colon;</seg>
+               <said direct="true" who="#nomnus">
+                  <seg facs="#segment_41"> Je &u_diplo;os di en &u_diplo;erite que nostre sires nos
+                     metra de&u_diplo;ant</seg>
+                  <seg facs="#segment_42"> ceste feme le &i_diplo;or de son &i_diplo;ugement. Com
+                     bien </seg>
+                  <seg facs="#segment_43"> cuidiez &u_diplo;os qe ele ait mis a&esp;soi
+                     la&u_diplo;er &et_tironien; pig</seg><seg facs="#segment_44">nier &et_tironien;
+                     mirer&virg; &et_tironien; son cors a&esp;apareillier pour </seg>
+                  <seg facs="#segment_45"> pleire au monde<choice>
+                        <orig>.</orig>
+                        <reg>?</reg>
+                     </choice> &et_tironien_maj; por ce qu&ap;ele n&ap;a&esp;pere l&ap;ede </seg>
+                  <seg facs="#segment_46"> a&esp;aucun de ceus qi l&ap;eiment qi est hui
+                     &et_tironien; par </seg>
+                  <seg facs="#segment_47"> a&u_diplo;enture ne sera pas demein. &et_tironien_maj;
+                     nos qui a</seg><seg facs="#segment_48">&u_diplo;ons a&esp;espous le signeur des
+                     seinz cieus<pc type="orig">:</pc> qi </seg>
+                  <seg facs="#segment_49"> done a&esp;ceus qi le ser&u_diplo;ent les richeces qi toz </seg>
+                  <seg facs="#segment_50"> &i_diplo;ors parmeinent ce que onqes euz ne &u_diplo;it </seg>
+                  <seg facs="#segment_51"> ne oreille ne&esp;l&ap;oi ne cuers d&ap;ome ne le pout </seg>
+                  <seg facs="#segment_52"> penser que il done a&esp;ceus qi le ser&u_diplo;ent
+                     &et_tironien; qi </seg>
+                  <seg facs="#segment_53"> l&ap;eiment<pc type="orig">.</pc> &et_tironien; qi
+                     a&u_diplo;ons certeine esperance qe </seg>
+                  <seg facs="#segment_54"> nos &u_diplo;errons la face del celestial seignor<pc
+                        type="reg">,</pc>
+                  </seg>
+                  <seg facs="#segment_55">qe cherubin &et_tironien; seraphin n&ap;osent regarder. </seg>
+                  <seg facs="#segment_56"> &nmaj;ous ne aornons pas&virg; <choice>
+                        <sic>ne</sic>
+                        <corr>nous</corr>
+                     </choice> ne gardons pas </seg>
+                  <seg facs="#segment_57"> nos cuers de pechiez&virg; einz gisons en noz </seg>
+                  <seg facs="#segment_58"> mau&u_diplo;es pechiez. <choice>
+                        <orig>q</orig>
+                        <reg>Q</reg>
+                     </choice>
+                     <choice>
+                        <orig><hi rend="position(combsup)">de</hi></orig>
+                        <reg>de</reg>
+                     </choice>&u_diplo;ons estre example de tot bien a&esp;toz. </seg></said>
+            </p>
+            <p>
+               <seg facs="#segment_59">Quant il ot ce dit il ala en son ostel </seg>
+               <seg facs="#segment_60"> &et_tironien; se lessa chaoir mout hati&u_diplo;ement
+                  &et_tironien; cou<cb n="2"/></seg><seg facs="#segment_61">menca a plorer durement
+                  e dit<pc type="reg">:</pc></seg>
+               <said direct="true" who="#nomnus">
+                  <seg facs="#segment_62">Hauti<choice>
+                        <abbr><hi rend="position(combsup)">s</hi></abbr>
+                        <expan>si</expan>
+                     </choice>mes dex<pc type="reg">,</pc> aies merci de moi quar <choice>
+                        <orig>L</orig>
+                        <reg>l</reg>
+                     </choice>&ap;aor</seg><seg facs="#segment_63">nemenz d’une soudoiere a
+                     seurmont&aigu; tout </seg>
+                  <seg facs="#segment_64"> l&ap;aornement de ma &u_diplo;ie. Beaus sire
+                     &neuf_tironien;ment </seg>
+                  <seg facs="#segment_65"> tolere &i_diplo;e &i_diplo;e &u_diplo;eoir qi onqes nul
+                     bien ne fis.</seg>
+               </said>
+            </p>
+            <p>
+               <seg facs="#segment_66"> Il fu tote la nuit en orissons&virg;</seg>
+               <seg facs="#segment_67"> &et_tironien; au matin qu&esp;il fu diemenches<choice>
+                     <orig>:</orig>
+                     <reg>,</reg>
+                  </choice> il apela un sien clerc</seg>
+               <seg facs="#segment_68"> qi a&u_diplo;oit non <persName ref="#jacques"
+                     >&i_diplo_maj;aqes </persName> &et_tironien; li dist&colon;</seg>
+               <said direct="true" who="#nomnus">
+                  <seg facs="#segment_69">
+                     <persName ref="#jacques">Frere &i_diplo_maj;aqes</persName> &i_diplo;e sui mout
+                     troublez d&ap;une a&esp;&u_diplo;ision que &i_diplo;&ap;ai </seg>
+                  <seg facs="#segment_70"> &u_diplo;eue. Il m&ap;estoit a&u_diplo;is qe &i_diplo;e
+                     estoit de&u_diplo;&a_tilde;t </seg>
+                  <seg facs="#segment_71"> l&ap;autel &et_tironien; uns colons noirs &et_tironien;
+                     pleins de gr&n_tilde;t </seg>
+                  <seg facs="#segment_72"> ordure &u_diplo;oletoit en&u_diplo;iron moi &et_tironien;
+                     puoit si </seg>
+                  <seg facs="#segment_73"> que &i_diplo;e ne pooie soffrir la puour<pc type="orig"
+                        >.</pc> &et_tironien; se de&p_barre;ti </seg>
+                  <seg facs="#segment_74"> onces d&esp;entor moi. De&u_diplo;ant qe li <persName
+                        ref="#eveque">e&u_diplo;esques</persName>
+                  </seg>
+                  <seg facs="#segment_75"> &neuf_tironien;manda qe cil qi n&ap;estoient pas
+                     baptiziez </seg>
+                  <seg facs="#segment_76"> s&ap;en ississent fors&virg; lors s&ap;en issi cil
+                     coulons. </seg>
+                  <seg facs="#segment_77"> Qant la messe fut chantee cil coulons re</seg><seg
+                     facs="#segment_78">&u_diplo;int &et_tironien; &u_diplo;oletoit de&u_diplo;ant
+                     moi aussint com </seg>
+                  <seg facs="#segment_79"> il a&u_diplo;oit fet de&u_diplo;ant&virg; &et_tironien;
+                     &i_diplo;e le pris &et_tironien; le getai en </seg>
+                  <seg facs="#segment_80"> un foss&aigu; qi estoit de&u_diplo;ant le porche de
+                     l&ap;egly</seg><seg facs="#segment_81">se. Cil coulons se la&u_diplo;a
+                     enle&u_diplo;e de cele fosse</seg>
+                  <seg facs="#segment_82"> &et_tironien; s&ap;en issi aussint blanz come nois
+                     &et_tironien; &u_diplo;ola </seg>
+                  <seg facs="#segment_83"> isnelement en l&ap;air si haut qe onqes puis ne le poi
+                     &u_diplo;eoir.</seg>
+               </said>
+            </p>
+            <p><seg facs="#segment_84">Qant <persName ref="#nomnus">&nmaj;omnus</persName> li
+                  e&u_diplo;esque</seg><seg facs="#segment_85"> ot ce cont&aigu; a son clerc il ala
+                  a l&ap;eglisse a&u_diplo;euc </seg><seg facs="#segment_86"> les autres
+                  e&u_diplo;esques por oir la messe &et_tironien; a<choice>
+                     <orig>&#771;</orig>
+                     <reg>pr&aigu;</reg>
+                  </choice>s </seg><seg facs="#segment_87"> l&ap;e&u_diplo;uangile li <persName
+                     ref="#eveque">e&u_diplo;esques de la cit&aigu;</persName> comanda </seg><seg
+                  facs="#segment_88"> a celui qi a&u_diplo;oit non <persName ref="#nomnus"
+                     >&nmaj;omnus</persName> qe il feist le </seg><seg facs="#segment_89"> sermon au <choice>
+                     <sic>pueple</sic>
+                     <corr>peuple</corr>
+                  </choice>. Cil qi estoit molt se&i_tilde;z </seg><seg facs="#segment_90"> hom
+                  comenca a parler mout doucement </seg><seg facs="#segment_91"> &et_tironien;
+                  a&esp;la foie reprenoit durement les pecheors </seg><seg facs="#segment_92">
+                  a&esp;la foie les confortoit&virg; a&esp;la foie les espoen</seg><seg
+                  facs="#segment_93">toit del &i_diplo;or del &i_diplo;ugement. Cele soudoiere
+                  </seg><seg facs="#segment_94"> dont &u_diplo;os a&u_diplo;ez oi parler
+                  de&u_diplo;ant fu par a</seg><seg facs="#segment_95">&u_diplo;enture a&esp;ce
+                  sermon <choice>
+                     <orig>:</orig>
+                     <reg>,</reg>
+                  </choice> car lons tens a&u_diplo;oit </seg><seg facs="#segment_96"> q&ap;ele
+                  n&ap;a&u_diplo;oit entr&aigu; en eglisse &et_tironien; oi la parole </seg><seg
+                  facs="#segment_97"> nostre signor<pc type="orig">.</pc> &et_tironien; i ot si
+                  grant compontion </seg><seg facs="#segment_98"> qe ele comenca a plorer trop
+                  durement.</seg>
+            </p>
+            <p><seg facs="#segment_99"> Apres la messe ele se prist garde de l’ostel </seg><seg
+                  facs="#segment_100"> au seint home<pc type="orig">.</pc> &et_tironien; qant il i
+                  fu entrez ele li </seg><seg facs="#segment_101"> en&u_diplo;oia unes lettres en
+                  tel maniere&colon;</seg><said direct="false" who="#pelagie">
+                  <seg facs="#segment_102"><persName ref="#nomnus">Au seint home e&u_diplo;esqe<pc
+                           type="reg">,</pc>
+                     </persName> deciple iesuscrist&virg; la </seg><seg facs="#segment_103">
+                     pecheresse deciple au deable saluz. J&ap;ai aper </seg><seg facs="#segment_104"
+                     >ceu par oir de deu qe tu aeures qe il abes</seg><seg facs="#segment_105">sa
+                     ses cieus &et_tironien; descendi en terre non pas </seg><seg
+                     facs="#segment_106"> por les &i_diplo;ustes&virg; mes por les pecheors a
+                     saluer</seg>
+                  <pb n="2"/>
+                  <cb n="3"/>
+                  <seg facs="#segment_107">par la medecine de penitance et il qe che </seg><seg
+                     facs="#segment_108">rubin ne seraphyn n&ap;osent regarder&virg; deg </seg><seg
+                     facs="#segment_109">na c&o_tilde;&v_tilde;ser en <choice>
+                        <abbr>t</abbr>
+                        <expan>ter</expan>
+                     </choice>re entre les pecheors. Si com </seg><seg facs="#segment_110"> tu
+                        preechas<pc type="reg">,</pc> tu qui es &u_diplo;raiment deciples </seg><seg
+                     facs="#segment_111"> nostre signor<pc type="reg">,</pc> &i_diplo;e te pri
+                     &q_tilde; tu ne me despises </seg><seg facs="#segment_112"> pas&virg; mes
+                     recoit moi a&esp;baptesme a estre sau</seg>&u_diplo;ee.</said><seg
+                  facs="#segment_113">
+                  <persName ref="#nomnus">Li e&u_diplo;esqes</persName> li remanda en tel maniere.
+                  </seg><said direct="false" who="#nomnus"><seg facs="#segment_114"> Qi conques tu
+                     soies nostre sires te conoist</seg>
+                  <seg facs="#segment_115"> bien. &i_diplo;e te pri qe tu ne me temptes pas
+                     &i_diplo;e sui </seg>
+                  <seg facs="#segment_116"> pechierres&virg; mes se tu en &u_diplo;erit&aigu;
+                     desirres a </seg>
+                  <seg facs="#segment_117"> estre sau&u_diplo;ee &et_tironien; tu me &u_diplo;euz
+                     &u_diplo;eoir tu ne me </seg>
+                  <seg facs="#segment_118"> &u_diplo;erras pas seul a seul&virg; mes entre les
+                     autres </seg>
+                  <seg facs="#segment_119"> e&u_diplo;esqes me porras &u_diplo;eoir.</seg></said>
+            </p>
+            <p>
+               <seg facs="#segment_120"> Qant ele oi ce ele ala au plus tost qe ele pout a
+                  l&ap;ostel a&esp;l&ap;e&u_diplo;es&q_tilde;s </seg>
+               <seg facs="#segment_121"> &et_tironien; se lessa cheoir seur le pa&u_diplo;ement
+                  &et_tironien; prist le </seg>
+               <seg facs="#segment_122"> seint home parmi les piez &et_tironien; comenca a
+                  plo</seg><seg facs="#segment_123">rer &et_tironien; getoit poudre seur son chief
+                  &et_tironien; cria durement &et_tironien; dist&colon;</seg><said direct="true"
+                  who="#nomnus">
+                  <seg facs="#segment_124">
+                     <persName ref="#nomnus">Beaus sire</persName> ensuit ton
+                     mest&e_suscrit;</seg><seg facs="#segment_125"> &et_tironien; ton signor
+                     iesucrist qi est pleinz de miseri</seg><seg facs="#segment_126">corde
+                     &et_tironien; aies merci de moi pecheresse &et_tironien; me </seg><seg
+                     facs="#segment_127"> fai orendroit crestiene. Je suis <persName ref="#pelagie"
+                        >&pmaj;elage</persName> pleine </seg><seg facs="#segment_128"> de pechiez
+                     par son detez de perdition laz &et_tironien; pie</seg><seg facs="#segment_129"
+                     >ges a&esp;ames prendre. J&ap;ai este delectations des</seg><seg
+                     facs="#segment_130"> mostieus de liz &et_tironien; &i_diplo;e deceue <choice>
+                        <sic>ai</sic>
+                        <corr>et</corr>
+                     </choice> mainz homes</seg><seg facs="#segment_131"> deceus&virg; or ai grant
+                     poor de mes mesfez &et_tironien; m&ap;en</seg>
+                  <seg facs="#segment_132">repent &et_tironien; requier que &i_diplo;e soie
+                     baptizi&aigu;&virg; car </seg><seg facs="#segment_133"> &i_diplo;e croi qe el
+                     baptesme ferai &i_diplo;e mondee de</seg><seg facs="#134"> toz mes pechiez
+                     &et_tironien; eschaperai des meins au deable qi ma&u_diplo;oit
+                  deceue.</seg></said>
+               <seg facs="#segment_135"><persName ref="#eveque">Li e&u_diplo;esque</persName>
+                  &et_tironien; tot cil qi a&u_diplo;ec estoient se mer&u_diplo;eillierent
+                  cou</seg><seg facs="#segment_136">ment si fole feme se pooit si durement</seg><seg
+                  facs="#segment_137"> repentir. <persName ref="#nomnus">Nomnus</persName> li
+                  e&u_diplo;esqes li dist<pc type="reg">:</pc></seg><said direct="true"
+                  who="#nomnus"><seg facs="#segment_138">Nost&e_suscrit; detre dient que feme
+                     legiere ne doit pas</seg><seg facs="#segment_139"> estre baptizi&aigu;&virg; se
+                     elle ne done seurt&aigu; qe elle</seg>
+                  <seg facs="#segment_140">nenchie &i_diplo;am&aigu;s el granz
+                  pechiez.</seg></said><seg facs="#segment_141">Qant ele oi ce ele se lessa cheoir a
+                  terre derechief &et_tironien;</seg><seg facs="#segment_142"> comenca a&esp;plorer
+                  &et_tironien; dist <persName ref="#nomnus">a&esp;l&ap;e&u_diplo;esqe</persName><pc
+                     type="reg">:</pc></seg><said direct="true" who="#pelagie"><seg
+                     facs="#segment_143"> Se tu demeures a&esp;moi baptizier &i_diplo;e pri deu qe
+                     tu li </seg><seg facs="#segment_144"> rendes reson de toz mes mesfez&virg; car
+                     &i_diplo;a poor</seg><seg facs="#segment_145"> que par la demorance ne renchie
+                     es mei&i_tilde;s</seg><seg facs="#segment_146"> au deable. &pmaj;or qoi
+                     &i_diplo;e te pri qe se tu &u_diplo;ieus</seg><seg facs="#segment_147">
+                     a&u_diplo;oir part el regne deu qe tu me doinses</seg><seg facs="#segment_148">
+                     le seint baptesme &et_tironien; qe tu prie por moi</seg><seg
+                     facs="#segment_149"> qe la male beste cui &i_diplo;e sui eschapee ne me
+                     ra&u_diplo;isce.</seg></said>
+            </p>
+            <p><seg facs="#segment_150">Lors <persName ref="#nomnus">li e&u_diplo;esqes &nmaj;omnus
+                  </persName> en&u_diplo;oia</seg><seg facs="#segment_151"> a <persName
+                     ref="#eveque">l&ap;e&u_diplo;esqe de la cit&aigu;</persName> &et_tironien; li
+                  manda </seg><said direct="false" who="#nomnus"><seg facs="#segment_152">qe il
+                     &u_diplo;oloit </seg><cb n="4"/><seg facs="#segment_153"> de tele
+                  chose.</seg></said><seg facs="#segment_154"> Et il li manda</seg>
+               <said direct="false" who="#nomnus"><seg facs="#segment_155"> qe nostre sires
+                     l&ap;a&u_diplo;oit por ce en&u_diplo;oie en la cit&aigu;&virg; car </seg><seg
+                     facs="#segment_156"> par les seinz amonestemenz estoit elle con&u_diplo;ertie
+                  </seg></said><seg facs="#segment_157">&et_tironien; li remanda </seg><said
+                  direct="false" who="#nomnus"><seg facs="#segment_158">qe il la
+                  baptizast</seg></said><seg facs="#segment_159"> &et_tironien; li en&u_diplo;oia
+                  une mout preude feme de la </seg><seg facs="#segment_160"> cit&aigu; qui
+                  a&u_diplo;oit non <persName ref="#romaine">&rmaj;omeine</persName> por estre
+                  sa</seg>
+               <seg facs="#segment_161">marine. Apres ce <persName ref="#nomnus"
+                     >&nmaj;omnus</persName> fist <persName ref="#pelagie"
+                  >&pmaj;elage</persName></seg>
+               <seg facs="#segment_162">confesse &et_tironien; la baptiza&virg; el non del pere
+                  &et_tironien; </seg><seg facs="#segment_163"> del fil &et_tironien; del seint
+                  esperit &et_tironien; <persName ref="#romaine">romeine</persName> fu </seg><seg
+                  facs="#segment_164"> sa marine. A&u_diplo;ec meismes de&u_diplo;ant toz</seg><seg
+                  facs="#segment_165"> nouz les meins lacies seur sa teste &u_diplo;&i_tilde;t
+                     <persName ref="#diable">li deables</persName> &et_tironien; co</seg><seg
+                  facs="#segment_166"> menca a&esp;crier &et_tironien; dist<pc type="reg"
+                  >:</pc></seg><said direct="true" who="#diable"><seg facs="#segment_167">hailas qe
+                     est ce qe &i_diplo;e suesfre&virg; e&u_diplo;esqes ne te soffissoit il pas
+                     qe</seg><seg facs="#segment_168"> tu m&ap;as tolues les ames de .XXX.
+                     milliers</seg><seg facs="#segment_169"> de sarrazinz qe tu as fez croire en ton
+                     deu </seg><seg facs="#segment_170"> &et_tironien; renduz par baptesme. Tu
+                     m&ap;as mespe</seg><seg facs="#segment_171">rance tolue&virg; &i_diplo;e ne te
+                     puis plus soffrir<pc type="reg">,</pc></seg><seg facs="#segment_172"> maleorz
+                     soit li &i_diplo;orz que tu nasquis por</seg><seg facs=" #segment_173"> estre
+                     mes a&u_diplo;ersaires.</seg></said><seg facs="#segment_174"> Apr&aigu;s il
+                  dist a <persName ref="#pelagie">&pmaj;elage&colon;</persName></seg>
+               <said direct="true" who="#diable"><seg facs="#segment_175">Que est ce que tu as
+                        fet<pc>,</pc> tu as fet</seg><seg facs="#segment_176"> ausssint come fist
+                     &i_diplo;udas&virg; qant ses sires</seg><seg facs="#segment_177"> qi li feisoit
+                     grant honeur lot fet apostre</seg><seg facs="#segment_178"> il le &u_diplo;endi
+                     &et_tironien; trai aussi as tu fet<pc type="reg">.</pc> &mmaj;oi</seg><seg
+                     facs="#segment_179"> je t&ap;a&u_diplo;oi honoree &et_tironien; &u_diplo;estue
+                     de dras de </seg><seg facs="#segment_180"> soie a&esp;pierres precieuses
+                     &et_tironien; t&ap;a&u_diplo;oit dou</seg><seg facs="#segment_181">nees granz
+                     richeces &et_tironien; tu m&ap;as del tout lessie.</seg></said>
+            </p>
+            <p>
+               <seg facs="#segment_182"><persName ref="#romaine">Sa marine</persName> li dist que
+                  ele se seig</seg><seg facs="#segment_183">nast &et_tironien; ele se seigna&virg;
+                  &et_tironien; soffia au deable en la chiere &et_tironien; li
+                  dist&colon;</seg><said direct="true" who="#pelagie"><seg facs="#segment_184"
+                        ><persName ref="#diable">Deables</persName> &i_diplo;e te reni &et_tironien;
+                     toutes tes oeuvres car nostre sires m&ap;a </seg><seg facs="#segment_185">
+                     deli&u_diplo;ree de ta poeste.</seg></said><seg facs="#segment_186"> Apres ce
+                  ele fist &u_diplo;endre tot ce qe ele a&u_diplo;oit&virg; &et_tironien; fist tout
+                  do</seg><seg facs="#segment_187">nner as poures iesucrist. Au diemence a</seg><seg
+                  facs="#segment_188">pr&aigu;s ele s&ap;en&esp;issi de la cit&aigu; que onques
+                  nul</seg><seg facs="#segment_189"> ne le sot &et_tironien; s&ap;en ala en
+                     <placeName ref="#jerusalem">&i_diplo;erusalem</placeName> &et_tironien; se
+                  mist</seg><seg facs="#segment_190"> en un reclus el <placeName ref="#mont"> mont
+                     d&ap;oli&u_diplo;eth</placeName> &et_tironien; fist en</seg><seg
+                  facs="#segment_191"> tendant a la gent que ele estoit home </seg><seg
+                  facs="#segment_192"> &et_tironien; ser&u_diplo;i a&u_diplo;ec nostre signor des
+                  qua la</seg><seg facs="#segment_193"> mort en &u_diplo;egiles en orissons
+                  &et_tironien; en gr&n_tilde;s</seg><seg facs="#segment_194"> abstinences&virg;
+                  &et_tironien; en granz macerations de</seg><seg facs="#segment_195"> son cors. Et
+                  qant el fu trespassee cil</seg><seg facs="#segment_196"> qui
+                  l&ap;ense&u_diplo;elirent apercurent qe ce es</seg><seg facs="#segment_197">toit
+                  feme &et_tironien; loerent &et_tironien; gloriefierent nos</seg><seg
+                  facs="#segment_198">tre signor qi a&u_diplo;oit don&aigu; a feme si grant
+                  &v_tilde;tu</seg><seg facs="#segment_199"> de si grant abstinence.</seg>
+            </p>
+         </div>
+      </body>
+   </text>
+</TEI>

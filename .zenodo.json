@@ -1,0 +1,68 @@
+{
+  "creators": [
+    {
+      "affiliation": ["École nationale des chartes", "Université Lyon 3"],
+      "name": "Ariane Pinche",
+      "orcid": "0000-0002-7843-5050"
+    },
+    {
+      "name": "JACQUOT Olivier",
+      "affiliation": ["École nationale des chartes", "Bibliothèque nationale de France"],
+    },
+    {
+      "name": "MORILLON Marie",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "DARTOIS Hélène",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "SCHMIED Marie-Caroline",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "FREY Marine",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "VIEILLON Lucie",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "ALBOUY Ségolène",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "ANDRIEUX Clément",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "Emilie Blotiere",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "LEMOSQUET Lauryne",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "Caroline Méot",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "Céline Champcourt",
+      "affiliation": "École nationale des chartes",
+    },
+    {
+      "name": "Victoria LE FOURNER",
+      "affiliation": "École nationale des chartes",
+    }
+  ],
+  "description": "This corpus contains courses evaluation written by students of different promotions of the <a href='http://www.chartes.psl.eu/fr/cursus/master-technologies-numeriques-appliquees-histoire'>TNAH master (Paris)</a>.",
+  "keywords": [
+    "old french", "xml/tei", "digital edition", "george sand"
+  ],
+  "access_right": "open",
+  "license": "cc-by-nc-4.0",
+  "upload_type": "dataset"
+}

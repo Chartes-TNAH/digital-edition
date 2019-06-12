@@ -1,0 +1,1120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Bases de l'ODD acquises, vous auriez pu personnaliser encore un peu plus ou par exemple trier vos règles pour bien mettre en valeur vos personnalisations -->
+<!-- Pour la documentation, le principe est compris, mais j'aurais aimé voir l'utilisation de facsimile expliquée, ainsi qu'un paragraphe sur l'intérêt de l'édition numérique -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr"
+    xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Edition nativement numérique de <hi rend="italic">la vie de saint Jacques le
+                        petit</hi>, extrait du recueil des vies de saints (manuscrit 412,
+                    BNF)</title>
+                <author>Marie Morillon</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Devoir XML-TEI, Master 2 TNAH, Ecole nationale des chartes, Paris, janvier <date
+                        when="2019">2019</date></p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Derived from an analysis of 13 files from
+                    file:/C:/Users/Utilisateur/Documents/MASTER_2_TNAH/XML-TEI/rendu/</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+            <div1>
+                <head>Guide d'encodage pour l'édition de la vie de saint Jacques le petit, extrait
+                    du manuscrit 412 (BNF)</head>
+                <p/>
+                <div2>
+                    <head>La structure du fichier XML</head>
+                    <div3>
+                        <head>La structure du <hi rend="italic">teiHeader</hi></head>
+                        <p>Le <gi>teiHeader</gi> comporte trois grandes sections : <specList>
+                                <specDesc key="fileDesc"/>
+                                <specDesc key="encodingDesc"/>
+                                <specDesc key="profileDesc"/>
+                            </specList>
+                        </p>
+                        <div4>
+                            <head>Le fileDesc</head>
+                            <p>Le <gi>fileDesc</gi> se divise en trois : <specList>
+                                    <specDesc key="titleStmt"/>
+                                    <specDesc key="publicationStmt"/>
+                                    <specDesc key="sourceDesc"/>
+                                </specList>
+                                Le <hi rend="italic">sourceDesc</hi> est des trois parties la
+                                    plus étendue et contient toutes les informations nécessaires à
+                                    l'identification de la source, ici le manuscrit 412 de la
+                                    Bibliothèque Nationale de France.</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <msIdentifier>
+                                    <country>France</country>
+                                    <settlement>Bibliothèque nationale de France. Département des
+                                        manuscrits</settlement>
+                                    <idno>Français 412</idno>
+                                </msIdentifier> [...] <msItemStruct>
+                                    <locus>ff. 45v-46v</locus>
+                                    <author>Anonyme</author>
+                                    <incipit>ne voz doit mie anoier se je vous conte ici apres la
+                                        vie et la passion de monsigneur seint Jaque le
+                                        petit</incipit>
+                                    <explicit>gloire par toz les siecles des siecles
+                                        amen.</explicit>
+                                </msItemStruct>
+                            </egXML>
+                        </div4>
+                        <div4>
+                            <head>L'encodingDesc</head>
+                            <p>L'<gi>encodingDesc</gi> permet de donner des informations sur
+                                l'encodage du fichier XML. Dans notre cas, il est assez court.</p>
+                        </div4>
+                        <div4>
+                            <head>Le profileDesc</head>
+                            <p>Le <gi>profileDesc</gi> contient les notices de tous les noms de
+                                personnage et de lieux apparaissant dans le fichier. Deux
+                                personnages reviennent plus régulièrement : Jésus Christ et Saint
+                                Jacques qui bénéficient donc d'une courte note explicative, un lien
+                                vers une notice d'autorité de la bnf a été ajouté. Les dates, trop
+                                souvent incertaines, n'ont pas été données. A chaque personnage est
+                                attribué un identifiant qui permet de référencer son apparition à
+                                chaque occurrence dans le texte. Cela peut permettre de générer
+                                automatiquement un index.</p>
+                            <p>Les noms de lieux peuvent être indiqués dans le profileDesc, ils sont
+                                absents dans le texte encodé.</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <person xml:id="Saint_Jacques_le_petit">
+                                    <persName>iaqe</persName>
+                                    <note type="biographical">Saint Jacques le petit est l'un des
+                                        douze apôtres de Jésus.</note>
+                                </person>
+                            </egXML>
+
+                        </div4>
+                    </div3>
+                    <div3>
+                        <head>La structure des différentes parties du texte</head>
+                        <p>Le texte est structuré en différentes parties, grâce à différentes
+                            balises : <specList>
+                                <specDesc key="div"/>
+                                <specDesc key="p"/>
+                                <specDesc key="lg"/> <!-- Attention, vous n'avez pas utilisé ces balises + elles ne sont pas déclarées dans votre schéma -->
+                                <specDesc key="said"/> <!-- Attention, vous n'avez pas utilisé ces balises + elles ne sont pas déclarées dans votre schéma -->
+                                <specDesc key="seg"/>
+                            </specList>
+                        </p>
+                        <p>Le texte est structuré à l’intérieur d’une balise <gi>text</gi> et
+                            englobe l'élément <gi>body</gi> à qui l'on a donné un attribut,
+                                <att>xml:lang</att>, qui indique la langue du texte, l'ancien
+                            français signifié par la valeur <hi rend="italic"><val>fro</val></hi>.
+                            Le <gi>body</gi> présente se divise en deux <gi>div</gi>, la première
+                            portant l'attribut <att>type</att> de valeur <hi rend="italic"
+                                    ><val>chapter</val></hi>, introduisant le titre du texte et la
+                            seconde possède le même attribut, de valeur <hi rend="italic"
+                                    ><val>section</val></hi>.</p>
+                        <p>Nous avons fait le choix pour cette édition de ne pas englober les
+                            parties dialoguées dans des balises <gi>said</gi>, préférant faire
+                            primer l'aspect facsimilaire.</p>
+                    </div3>
+                </div2>
+                <div2>
+                    <head>De l'édition facsimilaire à l'édition normalisée</head>
+                    <p>La réalisation nativement numérique de cette édition nous a permis de créer
+                        une édition doublant les informations, ce qui permet de proposer d'une part
+                        une édition facsimilaire et d'autre part une édition normalisée.</p>
+                    <div3>
+                        <head>Encodage de la mise en page du manuscrit</head>
+                        <p>Afin de pouvoir produire à terme une vue facsimilaire de l'édition, des
+                            informations sur la disposition du texte ont été encodées en utilisant
+                            les balises suivantes : <specList>
+                                <specDesc key="pb"/>
+                                <specDesc key="cb"/>
+                                <specDesc key="lb"/>
+                            </specList></p>
+                        <p>Chaque saut de page est indiqué avec élément <gi>pb</gi> qui contient,
+                            grâce à l'attribut <att>n</att>, le numéro du folio et, grâce à
+                            l'attribut <att>facs</att>, un lien vers le folio concerné du manuscrit,
+                            numérisé sur le site Gallica. Nous avons pris le parti de respecter la
+                            foliotation de Gallica en indiquant s'il s'agissait du recto ou du
+                            verso.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><pb n="f.46v"
+                                facs="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f102.item"
+                            /></egXML>
+                        <p>Chaque saut de colonne est indiqué avec l'élément <gi>cb</gi> et
+                            contient, grâce à l'attribut <att>n</att>, le numéro de la colonne du
+                            folio ; la colonne de gauche est appelée 1 et celle de droite 2.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><cb n="1"/></egXML>
+                        <p>Les lettrines, ainsi que les mots rubriqués ont été indiqués grâce à la
+                            balise <gi>hi</gi>. <egXML xmlns="http://www.tei-c.org/ns/Examples"><hi
+                                    rend="rubricated">A</hi> ce qe li</egXML> Ce sont les valeurs de
+                            l'attribut <att>rend</att> qui indiquent le type de décoration présent
+                            dans le texte qui comprend deux types de lettrines : <list>
+                                <label>rubricated</label>
+                                <item>désigne les grandes lettrines décoratives qui commencent les
+                                    paragraphes du texte, qui en compte trois, deux Q et un A, à
+                                    l'encre rouge et bleue, assez raffinées.</item>
+                                <label>decorated-initial</label>
+                                <item>désigne les lettrines décorées qui ouvrent le texte, il s'agit
+                                    pour notre texte d'un n montrant le martyre de saint Jacques
+                                    priant pendant sa lapidation, tandis qu'un personnage s'apprête
+                                    à le frapper à la tête.</item>
+                            </list>On trouve également dans le texte des majuscules à l'encre rouge,
+                            elles semblent décoratives mais on les retrouve souvent au début des
+                            dialogues, nous avons choisi de les signaler grâce à la balise
+                                <gi>hi</gi> accompagnée de l'attribut <att>rend</att> portant le
+                                <label>red</label>. <egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                    ><hi rend="red">O</hi>stons</egXML></p>
+                        <p>Pour le titre rubriqué, nous avons simplement, à l'aide de la balise
+                                <hi>hi</hi>, indiqué la valeur <hi rend="rubricated"/> encadrant la
+                            balise <gi>seg</gi> qui porte l'attribut <att>rend</att> avec le
+                                <label>rubricated</label>.<egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
+                                <hi rend="rubricated"><seg n="1" rend="red" facs="#l1">de seint
+                                        Jaque le petit.</seg></hi>
+                            </egXML>
+                        </p>
+                    </div3>
+                    <div3>
+                        <head>Encodage des graphies d'origine et des normalisations</head>
+                        <p>L'un des buts de cette édition est de pouvoir proposer une vue
+                            facsimilaire et une vue normalisée du texte et donc de pouvoir aisément
+                            passer de l'une à l'autre. Cette plasticité est rendue possible par
+                            l’utilisation des balises : <specList>
+                                <specDesc key="choice"/>
+                                <specDesc key="orig"/>
+                                <specDesc key="reg"/>
+                                <specDesc key="abbr"/>
+                                <specDesc key="expan"/>
+                                <specDesc key="ex"/>
+                            </specList> Ce balisage permet de conserver dans le code des graphies
+                            originales et de les restituer si besoin.</p>
+                        <p>Les régularisations concernent les espaces entre les mots, la graphie des
+                            u/v et des i/j, l'utilisation des majuscules dont l'usage dans le
+                            manuscrit ne correspond pas aux usages modernes. Nous avons employé pour
+                            des besoins de facilité des entités. </p>
+                        <p>Le signalement et le développement des abrévations fonctionnent sur le
+                            même principe. Les caractères spéciaux des abréviations sont signalés
+                            par le <hi>Numerical Character Reference Decimal</hi> du signe
+                                concerné.<egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                        ><choice><abbr>&#42863;</abbr><expan>com</expan></choice>
+                            </egXML> Afin d’alléger le code, mais aussi de procéder de manière
+                            homogène pour le développement des abréviations, les balises
+                                <gi>choice</gi> et leur contenu sont dans la plupart des cas appelés
+                            par une entité dans les fichiers XML.</p>
+                    </div3>
+                    <div3>
+                        <head>Ponctuation originale et ponctuation normalisée</head>
+                        <p>Le texte présente des marques de ponctuation, points simples ou doubles,
+                            dont l'usage est assez éloigné des règles modernes. Nous avons néanmoins
+                            décidé de nous placer assez proche du texte, en ajoutant uniquement la
+                            ponctuation des dialogues qui nous paraissait la plus nécessaire à la
+                            compréhension. Lorsque la ponctuation du manuscrit ne présentait pas de
+                            difficulté, elle a simplement été transcrite, c'est le cas le plus
+                            courant. </p>
+                    </div3>
+                    <div3>
+                        <note>Dans le cadre de cette édition, le choix a été fait de ne pas réaliser
+                            d'apparat critique en raison de la longueur réduite du texte.</note>
+                    </div3>
+                </div2>
+            </div1>
+
+            <div1>
+                <head>Tableau des éléments</head>
+                <schemaSpec ident="oddbyexample" start="TEI ">
+                    <moduleRef key="tei"/>
+
+                    <!--Checking module textcrit-->
+                    <classRef key="att.textCritical"/>
+                    <classRef key="model.rdgLike"/>
+                    <classRef key="model.rdgPart"/>
+                    <classSpec ident="att.textCritical" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="type" mode="delete"/>
+                            <attDef ident="cause" mode="delete"/>
+                            <attDef ident="varSeq" mode="delete"/>
+                            <attDef ident="require" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <!--Checking module msdescription-->
+                    <classRef key="model.physDescPart"/>
+                    <moduleRef key="msdescription"
+                        include="msDesc height width locus origDate msIdentifier altIdentifier explicit incipit msContents msItem msItemStruct physDesc objectDesc supportDesc support foliation layoutDesc layout handDesc decoDesc bindingDesc history origin provenance acquisition msPart"/>
+                    <elementSpec ident="msDesc" mode="change">
+                        <gloss>Le msDesc contient une description du texte du manuscrit.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="height" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="width" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="locus" mode="change">
+                        <gloss>On a indiqué dans le locus les folios de notre texte.</gloss>
+                        <attList>
+                            <attDef ident="scheme" mode="delete"/>
+                            <attDef ident="from" mode="delete"/>
+                            <attDef ident="to" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="target" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="origDate" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="when" mode="delete"/>
+                            <attDef ident="unit" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="msIdentifier" mode="change">
+                        <gloss>Le msIdentifier contient l'information nécessaire pour identifier
+                            l'exemplaire du manuscrit.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="altIdentifier" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="explicit" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="incipit" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="msContents" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="msItem" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="msItemStruct" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="physDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="objectDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="supportDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="support" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="foliation" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="layoutDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="layout" mode="change">
+                        <attList>
+                            <attDef ident="streams" mode="delete"/>
+                            <attDef ident="ruledLines" mode="delete"/>
+                            <attDef ident="writtenLines" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="handDesc" mode="change">
+                        <attList>
+                            <attDef ident="hands" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="decoDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="bindingDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="history" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="origin" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="when" mode="delete"/>
+                            <attDef ident="notBefore" mode="delete"/>
+                            <attDef ident="notAfter" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="provenance" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="when" mode="delete"/>
+                            <attDef ident="notBefore" mode="delete"/>
+                            <attDef ident="notAfter" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="acquisition" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="when" mode="delete"/>
+                            <attDef ident="notBefore" mode="delete"/>
+                            <attDef ident="notAfter" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="msPart" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <!--Checking module namesdates-->
+                    <classRef key="model.persNamePart"/>
+                    <moduleRef key="namesdates"
+                        include="persName country settlement listPerson person"/>
+                    <elementSpec ident="persName" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="when" mode="delete"/>
+                            <attDef ident="notBefore" mode="delete"/>
+                            <attDef ident="notAfter" mode="delete"/>
+                            <attDef ident="full" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="yes"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="country" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="ref" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                            <attDef ident="when" mode="delete"/>
+                            <attDef ident="notBefore" mode="delete"/>
+                            <attDef ident="notAfter" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="settlement" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="ref" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                            <attDef ident="when" mode="delete"/>
+                            <attDef ident="notBefore" mode="delete"/>
+                            <attDef ident="notAfter" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="listPerson" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                            <attDef ident="default" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="false"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="person" mode="change">
+                        <attList>
+                            <attDef ident="role" mode="delete"/>
+                            <attDef ident="sex" mode="delete"/>
+                            <attDef ident="age" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <!--Checking module dictionaries-->
+                    <classRef key="att.lexicographic"/>
+                    <classRef key="model.entryLike"/>
+                    <classRef key="model.formPart"/>
+                    <classRef key="model.gramPart"/>
+                    <classRef key="model.lexicalRefinement"/>
+                    <classRef key="model.morphLike"/>
+                    <classRef key="model.ptrLike.form"/>
+                    <classSpec ident="att.lexicographic" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="expand" mode="delete"/>
+                            <attDef ident="norm" mode="delete"/>
+                            <attDef ident="split" mode="delete"/>
+                            <attDef ident="value" mode="delete"/>
+                            <attDef ident="orig" mode="delete"/>
+                            <attDef ident="location" mode="delete"/>
+                            <attDef ident="mergedIn" mode="delete"/>
+                            <attDef ident="opt" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <!--Checking module tagdocs-->
+                    <classRef key="att.combinable"/>
+                    <classRef key="att.identified"/>
+                    <classRef key="model.contentPart"/>
+                    <moduleRef key="tagdocs"
+                        include="classRef moduleRef schemaSpec elementSpec classSpec attList attDef valItem valList"/>
+                    <elementSpec ident="classRef" mode="change">
+                        <attList>
+                            <attDef ident="expand" mode="delete"/>
+                            <attDef ident="include" mode="delete"/>
+                            <attDef ident="except" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="moduleRef" mode="change">
+                        <attList>
+                            <attDef ident="prefix" mode="delete"/>
+                            <attDef ident="except" mode="delete"/>
+                            <attDef ident="url" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="schemaSpec" mode="change">
+                        <attList>
+                            <attDef ident="prefix" mode="delete"/>
+                            <attDef ident="targetLang" mode="delete"/>
+                            <attDef ident="docLang" mode="delete"/>
+                            <attDef ident="defaultExceptions" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="mode" mode="delete"/>
+                            <attDef ident="status" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="elementSpec" mode="change">
+                        <attList>
+                            <attDef ident="prefix" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="mode" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="change"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="classSpec" mode="change">
+                        <attList>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="atts"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="generate" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="mode" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="change"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="attList" mode="change">
+                        <attList>
+                            <attDef ident="org" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="attDef" mode="change">
+                        <attList>
+                            <attDef ident="usage" mode="delete"/>
+                            <attDef ident="ns" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="mode" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="change"/>
+                                    <valItem ident="delete"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="valItem" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="mode" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="valList" mode="change">
+                        <attList>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="closed"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="mode" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="add"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <classSpec ident="att.identified" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="predeclare" mode="delete"/>
+                            <attDef ident="module" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.ascribed.directed" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="toWhom" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.canonical" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="key" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.dimensions" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="quantity" mode="delete"/>
+                            <attDef ident="extent" mode="delete"/>
+                            <attDef ident="precision" mode="delete"/>
+                            <attDef ident="scope" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.damaged" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="agent" mode="delete"/>
+                            <attDef ident="degree" mode="delete"/>
+                            <attDef ident="group" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.datable.w3c" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="from" mode="delete"/>
+                            <attDef ident="to" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.datable" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="calendar" mode="delete"/>
+                            <attDef ident="period" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.editLike" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="evidence" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.media" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="scale" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.naming" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="role" mode="delete"/>
+                            <attDef ident="nymRef" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.typed" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="subtype" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.pointing" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="targetLang" mode="delete"/>
+                            <attDef ident="evaluate" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.pointing.group" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="domains" mode="delete"/>
+                            <attDef ident="targFunc" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.segLike" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="function" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.timed" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="start" mode="delete"/>
+                            <attDef ident="end" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.transcriptional" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="status" mode="delete"/>
+                            <attDef ident="cause" mode="delete"/>
+                            <attDef ident="seq" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.personal" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="sort" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <!--Checking module core-->
+                    <moduleRef key="core"
+                        include="p hi sic corr choice reg orig date abbr expan ref head note graphic pb lb cb author title textLang"/>
+                    <elementSpec ident="p" mode="change">
+                        <gloss>La balise p marque les paragraphes dans le texte.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="part" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="N"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="hi" mode="change">
+                        <gloss>La balise hi permet d'indiquer qu'une chaîne de caractères est
+                            graphiquement différente du texte environnant, sans raison sémantique
+                            donnée.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="rend" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="sup"/>
+                                    <valItem ident="red"/>
+                                    <valItem ident="decorated-initial"/>
+                                    <valItem ident="rubricated"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="sic" mode="change">
+                        <gloss>La balise sic signale une erreur de graphie ou d'orthographe.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="corr" mode="change">
+                        <gloss>La balise corr permet de proposer une correction si une erreur est
+                            repérée.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="choice" mode="change">
+                        <gloss>La balise choice signale une alternative dans le texte
+                            encodé.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="reg" mode="change">
+                        <gloss>La balise reg propose une régularisation d'une partie du texte par
+                            rapport à une forme non satisfaisante.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="orig" mode="change">
+                        <gloss>La balise orig signale la forme originale d'une partie du texte dont
+                            l'encodage propose une alternative.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="date" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="unit" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="abbr" mode="change">
+                        <gloss>La balise abbr contient une abréviation.</gloss>
+                        <attList>
+                            <attDef ident="type" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="expan" mode="change">
+                        <gloss>La balise expan contient le développement d'une abréviation.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="ref" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="head" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="note" mode="change">
+                        <attList>
+                            <attDef ident="targetEnd" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="target" mode="delete"/>
+                            <attDef ident="type" mode="change"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="graphic" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="pb" mode="change">
+                        <gloss>La balise pb marque le début d'une nouvelle page au sein d'un
+                            document paginé.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="change"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="lb" mode="change">
+                        <gloss>La balise lb marque le début d'une ligne typographique dans un
+                            texte.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="cb" mode="change">
+                        <gloss>La balise cb indique le début d'une nouvelle dans un texte.</gloss>
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                            <attDef ident="n" mode="change" usage="req">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="1"/>
+                                    <valItem ident="2"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="author" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="ref" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="title" mode="change">
+                        <attList>
+                            <attDef ident="level" mode="delete"/>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="desc"/>
+                                    <valItem ident="main"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="ref" mode="delete"/>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="desc"/>
+                                    <valItem ident="main"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="when" mode="delete"/>
+                            <attDef ident="notBefore" mode="delete"/>
+                            <attDef ident="notAfter" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="textLang" mode="change">
+                        <attList>
+                            <attDef ident="otherLangs" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+
+                    <!--Checking module header-->
+                    <moduleRef key="header"
+                        include="teiHeader fileDesc titleStmt extent publicationStmt idno sourceDesc encodingDesc projectDesc editorialDecl profileDesc"/>
+                    <elementSpec ident="teiHeader" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="fileDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="titleStmt" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="extent" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="publicationStmt" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="idno" mode="change">
+                        <attList>
+                            <attDef ident="type" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="when" mode="delete"/>
+                            <attDef ident="notBefore" mode="delete"/>
+                            <attDef ident="notAfter" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="sourceDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="default" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="false"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="encodingDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="projectDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="default" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="false"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="editorialDecl" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="default" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="false"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="profileDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <!--Checking module verse-->
+                    <!--Checking module transcr-->
+                    <classRef key="att.coordinated"/>
+                    <classRef key="att.global.facs"/>
+                    <moduleRef key="transcr" include="facsimile surface zone ex"/>
+                    <elementSpec ident="facsimile" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="surface" mode="change">
+                        <content> <!-- Bien -->
+                            <sequence preserveOrder="true">
+                                <elementRef key="graphic" minOccurs="1" maxOccurs="1"/>
+                                <elementRef key="zone" minOccurs="1" maxOccurs="unbounded"/>
+                            </sequence>
+                        </content>
+                        <attList>
+                            <attDef ident="attachment" mode="delete"/>
+                            <attDef ident="flipping" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="ulx" mode="delete"/>
+                            <attDef ident="uly" mode="delete"/>
+                            <attDef ident="lrx" mode="delete"/>
+                            <attDef ident="lry" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="zone" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="ex" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="unit" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <classSpec ident="att.coordinated" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="start" mode="delete"/>
+                            <attDef ident="points" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <!--Checking module linking-->
+                    <moduleRef key="linking" include="seg"/>
+                    <elementSpec ident="seg" mode="change">
+                        <gloss>La balise seg correspond à un segment arbitraire de texte. Nous
+                            l'avons utilisé pour signaler les mots se présentant sur deux lignes,
+                            évitant ainsi un chevauchement malencontreux et pour signaler les lignes
+                            du texte, qui ne sont pas vers.</gloss>
+                        <constraintSpec ident="SegNumber" scheme="isoschematron">
+                            <!-- Votre règle ne fonctionne pas à cause du chemin xpath choisi qui est absolu et qui ne s'adapte pas à la position du seg et à votre structure d'imbrication
+                            <constraint>
+                                <s:rule context="tei:seg[@n]"><s:assert
+                                    test="number(@n) = number(TEI/text/body/div/p/seg[1]/@n) + 1 or count(TEI/text/body/div/p/seg[1]/@n) = 0"
+                                        > value of @n is wrong </s:assert>
+                                </s:rule>
+                            </constraint>
+                            voir la correction ci-dessous
+                            -->
+                            <constraint>
+                                <s:rule context="tei:seg[@n]"><s:assert
+                                    test="number(@n) = number(preceding::tei:seg[@n][1]/@n) + 1 or count(preceding::tei:seg[@n][1]/@n) = 0"> value of @n is wrong </s:assert>
+                                </s:rule>
+                            </constraint>
+                        </constraintSpec>
+                        <attList>
+                            <attDef ident="part" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="F"/>
+                                    <valItem ident="I"/>
+                                    <valItem ident="N"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="number"/>
+                                </valList>
+                            </attDef>
+                            <!-- <attDef ident="facs" usage="req"> </attDef> -->
+                        </attList>
+                    </elementSpec>
+                    <!--Checking module analysis-->
+                    <!--Checking module textstructure-->
+                    <moduleRef key="textstructure"
+                        include="TEI text body div docTitle titlePart docAuthor docDate"/>
+                    <elementSpec ident="TEI" mode="change">
+                        <attList>
+                            <attDef ident="version" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="text" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="body" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="div" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="org" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="uniform"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="sample" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="complete"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="part" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="N"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="section"/>
+                                    <valItem ident="chapter"/>
+                                </valList>
+                            </attDef>
+
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="docTitle" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="ref" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="titlePart" mode="change">
+                        <attList>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="main"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="docAuthor" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="ref" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="docDate" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+
+                    <!--Checking module corpus-->
+                    <moduleRef key="corpus" include="particDesc"/>
+                    <elementSpec ident="particDesc" mode="change">
+                        <attList>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="default" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="false"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+
+                </schemaSpec>
+            </div1>
+        </body>
+    </text>
+</TEI>

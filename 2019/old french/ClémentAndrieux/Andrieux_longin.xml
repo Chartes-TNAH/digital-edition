@@ -1,0 +1,1810 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE texte [
+   <!ENTITY a-n '<choice><abbr>&#257;</abbr><expan>an</expan></choice>'>
+   <!ENTITY com '<choice><abbr>&#42863;</abbr><expan>com</expan></choice>'>
+   <!ENTITY Com '<choice><abbr>&#42863;</abbr><expan>Com</expan></choice>'>
+   <!ENTITY con '<choice><abbr>&#42863;</abbr><expan>con</expan></choice>'>
+   <!ENTITY e-m '<choice><abbr>&#275;</abbr><expan>em</expan></choice>'>
+   <!ENTITY e-n '<choice><abbr>&#275;</abbr><expan>en</expan></choice>'>
+   <!ENTITY et '<choice><abbr>&#8266;</abbr><expan>et</expan></choice>'>
+   <!ENTITY Et '<choice><abbr>&#8266;</abbr><expan>Et</expan></choice>'>
+   <!ENTITY m-en '<choice><abbr>&#58834;</abbr><expan>men</expan></choice>'>
+   <!ENTITY o-m '<choice><abbr>&#333;</abbr><expan>om</expan></choice>'>
+   <!ENTITY o-n '<choice><abbr>&#333;</abbr><expan>on</expan></choice>'>
+   <!ENTITY oz '<choice><abbr>&#42864;</abbr><expan>oz</expan></choice>'>
+   <!ENTITY pbarre-par '<choice><abbr>&#42833;</abbr><expan>par</expan></choice>'>
+   <!ENTITY pbarre-per '<choice><abbr>&#42833;</abbr><expan>per</expan></choice>'>
+   <!ENTITY pbarre-por '<choice><abbr>&#42833;</abbr><expan>por</expan></choice>'>
+   <!ENTITY pbarre-pre '<choice><abbr>p&#771;</abbr><expan>re</expan></choice>'>
+   <!ENTITY qbarre-que '<choice><abbr>q&#771;</abbr><expan>ue</expan></choice>'>
+
+   <!ENTITY A '<choice><orig>a</orig><reg>A</reg></choice>'>
+   <!ENTITY B '<choice><orig>b</orig><reg>B</reg></choice>'>
+   <!ENTITY c '<choice><orig>C</orig><reg>c</reg></choice>'>
+   <!ENTITY C '<choice><orig>c</orig><reg>C</reg></choice>'>
+   <!ENTITY D '<choice><orig>d</orig><reg>D</reg></choice>'>
+   <!ENTITY e '<choice><orig>E</orig><reg>e</reg></choice>'>
+   <!ENTITY é '<choice><orig>e</orig><reg>é</reg></choice>'>
+   <!ENTITY E '<choice><orig>e</orig><reg>E</reg></choice>'>
+   <!ENTITY F '<choice><orig>f</orig><reg>F</reg></choice>'>
+   <!ENTITY G '<choice><orig>g</orig><reg>G</reg></choice>'>
+   <!ENTITY H '<choice><orig>h</orig><reg>H</reg></choice>'>
+   <!ENTITY ï '<choice><orig>i</orig><reg>ï</reg></choice>'>
+   <!ENTITY I '<choice><orig>i</orig><reg>I</reg></choice>'>
+   <!ENTITY j '<choice><orig>i</orig><reg>j</reg></choice>'>
+   <!ENTITY J '<choice><orig>I</orig><reg>J</reg></choice>'>
+   <!ENTITY K '<choice><orig>k</orig><reg>K</reg></choice>'>
+   <!ENTITY L '<choice><orig>l</orig><reg>L</reg></choice>'>
+   <!ENTITY M '<choice><orig>m</orig><reg>M</reg></choice>'>
+   <!ENTITY N '<choice><orig>n</orig><reg>N</reg></choice>'>
+   <!ENTITY O '<choice><orig>o</orig><reg>O</reg></choice>'>
+   <!ENTITY p '<choice><orig>P</orig><reg>p</reg></choice>'>
+   <!ENTITY P '<choice><orig>p</orig><reg>P</reg></choice>'>
+   <!ENTITY Q '<choice><orig>q</orig><reg>Q</reg></choice>'>
+   <!ENTITY r '<choice><orig>&#42843;</orig><reg>r</reg></choice>'>
+   <!ENTITY R '<choice><orig>r</orig><reg>R</reg></choice>'>
+   <!ENTITY S1 '<choice><orig>s</orig><reg>S</reg></choice>'>
+   <!ENTITY s '<choice><orig>&#383;</orig><reg>s</reg></choice>'>
+   <!ENTITY S2 '<choice><orig>&#383;</orig><reg>S</reg></choice>'>
+   <!ENTITY T '<choice><orig>t</orig><reg>T</reg></choice>'>
+   <!ENTITY U '<choice><orig>u</orig><reg>U</reg></choice>'>
+   <!ENTITY v '<choice><orig>u</orig><reg>v</reg></choice>'>
+   <!ENTITY V '<choice><orig>U</orig><reg>V</reg></choice>'>
+   <!ENTITY W '<choice><orig>w</orig><reg>W</reg></choice>'>
+   <!ENTITY X '<choice><orig>x</orig><reg>X</reg></choice>'>
+   <!ENTITY i '<choice><orig>&#7823;</orig><reg>i</reg></choice>'>
+   <!ENTITY Y '<choice><orig>y</orig><reg>Y</reg></choice>'>
+   <!ENTITY Z '<choice><orig>z</orig><reg>Z</reg></choice>'>
+      
+   <!ENTITY acute '<choice><orig/><reg>&#180;</reg></choice>'>
+   <!ENTITY colon '<choice><orig/><reg>&#58;</reg></choice>'>
+   <!ENTITY quest '<choice><orig/><reg>&#63;</reg></choice>'>
+   <!ENTITY laquo '<choice><orig/><reg>&#171; </reg></choice>'>
+   <!ENTITY raquo '<choice><orig/><reg> &#187;</reg></choice>'>
+   <!ENTITY sp '<choice><orig/><reg> </reg></choice>'>
+      ]>
+
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vie de saint Longin</title>
+            <author>Anonyme</author>
+            <editor>Clément Andrieux</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Clément Andrieux</publisher>
+            <availability>
+               <licence>Creative commons</licence>
+            </availability>
+            <date>2019</date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <repository>Bibliothèque nationale de France</repository>
+                  <idno>Français 412</idno>
+                  <altIdentifier>
+                     <idno>Lancelot 135</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>Regius 7019(3)</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <head>
+                  <title>Recueil de textes , Vie de saints</title>
+                  <origDate when="1285">1285</origDate>
+                  <note>Voir la notice : Anne-Françoise Leurquin et Marie-Laure Savoye, notice de
+                     "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans la base
+                     Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/45533).
+                     Consultation du 05/01/2019</note>
+                  <note>Voir la notice du catalogue Archives et manuscrits de la BnF : mise à jour
+                     en juillet 2018 par Delphine Mercuzot et Ludmilla Dali (permalink :
+                     https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50522d). Consultation du
+                     05/01/2019</note>
+               </head>
+               <msContents>
+                  <msItem>
+                     <locus>fol. 51r – fol. 52v</locus>
+                     <author>Anonyme</author>
+                     <title>Vie de saint Longin</title>
+                     <incipit>Au tens ke Nostre Sires Jhesucris fu mis en crois estoit un chevalier
+                        qui Longins avoit nom. Il par le commandement Pilate feri Nostre
+                        Sires</incipit>
+                     <explicit>A donc fu l'ame del saint martyr en paradiz, portee avec la
+                        compaignie des angeles, ou Dex noz doinst parvenir qil vit et regne el
+                        siecle de toz siecles. Amen.</explicit>
+                     <textLang mainLang="fr">oil-français</textLang>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>parchemin</support>
+                        <extent>
+                           <width unit="mm">330</width>
+                           <height unit="mm">245</height>
+                        </extent>
+                        <foliation>21 senions, 245 feuillets + 3 gardes</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="46"/>
+                     </layoutDesc>
+                  </objectDesc>
+                  <scriptDesc>
+                     <scriptNote>Textualis</scriptNote>
+                  </scriptDesc>
+                  <decoDesc>
+                     <decoNote>
+                        <note>1 initiale historiée (lettre M) haute de dix lignes représentant saint
+                           Longin détruisant les idoles païennes. Cette initiale a été peinte par un
+                           enlumineur nommé Henris (cf. colophon au folio 227v).</note>
+                        <note>5 initiales filigranées rouges (lettre A, O, L, Q et Q) et bleues
+                           hautes de trois lignes caractéristiques du Nord de la France de la
+                           seconde moitié du XIIIe siècle ; prolongement de bandes d'i en marge
+                           elles aussi caractéristiques du lieu de production et de la
+                           période.</note>
+                     </decoNote>
+                  </decoDesc>
+                  <bindingDesc>
+                     <p>Basane (veau)</p>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>Nord de la France (Cambrai ?)</origin>
+                  <provenance>
+                     <p>Tanguy du Châtel (Possesseur hypothétique)</p>
+                     <p>Jacques d'Armagnac, duc de Nemours (Possesseur, blason sur la gouttière du
+                        manuscrit)</p>
+                     <p>Antoine Lancelot (Possesseur, de 1724 à 1732)</p>
+                     <p>Bibliothèque nationale de France (Paris), Département des manuscrits
+                        (Anciennement Bibliothèque Royale, Cabinet des manuscrits ; Possesseur,
+                        depuis 1732)</p>
+                     <listBibl>
+                        <bibl>
+                           <author/>Eugenio Burgio <title/>Schede bibliografiche sulla tradizione
+                           delle versioni antico-francesi dei 'Dialogi' di Gregorio Magno, I
+                           'Dialogi' di Gregorio Magno. Tradizione del testo e antiche traduzioni,
+                           Archivum gregorianum <pubPlace/>Firenze <publisher/>Edizioni del Galluzzo
+                           / Sismel <date/>2006 <note/>p. 83-126 </bibl> <!--Attention vos balises à l'intérieur de bibl ne sont pas englobantes-->
+                        <bibl>
+                           <author/>Keith Busby <title/>Codex and Context. Reading Old French Verse
+                           Narrative in Manuscript <pubPlace/>New York <publisher/>Rodopi
+                           <date/>2002 </bibl> <!--Attention vos balises ne sont pas englobantes-->
+                        <bibl>
+                           <author/>Anne-Françoise Leurquin, Françoise Féry-Hue, Sylvie Lefèvre,
+                           Maria Careri, Gillette Labory, Geneviève Hasenohr, Christine Ruby et
+                           Françoise Gasparri <title/>Album de manuscrits français du 13e siècle :
+                           mise en page et mise en texte <pubPlace/>Rome <publisher/>Viella
+                           <date/>2001 </bibl><!--Attention vos balises ne sont pas englobantes-->
+                        <bibl>
+                           <author/>Nathalie Coilly et Marie-Hélène Tesnière <title/>Le Roman de la
+                           Rose. L'art d'aimer au Moyen Âge <pubPlace/>Paris
+                           <publisher/>Bibliothèque nationale de France <date/>2012 </bibl><!--Attention vos balises ne sont pas englobantes-->
+                        <bibl>
+                           <author/>Martina Di Febo <title/>Les versions en prose du Purgatoire de
+                           saint Patrice en ancien français, dans Classiques français du Moyen Age
+                           <pubPlace/>Paris <publisher/>Champion <date/>2013 </bibl><!--Attention vos balises ne sont pas englobantes-->
+                        <bibl> 
+                           <author/>Ludmilla Evdokimova <title/>Disposition des lettrines dans les
+                           manuscrits du Bestiaire d'amour et sa composition : des lectures
+                           possibles de l'oeuvre, dans Le Moyen Age <pubPlace/>
+                           <publisher/>
+                           <date/>1996 <note/>p. 465-498 </bibl>
+                        <bibl>
+                           <author/>Christopher Lucken <title/>Les manuscrits du Bestiaire d'Amours
+                           de Richard de Fournival, Le recueil au Moyen Âge, le Moyen Âge central.,
+                           Texte, Codex et Contexte, 8 <pubPlace/>Turnhout <publisher/>Brepols
+                           <date/>2010 <note/>p. 112-138 </bibl>
+                        <bibl>
+                           <author/>Molly Lynde-Recchia <title/>Wauchier de Denain. La vie seint
+                           Marcel de Lymoges, dans Textes Littéraires Français <pubPlace/>Genève
+                           <publisher/>Droz <date/>2005 </bibl>
+                        <bibl>
+                           <author/>Paul Meyer <title/> Notice sur le manuscrit 307 (ancien 851) de
+                           la bibliothèque d'Arras, recueil de vies de saints en prose et en vers,
+                           Romania, 17 <pubPlace/>
+                           <publisher/>
+                           <date/>1888 <note/>p. 366-400 </bibl>
+                        <bibl>
+                           <author/>Paul Meyer <title/>Légendes hagiographiques en français. II.
+                           Légendes en prose, Histoire littéraire de la France, 33 <pubPlace/>Paris
+                           <publisher/>1906 <date/>
+                        </bibl>
+                        <bibl>
+                           <author/>Paul Meyer <title/>Versions en vers et en prose des Vies des
+                           Pères, Histoire littéraire de la France, 33 <pubPlace/>
+                           <publisher/>
+                           <date/>1906 <note/>p. 254-328 </bibl>
+                        <bibl>
+                           <author/>Eric George Millar <title/>The parisian miniaturist Honoré <pubPlace/>
+                           <publisher/>
+                           <date/>1959 </bibl>
+                        <bibl>
+                           <author/>Paulin Paris <title/>Les manuscrits françois de la bibliothèque
+                           du roy <pubPlace/>Paris <publisher/>
+                           <date/>1836-1848 </bibl>
+                        <bibl>
+                           <author/>Alison Stones <title/>A Note on the Maître au menton fuyant, Als
+                           ich can. Liber Amicorum in Memory of Professor Dr. Maurits Smeyers / Bert
+                           CARDON, Jan VAN DER STOCK et Dominique VANWIJNSBERGHE (éds.), Corpus of
+                           Illuminated Manuscripts, 11-12 <pubPlace/>Louvain <publisher/>Peeters
+                           <date/>2002 <note/>p. 1247-1271 </bibl>
+                        <bibl>
+                           <author/>Alison Stones <title/> Gothic Manuscripts 1260-1320
+                           <pubPlace/>Londres <publisher/>Harvey Miller <date/>2013 </bibl>
+                        <bibl>
+                           <author/>Dominique Vanwijnsberghe <title/>De fin or et d'azur. Les
+                           commanditaires de livres et le métier de l'enluminure à Tournai à la fin
+                           du Moyen Age (XIV-XVe siècles), Manuscripts in Transition. Recycling
+                           Manuscripts, Texts and Images, Corpus of Illuminated Manuscripts, 10
+                           <pubPlace/>Paris <publisher/>Peeters <date/>2001 </bibl>
+                        <bibl>
+                           <author/>
+                           <title/>L'Art au temps des rois maudits. Philippe le Bel et ses fils :
+                           1285-1328 <pubPlace/>Paris <publisher/>Réunion des Musées Nationaux
+                           <date/>1998 </bibl>
+                        
+                     </listBibl>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Encodage réalisé dans le cadre du cours de XML-TEI de Mme Ariane Pinche, Ecole
+               nationale des chartes - année scolaire 2018/2019.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>L'enjeu est de réaliser une édition paléographique. Nous avons décidé de réaliser une
+               édition facsimilaire et normalisée. </p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person corresp="https://www.idref.fr/174997566" xml:id="longin"> 
+                  <persName ref="#longin"><forename>Saint Longin</forename>
+                                         </persName>
+                  <birth when="0001"/>
+                  <death when="0099"/>
+                  <note type="biographical" source="https://catalogue.bnf.fr/ark:/12148/cb161026051">
+                     <surname type="complex">Longin le centurion</surname> était le soldat romain
+                     qui avait été chargé par Ponce Pilate
+                     d'assister à la crucifixion de Jésus Christ.
+                     Longin se serait converti à la foi en voyant les signes qui suivirent la mort
+                     du Christ, à savoir l'éclipse solaire et le tremblement de terre. Longin est
+                     notamment connu pour avoir percé de sa lance le flanc du Christ alors que
+                     celui-ci était sur la croix. La légende veut que du sang aurait coulé de cette
+                     cinquième plaie jusque dans les yeux de Longin, lui permettant de recouvrir la
+                     vue (et sa cécité spirituelle par la même occasion). Longin renonça donc à sa
+                     carrière militaire, se fit instruire par les apôtres et, pendant 28 ans, mena
+                     une vie monastique à Césarée de
+                     Cappadoce. Il y connut un certain succès et fit de nombreuses
+                     conversions. L'histoire veut que Longin fut amené devant le préfet de cette région. Refusant de renoncer au
+                     Dieu unique et de servir les dieux païens, Longin se fit arracher les dents et
+                     couper la langue ; mais il ne perdit pas pour autant l'usage de la parole. Pour
+                     se venger, Longin brisa les idoles païennes ; celles-ci étaient habitées par
+                     des forces démonaïques qui prirent
+                     possession des païens. Longin somme le prefet de le tuer pour qu'il intercède
+                     en faveur de son exorcisme auprès de Dieu. Longin fut ainsi décapité.</note>
+               </person>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246" xml:id="jesus">
+                  <persName ref="#jesus">Jésus Christ</persName>
+                  <birth when="0001">1</birth>
+                  <death when="0030">30</death>
+                  <note type="biographical" source="https://fr.wikipedia.org/wiki/J%C3%A9sus-Christ"> <!-- Un lien vers wikidata ou databnf, vous fournirait une urn pérenne plus solide-->
+                     <surname type="complex">Notre Seigneur Jésus-Christ</surname> est le nom donné
+                     par l'ensemble des chrétiens au prophète qu'ils considèrent comme le Messie.
+                     Les chrétiens voient en ce prédicateur juif le Fils unique de Dieu (être
+                     suprême ayant créé l'univers en sept jours, entre autres choses) et l'une des
+                     trois personnes du Dieu trinitaire. Jésus Christ est donc le corps par lequel
+                     Dieu s'est incarné (le Verbe s'est fait chair), signe d’une nouvelle alliance
+                     entre Dieu et les hommes ; il va se sacrifier pour le Salut des hommes (épisode
+                     de la Crucifixion) et être ressuscité (épisode de la Résurrection).</note>
+               </person>
+               <person corresp="https://www.idref.fr/027384365" xml:id="pilate">
+                  <persName ref="#pilate">Ponce Pilate</persName>
+                  <birth when="0001">Inconnue</birth>
+                  <death when="0099">99</death>
+                  <note type="biographical" source="https://www.idref.fr/027384365">
+                     <surname type="complex">Pontius Pilatus</surname> a été préfet de Judée de 26 à
+                     36 de notre ère. Ce mandat est attesté par les Évangiles, Flavius Josèphe,
+                     Philon d'Alexandrie et Tacite, mais aussi par la numismatique et par une
+                     inscription découverte à Césarée en 1961. Il est essentiellement connu pour
+                     avoir, selon les Évangiles, ordonné l'exécution et le crucifiement de Jésus Christ. Les sources historique ne nous
+                     apprennent rien sur Ponce Pilate avant et après son séjour en Judée. Aucun
+                     écrit actuellement connu ne peut être légitimement attribué à Ponce
+                     Pilate.</note>
+               </person>
+               <person xml:id="octave">
+                  <persName ref="#octave">Octave</persName>
+                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
+                        Longin</hi>. Gouverneur romain de la province où saint Longin mena sa vie monastique. Ce préfet persécuta
+                     Longin ; il lui a notamment fait arracher toutes les dents et couper la langue.
+                     Marabouté par des démons infernaux, le gouverneur païen doit tuer Longin (sur
+                     le bon conseil de Longin lui-même) pour que ce dernier intercède en faveur de
+                     la guérison de son corps et de son âme auprès de Dieu. Le gouverneur fit donc décapiter Longin puis fit pénitence
+                     et se convertit au Dieu unique.</note>
+               </person>
+               <person xml:id="demons">
+                  <persName ref="#demons">Démons</persName>
+                  <note>Personnages de la <hi rend="italic">Vie de saint Longin</hi>. Démons
+                     habitant les idoles païennes. Libérés des idoles, ils possèdent le corps
+                     gouverneur Octave avant d'être
+                     définitivement chassés par Longin.</note>
+               </person>
+               <person xml:id="asfrodisie">
+                  <persName ref="#asfrodisie">Asfrodisie</persName>
+                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
+                        Longin</hi>. Homme important de la ville de Césarée converti au Dieu unique par saint Longin. Il défend Longin et se fait trancher la langue par
+                     le gouverneur romain.</note>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place corresp="https://fr.wikipedia.org/wiki/Kayseri" xml:id="cesaree">
+                  <placeName ref="#cesaree">Kayseri, anciennement connue sous le nom de Césarée de
+                     Cappadoce</placeName>
+                  <location>
+                     <geo>38.7322222 35.4852778</geo>
+                  </location>
+                  <note>Ville où saint Longin mena une vie
+                     monastique et paisible pendant 28 ans avant d'être confronté au préfet romain.</note>
+               </place>
+               <place corresp="https://fr.wikipedia.org/wiki/Rome" xml:id="rome">
+                  <placeName ref="#rome">Rome</placeName>
+                  <location>
+                     <geo>41.8919300 12.5113300</geo>
+                  </location>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
+
+   <facsimile>
+      <surface>
+         <!-- Paris, BnF, Français 412, feuillet 51, recto (colonne B) -->
+         <graphic
+            url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84259980/f111/full/full/0/native.jpg"
+            width="3860.0125px" height="5646.0125px"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L5" ulx="1990" uly="841" lrx="2782" lry="934"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L6" ulx="1591" uly="925" lrx="2700" lry="1014"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L7" ulx="1434" uly="1010" lrx="2682" lry="1092"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L8" ulx="2314" uly="1097" lrx="2700" lry="1164"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L9" ulx="2316" uly="1168" lrx="2708" lry="1248"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L10" ulx="2316" uly="1249" lrx="2714" lry="1327"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L11" ulx="2318" uly="1332" lrx="2688" lry="1403"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L12" ulx="2318" uly="1412" lrx="2689" lry="1484"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L13" ulx="2314" uly="1501" lrx="2718" lry="1586"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L14" ulx="2314" uly="1588" lrx="2707" lry="1654"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L15" ulx="2320" uly="1656" lrx="2680" lry="1718"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L16" ulx="2324" uly="1728" lrx="2711" lry="1798"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L17" ulx="1572" uly="1819" lrx="2708" lry="1900"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L18" ulx="1586" uly="1912" lrx="2704" lry="1967"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L19" ulx="1596" uly="1980" lrx="2722" lry="2043"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L20" ulx="1590" uly="2067" lrx="2689" lry="2136"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L21" ulx="1580" uly="2148" lrx="2674" lry="2205"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L22" ulx="1597" uly="2225" lrx="2672" lry="2285"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L23" ulx="1598" uly="2304" lrx="2688" lry="2387"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L24" ulx="1590" uly="2401" lrx="2702" lry="2474"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L25" ulx="1589" uly="2496" lrx="2658" lry="2552"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L26" ulx="1584" uly="2570" lrx="2677" lry="2628"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L27" ulx="1579" uly="2644" lrx="2698" lry="2710"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L28" ulx="1588" uly="2732" lrx="2424" lry="2788"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L29" ulx="1567" uly="2808" lrx="2676" lry="2879"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L30" ulx="1824" uly="2890" lrx="2670" lry="2946"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L31" ulx="1806" uly="2959" lrx="2650" lry="3034"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L32" ulx="1583" uly="3065" lrx="2682" lry="3119"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L33" ulx="1584" uly="3142" lrx="2663" lry="3196"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L34" ulx="1580" uly="3210" lrx="2672" lry="3278"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L35" ulx="1584" uly="3296" lrx="2681" lry="3352"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L36" ulx="1591" uly="3374" lrx="2670" lry="3436"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L37" ulx="1589" uly="3452" lrx="2666" lry="3518"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L38" ulx="1590" uly="3535" lrx="2678" lry="3606"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L39" ulx="1591" uly="3620" lrx="2676" lry="3678"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L40" ulx="1596" uly="3686" lrx="2648" lry="3758"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L41" ulx="1590" uly="3773" lrx="2728" lry="3852"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L42" ulx="1573" uly="3860" lrx="2692" lry="3919"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L43" ulx="1578" uly="3937" lrx="2657" lry="4003"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L44" ulx="1570" uly="4018" lrx="2702" lry="4088"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L45" ulx="1571" uly="4098" lrx="2668" lry="4175"/>
+         <zone xml:id="BNF_Fr412_F51r_B_L46" ulx="1564" uly="4194" lrx="2660" lry="4262"/>
+      </surface>
+      <surface>
+         <!-- Paris, BnF, Français 412, feuillet 51, verso (colonne C) -->
+         <graphic
+            url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84259980/f112/full/full/0/native.jpg"
+            width="3805px" height="5634px"/>
+         <zone xml:id="BNF_Fr412_F51v_C_Ll" ulx="1183" uly="538" lrx="2263" lry="610"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L2" ulx="1192" uly="627" lrx="2263" lry="694"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L3" ulx="1190" uly="710" lrx="2253" lry="768"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L4" ulx="1188" uly="782" lrx="2279" lry="837"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L5" ulx="1193" uly="845" lrx="2319" lry="910"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L6" ulx="1187" uly="926" lrx="2294" lry="993"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L7" ulx="1184" uly="1011" lrx="2265" lry="1074"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L8" ulx="1185" uly="1086" lrx="2270" lry="1145"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L9" ulx="1185" uly="1158" lrx="2304" lry="1226"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L10" ulx="1184" uly="1239" lrx="2269" lry="1314"/>
+         <zone xml:id="BNF_Fr412_F51v_C_Ll1" ulx="1190" uly="1316" lrx="2272" lry="1389"/>
+         <zone xml:id="BNF_Fr412_F51v_C_Ll2" ulx="1188" uly="1400" lrx="2286" lry="1468"/>
+         <zone xml:id="BNF_Fr412_F51v_C_Ll3" ulx="1193" uly="1483" lrx="2270" lry="1547"/>
+         <zone xml:id="BNF_Fr412_F51v_C_Ll4" ulx="1197" uly="1560" lrx="2282" lry="1638"/>
+         <zone xml:id="BNF_Fr412_F51v_C_Ll5" ulx="1196" uly="1642" lrx="2295" lry="1719"/>
+         <zone xml:id="BNF_Fr412_F51v_C_Ll6" ulx="1193" uly="1728" lrx="2276" lry="1788"/>
+         <zone xml:id="BNF_Fr412_F51v_C_Ll7" ulx="1195" uly="1799" lrx="2279" lry="1874"/>
+         <zone xml:id="BNF_Fr412_F51v_C_Ll8" ulx="1192" uly="1885" lrx="2286" lry="1956"/>
+         <zone xml:id="BNF_Fr412_F51v_C_Ll9" ulx="1191" uly="1971" lrx="2278" lry="2039"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L20" ulx="1189" uly="2043" lrx="2284" lry="2115"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L21" ulx="1196" uly="2126" lrx="2276" lry="2211"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L22" ulx="1189" uly="2217" lrx="2278" lry="2290"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L23" ulx="1200" uly="2300" lrx="2317" lry="2380"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L24" ulx="1185" uly="2389" lrx="2287" lry="2448"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L25" ulx="1189" uly="2460" lrx="2263" lry="2529"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L26" ulx="1193" uly="2530" lrx="2273" lry="2602"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L27" ulx="1193" uly="2610" lrx="2298" lry="2693"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L28" ulx="1190" uly="2700" lrx="2334" lry="2778"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L29" ulx="1180" uly="2771" lrx="2269" lry="2858"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L30" ulx="1185" uly="2866" lrx="2263" lry="2940"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L3l" ulx="1187" uly="2946" lrx="2259" lry="3020"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L32" ulx="1188" uly="3027" lrx="2295" lry="3102"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L33" ulx="1191" uly="3106" lrx="2249" lry="3191"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L34" ulx="1187" uly="3196" lrx="2239" lry="3264"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L35" ulx="1190" uly="3272" lrx="2269" lry="3347"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L36" ulx="1178" uly="3352" lrx="2280" lry="3426"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L37" ulx="1180" uly="3430" lrx="2297" lry="3511"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L38" ulx="1184" uly="3516" lrx="2281" lry="3583"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L39" ulx="1173" uly="3587" lrx="2285" lry="3675"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L40" ulx="1180" uly="3679" lrx="2298" lry="3762"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L4l" ulx="1180" uly="3763" lrx="2272" lry="3845"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L42" ulx="1186" uly="3844" lrx="2269" lry="3930"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L43" ulx="1190" uly="3933" lrx="2268" lry="4007"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L44" ulx="1175" uly="4005" lrx="2293" lry="4094"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L45" ulx="1167" uly="4095" lrx="2299" lry="4169"/>
+         <zone xml:id="BNF_Fr412_F51v_C_L46" ulx="1164" uly="4161" lrx="2288" lry="4253"/>
+         <!-- Paris, BnF, Français 412, feuillet 51, verso (colonne D) -->
+         <zone xml:id="BNF_Fr412_F51v_D_Ll" ulx="2554" uly="537" lrx="3675" lry="622"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L2" ulx="2554" uly="631" lrx="3650" lry="702"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L3" ulx="2560" uly="710" lrx="3646" lry="773"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L4" ulx="2543" uly="777" lrx="3642" lry="841"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L5" ulx="2564" uly="844" lrx="3678" lry="922"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L6" ulx="2561" uly="932" lrx="3664" lry="994"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L7" ulx="2568" uly="1007" lrx="3641" lry="1068"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L8" ulx="2566" uly="1082" lrx="3643" lry="1140"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L9" ulx="2560" uly="1156" lrx="3631" lry="1229"/>
+         <zone xml:id="BNF_Fr412_F51v_D_Ll0" ulx="2556" uly="1242" lrx="3629" lry="1307"/>
+         <zone xml:id="BNF_Fr412_F51v_D_Ll1" ulx="2551" uly="1317" lrx="3614" lry="1377"/>
+         <zone xml:id="BNF_Fr412_F51v_D_Ll2" ulx="2554" uly="1393" lrx="3656" lry="1465"/>
+         <zone xml:id="BNF_Fr412_F51v_D_Ll3" ulx="2555" uly="1482" lrx="3645" lry="1557"/>
+         <zone xml:id="BNF_Fr412_F51v_D_Ll4" ulx="2558" uly="1569" lrx="3679" lry="1655"/>
+         <zone xml:id="BNF_Fr412_F51v_D_Ll5" ulx="2553" uly="1660" lrx="3682" lry="1727"/>
+         <zone xml:id="BNF_Fr412_F51v_D_Ll6" ulx="2553" uly="1733" lrx="3639" lry="1808"/>
+         <zone xml:id="BNF_Fr412_F51v_D_Ll7" ulx="2547" uly="1811" lrx="3665" lry="1891"/>
+         <zone xml:id="BNF_Fr412_F51v_D_Ll8" ulx="2560" uly="1898" lrx="3648" lry="1958"/>
+         <zone xml:id="BNF_Fr412_F51v_D_Ll9" ulx="2556" uly="1962" lrx="3682" lry="2058"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L20" ulx="2560" uly="2063" lrx="3665" lry="2119"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L2l" ulx="2559" uly="2133" lrx="3645" lry="2194"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L22" ulx="2563" uly="2204" lrx="3673" lry="2287"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L23" ulx="2558" uly="2301" lrx="3676" lry="2372"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L24" ulx="2560" uly="2385" lrx="3660" lry="2446"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L25" ulx="2558" uly="2456" lrx="3656" lry="2530"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L26" ulx="2552" uly="2543" lrx="3661" lry="2614"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L27" ulx="2563" uly="2626" lrx="3659" lry="2694"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L28" ulx="2557" uly="2706" lrx="3645" lry="2773"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L29" ulx="2566" uly="2784" lrx="3652" lry="2861"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L30" ulx="2563" uly="2866" lrx="3652" lry="2945"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L3l" ulx="2561" uly="2950" lrx="3626" lry="3022"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L32" ulx="2559" uly="3033" lrx="3642" lry="3119"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L33" ulx="2550" uly="3126" lrx="3655" lry="3197"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L34" ulx="2837" uly="3202" lrx="3655" lry="3269"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L35" ulx="2834" uly="3283" lrx="3637" lry="3349"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L36" ulx="2553" uly="3353" lrx="3633" lry="3433"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L37" ulx="2550" uly="3439" lrx="3650" lry="3503"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L38" ulx="2550" uly="3518" lrx="3646" lry="3596"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L39" ulx="2545" uly="3613" lrx="3639" lry="3691"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L40" ulx="2555" uly="3703" lrx="3631" lry="3759"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L4l" ulx="2553" uly="3778" lrx="3641" lry="3845"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L42" ulx="2548" uly="3861" lrx="3633" lry="3943"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L43" ulx="2556" uly="3949" lrx="3634" lry="4010"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L44" ulx="2560" uly="4025" lrx="3625" lry="4099"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L45" ulx="2561" uly="4112" lrx="3634" lry="4170"/>
+         <zone xml:id="BNF_Fr412_F51v_D_L46" ulx="2564" uly="4184" lrx="3625" lry="4258"/>
+      </surface>
+      <surface>
+         <!-- Paris, BnF, Français 412, feuillet 52, recto (colonne A) -->
+         <graphic
+            url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84259980/f113/full/full/0/native.jpg"
+            width="3860px" height="5648px"/>
+         <zone xml:id="BNF_Fr412_F52r_A_Ll" ulx="274" uly="577" lrx="1389" lry="642"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L2" ulx="278" uly="673" lrx="1371" lry="721"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L3" ulx="274" uly="749" lrx="1343" lry="788"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L4" ulx="278" uly="823" lrx="1340" lry="864"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L5" ulx="274" uly="896" lrx="1332" lry="940"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L6" ulx="273" uly="973" lrx="1323" lry="1026"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L7" ulx="277" uly="1056" lrx="1336" lry="1098"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L8" ulx="270" uly="1121" lrx="1331" lry="1174"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L9" ulx="275" uly="1208" lrx="1327" lry="1255"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L10" ulx="271" uly="1288" lrx="1341" lry="1341"/>
+         <zone xml:id="BNF_Fr412_F52r_A_Ll1" ulx="266" uly="1355" lrx="1337" lry="1417"/>
+         <zone xml:id="BNF_Fr412_F52r_A_Ll2" ulx="258" uly="1449" lrx="1351" lry="1502"/>
+         <zone xml:id="BNF_Fr412_F52r_A_Ll3" ulx="262" uly="1516" lrx="1358" lry="1591"/>
+         <zone xml:id="BNF_Fr412_F52r_A_Ll4" ulx="271" uly="1615" lrx="1327" lry="1659"/>
+         <zone xml:id="BNF_Fr412_F52r_A_Ll5" ulx="271" uly="1694" lrx="1327" lry="1743"/>
+         <zone xml:id="BNF_Fr412_F52r_A_Ll6" ulx="277" uly="1758" lrx="1331" lry="1829"/>
+         <zone xml:id="BNF_Fr412_F52r_A_Ll7" ulx="262" uly="1844" lrx="1320" lry="1907"/>
+         <zone xml:id="BNF_Fr412_F52r_A_Ll8" ulx="254" uly="1919" lrx="1315" lry="1979"/>
+         <zone xml:id="BNF_Fr412_F52r_A_Ll9" ulx="274" uly="1991" lrx="1346" lry="2046"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L20" ulx="278" uly="2066" lrx="1340" lry="2125"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L2l" ulx="274" uly="2144" lrx="851" lry="2203"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L22" ulx="263" uly="2211" lrx="1328" lry="2296"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L23" ulx="471" uly="2319" lrx="1352" lry="2383"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L24" ulx="469" uly="2392" lrx="1332" lry="2458"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L25" ulx="261" uly="2475" lrx="1387" lry="2541"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L26" ulx="265" uly="2555" lrx="1320" lry="2627"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L27" ulx="260" uly="2628" lrx="1320" lry="2716"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L28" ulx="254" uly="2715" lrx="1319" lry="2790"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L29" ulx="254" uly="2796" lrx="1328" lry="2873"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L30" ulx="257" uly="2880" lrx="1324" lry="2959"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L3l" ulx="255" uly="2960" lrx="1332" lry="3031"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L32" ulx="263" uly="3035" lrx="1312" lry="3130"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L33" ulx="246" uly="3126" lrx="1319" lry="3207"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L34" ulx="258" uly="3210" lrx="1343" lry="3288"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L35" ulx="267" uly="3292" lrx="1315" lry="3362"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L36" ulx="264" uly="3365" lrx="1324" lry="3441"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L37" ulx="269" uly="3441" lrx="1328" lry="3536"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L38" ulx="283" uly="3520" lrx="1295" lry="3608"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L39" ulx="271" uly="3599" lrx="1306" lry="3697"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L40" ulx="264" uly="3685" lrx="1314" lry="3771"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L4l" ulx="270" uly="3772" lrx="1331" lry="3852"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L42" ulx="276" uly="3855" lrx="1349" lry="3939"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L43" ulx="254" uly="3933" lrx="1303" lry="4020"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L44" ulx="271" uly="4015" lrx="1351" lry="4113"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L45" ulx="260" uly="4082" lrx="1326" lry="4181"/>
+         <zone xml:id="BNF_Fr412_F52r_A_L46" ulx="251" uly="4158" lrx="1377" lry="4272"/>
+         <!-- Paris, BnF, Français 412, feuillet 52, recto (colonne B) -->
+         <zone xml:id="BNF_Fr412_F52r_B_Ll" ulx="1602" uly="568" lrx="2670" lry="641"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L2" ulx="1626" uly="646" lrx="2687" lry="726"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L3" ulx="1624" uly="731" lrx="2675" lry="789"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L4" ulx="1630" uly="795" lrx="2695" lry="873"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L5" ulx="1628" uly="882" lrx="2710" lry="935"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L6" ulx="1627" uly="951" lrx="2710" lry="1031"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L7" ulx="1630" uly="1035" lrx="2710" lry="1107"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L8" ulx="1622" uly="1112" lrx="2705" lry="1180"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L9" ulx="1625" uly="1189" lrx="2674" lry="1254"/>
+         <zone xml:id="BNF_Fr412_F52r_B_Ll0" ulx="1623" uly="1262" lrx="2685" lry="1331"/>
+         <zone xml:id="BNF_Fr412_F52r_B_Ll1" ulx="1624" uly="1341" lrx="2678" lry="1424"/>
+         <zone xml:id="BNF_Fr412_F52r_B_Ll2" ulx="1618" uly="1430" lrx="2710" lry="1507"/>
+         <zone xml:id="BNF_Fr412_F52r_B_Ll3" ulx="1615" uly="1513" lrx="2671" lry="1587"/>
+         <zone xml:id="BNF_Fr412_F52r_B_Ll4" ulx="1614" uly="1598" lrx="2660" lry="1676"/>
+         <zone xml:id="BNF_Fr412_F52r_B_Ll5" ulx="1618" uly="1683" lrx="2690" lry="1753"/>
+         <zone xml:id="BNF_Fr412_F52r_B_Ll6" ulx="1614" uly="1760" lrx="2663" lry="1822"/>
+         <zone xml:id="BNF_Fr412_F52r_B_Ll7" ulx="1620" uly="1826" lrx="2681" lry="1903"/>
+         <zone xml:id="BNF_Fr412_F52r_B_Ll8" ulx="1618" uly="1909" lrx="2679" lry="1987"/>
+         <zone xml:id="BNF_Fr412_F52r_B_Ll9" ulx="1622" uly="1991" lrx="2661" lry="2054"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L20" ulx="1616" uly="2064" lrx="2677" lry="2135"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L21" ulx="1619" uly="2144" lrx="2664" lry="2203"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L22" ulx="1610" uly="2213" lrx="2664" lry="2299"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L23" ulx="1617" uly="2305" lrx="2671" lry="2369"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L24" ulx="1614" uly="2384" lrx="2667" lry="2462"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L25" ulx="1618" uly="2469" lrx="2142" lry="2540"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L26" ulx="1602" uly="2549" lrx="2703" lry="2629"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L27" ulx="1892" uly="2636" lrx="2670" lry="2692"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L28" ulx="1909" uly="2704" lrx="2687" lry="2796"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L29" ulx="1621" uly="2805" lrx="2671" lry="2867"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L30" ulx="1606" uly="2873" lrx="2691" lry="2958"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L3l" ulx="1605" uly="2968" lrx="2673" lry="3040"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L32" ulx="1608" uly="3049" lrx="2633" lry="3117"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L33" ulx="1611" uly="3124" lrx="2675" lry="3204"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L34" ulx="1613" uly="3214" lrx="2715" lry="3293"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L35" ulx="1601" uly="3301" lrx="2687" lry="3371"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L36" ulx="1608" uly="3384" lrx="2679" lry="3444"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L37" ulx="1607" uly="3452" lrx="2667" lry="3516"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L38" ulx="1610" uly="3528" lrx="2666" lry="3601"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L39" ulx="1609" uly="3619" lrx="2685" lry="3681"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L40" ulx="1611" uly="3687" lrx="2700" lry="3779"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L4l" ulx="1608" uly="3795" lrx="2703" lry="3867"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L42" ulx="1599" uly="3879" lrx="2708" lry="3939"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L43" ulx="1603" uly="3946" lrx="2687" lry="4021"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L44" ulx="1602" uly="4027" lrx="2715" lry="4094"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L45" ulx="1599" uly="4111" lrx="2654" lry="4180"/>
+         <zone xml:id="BNF_Fr412_F52r_B_L46" ulx="1602" uly="4190" lrx="2681" lry="4254"/>
+      </surface>
+      <surface>
+         <!-- Paris, BnF, Français 412, feuillet 52, verso (colonne C) -->
+         <graphic
+            url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84259980/f114/full/full/0/native.jpg"
+            width="3805px" height="5634px"/>
+         <zone xml:id="BNF_Fr412_F52v_C_Ll" ulx="1142" uly="579" lrx="2221" lry="656"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L2" ulx="1162" uly="677" lrx="2268" lry="739"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L3" ulx="1158" uly="748" lrx="2255" lry="811"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L4" ulx="1163" uly="818" lrx="2239" lry="880"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L5" ulx="1163" uly="889" lrx="2234" lry="967"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L6" ulx="1162" uly="978" lrx="2256" lry="1049"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L7" ulx="1172" uly="1057" lrx="2222" lry="1114"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L8" ulx="1164" uly="1131" lrx="2317" lry="1215"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L9" ulx="1157" uly="1219" lrx="2255" lry="1285"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L10" ulx="1160" uly="1299" lrx="2246" lry="1363"/>
+         <zone xml:id="BNF_Fr412_F52v_C_Ll1" ulx="1164" uly="1378" lrx="2224" lry="1443"/>
+         <zone xml:id="BNF_Fr412_F52v_C_Ll2" ulx="1178" uly="1461" lrx="2227" lry="1540"/>
+         <zone xml:id="BNF_Fr412_F52v_C_Ll3" ulx="1153" uly="1547" lrx="2260" lry="1618"/>
+         <zone xml:id="BNF_Fr412_F52v_C_Ll4" ulx="1166" uly="1625" lrx="2238" lry="1698"/>
+         <zone xml:id="BNF_Fr412_F52v_C_Ll5" ulx="1168" uly="1715" lrx="2269" lry="1791"/>
+         <zone xml:id="BNF_Fr412_F52v_C_Ll6" ulx="1165" uly="1789" lrx="1679" lry="1861"/>
+         <zone xml:id="BNF_Fr412_F52v_C_Ll7" ulx="1148" uly="1876" lrx="2236" lry="1949"/>
+         <zone xml:id="BNF_Fr412_F52v_C_Ll8" ulx="1406" uly="1952" lrx="2252" lry="2035"/>
+         <zone xml:id="BNF_Fr412_F52v_C_Ll9" ulx="1399" uly="2051" lrx="2237" lry="2116"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L20" ulx="1169" uly="2106" lrx="2241" lry="2181"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L2l" ulx="1178" uly="2190" lrx="2279" lry="2259"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L22" ulx="1177" uly="2272" lrx="2217" lry="2353"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L23" ulx="1171" uly="2359" lrx="2244" lry="2431"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L24" ulx="1177" uly="2435" lrx="2244" lry="2521"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L25" ulx="1176" uly="2528" lrx="2249" lry="2602"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L26" ulx="1176" uly="2610" lrx="2247" lry="2701"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L27" ulx="1160" uly="2689" lrx="2238" lry="2771"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L28" ulx="1178" uly="2779" lrx="2281" lry="2861"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L29" ulx="1168" uly="2869" lrx="2260" lry="2944"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L30" ulx="1175" uly="2945" lrx="2259" lry="3018"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L3l" ulx="1169" uly="3024" lrx="2270" lry="3089"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L32" ulx="1174" uly="3093" lrx="2220" lry="3178"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L33" ulx="1168" uly="3183" lrx="2235" lry="3261"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L34" ulx="1182" uly="3265" lrx="2238" lry="3340"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L35" ulx="1167" uly="3345" lrx="2279" lry="3424"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L36" ulx="1187" uly="3422" lrx="2235" lry="3505"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L37" ulx="1169" uly="3504" lrx="2214" lry="3584"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L38" ulx="1181" uly="3590" lrx="2271" lry="3671"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L39" ulx="1171" uly="3670" lrx="2265" lry="3739"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L40" ulx="1177" uly="3743" lrx="2261" lry="3821"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L4l" ulx="1179" uly="3829" lrx="2266" lry="3911"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L42" ulx="1177" uly="3910" lrx="2268" lry="3997"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L43" ulx="1164" uly="3985" lrx="2227" lry="4075"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L44" ulx="1185" uly="4081" lrx="2265" lry="4156"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L45" ulx="1167" uly="4155" lrx="2253" lry="4238"/>
+         <zone xml:id="BNF_Fr412_F52v_C_L46" ulx="1182" uly="4240" lrx="2229" lry="4315"/>
+         <!-- Paris, BnF, Français 412, feuillet 52, verso (colonne D) -->
+         <zone xml:id="BNF_Fr412_F52v_D_Ll" ulx="2501" uly="594" lrx="3642" lry="674"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L2" ulx="2503" uly="678" lrx="3625" lry="751"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L3" ulx="2518" uly="751" lrx="3610" lry="843"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L4" ulx="2508" uly="834" lrx="3608" lry="901"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L5" ulx="2506" uly="908" lrx="3608" lry="983"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L6" ulx="2511" uly="988" lrx="3595" lry="1062"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L7" ulx="2508" uly="1068" lrx="3631" lry="1138"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L8" ulx="2509" uly="1146" lrx="3614" lry="1231"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L9" ulx="2524" uly="1233" lrx="3589" lry="1298"/>
+         <zone xml:id="BNF_Fr412_F52v_D_Ll0" ulx="2533" uly="1302" lrx="3620" lry="1378"/>
+         <zone xml:id="BNF_Fr412_F52v_D_Ll1" ulx="2517" uly="1388" lrx="3635" lry="1472"/>
+         <zone xml:id="BNF_Fr412_F52v_D_Ll2" ulx="2516" uly="1478" lrx="3593" lry="1554"/>
+         <zone xml:id="BNF_Fr412_F52v_D_Ll3" ulx="2518" uly="1559" lrx="3627" lry="1628"/>
+         <zone xml:id="BNF_Fr412_F52v_D_Ll4" ulx="2520" uly="1642" lrx="3611" lry="1712"/>
+         <zone xml:id="BNF_Fr412_F52v_D_Ll5" ulx="2522" uly="1722" lrx="3608" lry="1797"/>
+         <zone xml:id="BNF_Fr412_F52v_D_Ll6" ulx="2520" uly="1805" lrx="3611" lry="1883"/>
+         <zone xml:id="BNF_Fr412_F52v_D_Ll7" ulx="2513" uly="1892" lrx="3612" lry="1961"/>
+         <zone xml:id="BNF_Fr412_F52v_D_Ll8" ulx="2511" uly="1967" lrx="3617" lry="2039"/>
+         <zone xml:id="BNF_Fr412_F52v_D_Ll9" ulx="2522" uly="2046" lrx="3609" lry="2118"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L20" ulx="2510" uly="2124" lrx="3589" lry="2204"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L2l" ulx="2518" uly="2206" lrx="3587" lry="2278"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L22" ulx="2513" uly="2284" lrx="3629" lry="2356"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L23" ulx="2521" uly="2370" lrx="3632" lry="2451"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L24" ulx="2513" uly="2451" lrx="3609" lry="2541"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L25" ulx="2505" uly="2535" lrx="3627" lry="2615"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L26" ulx="2524" uly="2625" lrx="3636" lry="2691"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L27" ulx="2512" uly="2703" lrx="3593" lry="2783"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L28" ulx="2526" uly="2788" lrx="3623" lry="2870"/>
+         <zone xml:id="BNF_Fr412_F52v_D_L29" ulx="2519" uly="2879" lrx="3626" lry="2950"/>
+      </surface>
+   </facsimile>
+
+   <text>
+      <body>
+         <pb n="51r"
+            facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84259980/f111/full/full/0/native.jpg" />
+         <!-- Paris, BnF, Français 412, feuillet 51, recto -->
+         <cb type="B"/>
+         <!-- Paris, BnF, Français 412, feuillet 51, recto, colonne B -->
+         <div1 type="chapter" n="1">
+            <div2 type="section" n="1.1">
+               <p>
+                  <hi rend="rubrique">
+                     <lb/><seg n="1" facs="#BNF_Fr412_F51r_B_L5">Ici &com;mence la &v;ie &et; la
+                        pa&s;&s;i&o-n; </seg>
+                     <lb/><seg n="2" facs="#BNF_Fr412_F51r_B_L6"><persName ref="#longin"
+                              >seint
+                           &L;ongis</persName> qi feri <persName ref="#jesus"
+                              >&j;esu&#32;&C;ri&s;t</persName> de la
+                        lance.</seg>
+                  </hi>
+               </p>
+            </div2>
+            <div2 type="section" n="1.2">
+               <p>
+                  <lb/>
+                  <seg n="3" facs="#BNF_Fr412_F51r_B_L7"><hi rend="initiale_historiee">M</hi><hi
+                        rend="lettre_rubriquee">o</hi>lt de&v;roit </seg>
+                  <lb/>
+                  <seg n="4" facs="#BNF_Fr412_F51r_B_L8">&v;olentier&s; ca&s;-</seg>
+                  <lb/>
+                  <seg n="5" facs="#BNF_Fr412_F51r_B_L9">cun qi cre&s;ti&e-n;s </seg>
+                  <lb/>
+                  <seg n="6" facs="#BNF_Fr412_F51r_B_L10">est o&ï;r &et; enten-</seg>
+                  <lb/>
+                  <seg n="7" facs="#BNF_Fr412_F51r_B_L11">dre de &v;erai </seg>
+                  <lb/>
+                  <seg n="8" facs="#BNF_Fr412_F51r_B_L12">cuer &et; &pbarre-par; bone </seg>
+                  <lb/>
+                  <seg n="9" facs="#BNF_Fr412_F51r_B_L13">pen&s;ee retenir </seg>
+                  <lb/>
+                  <seg n="10" facs="#BNF_Fr412_F51r_B_L14">le&s; pa&s;&s;ions &et; </seg>
+                  <lb/>
+                  <seg n="11" facs="#BNF_Fr412_F51r_B_L15">le&s; &v;ies des </seg>
+                  <lb/>
+                  <seg n="12" facs="#BNF_Fr412_F51r_B_L16">&s;ain&s; apo&s;tre&s; </seg>
+                  <lb/>
+                  <seg n="13" facs="#BNF_Fr412_F51r_B_L17">&et; de&s; marty&r;s qi lo&r; co&r;&s;
+                     li&v;rerent a <choice>
+                        <abbr>gnz</abbr>
+                        <expan>g<ex>ra</ex>n<ex>t</ex>z</expan>
+                     </choice>
+                  </seg>
+                  <lb/>
+                  <seg n="14" facs="#BNF_Fr412_F51r_B_L18">to&r;menz, po&r; e&s;&s;aucier la lo&i;
+                        <persName ref="#jesus">&N;o&s;tre
+                        &S2;igno&r;</persName>, </seg>
+                  <lb/>
+                  <seg n="15" facs="#BNF_Fr412_F51r_B_L19">ce qe l&acute;en &v;oit o&r;e apoi de genz
+                     faire, car <choice>
+                        <abbr>nei</abbr>
+                        <expan>nei<ex>us</ex></expan>
+                     </choice>
+                  </seg>
+                  <lb/>
+                  <seg n="16" facs="#BNF_Fr412_F51r_B_L20">li o&ï;rs ﻿&pbarre-par;ler de <persName
+                        ref="#jesus">&N;o&s;tre &S2;igno&r;</persName> &et; de &s;e&s; &s;ainz </seg>
+                  <lb/>
+                  <seg n="17" facs="#BNF_Fr412_F51r_B_L21">lo&r; grie&v;e tant &et; an&v;ie qe il cuident
+                     qe </seg>
+                  <lb/>
+                  <seg n="18" facs="#BNF_Fr412_F51r_B_L22">ce &s;oit grie&s; martyr&r;s alo&r; oes &et; cil
+                     acui </seg>
+                  <lb/>
+                  <seg n="19" facs="#BNF_Fr412_F51r_B_L23">la parole an&v;ie, molt li an&v;ieroit, &et;
+                     &s;ou&s;-</seg>
+                  <lb/>
+                  <seg n="20" facs="#BNF_Fr412_F51r_B_L24">ferroit aenuiz &s;i&sp;dolereu&s;e paine po&r;
+                     lui </seg>
+                  <lb/>
+                  <seg n="21" facs="#BNF_Fr412_F51r_B_L25">&com; li &s;aint apo&s;tre &et; li &s;aint
+                     marty&r; en </seg>
+                  <lb/>
+                  <seg n="22" facs="#BNF_Fr412_F51r_B_L26">&s;o&s;frirent. <hi rend="lettre_rubriquee"
+                        >E</hi>t po&r; ce ne doit l&acute;en mie le&s;-</seg>
+                  <lb/>
+                  <seg n="23" facs="#BNF_Fr412_F51r_B_L27">&s;ier le bien a faire, me&s; qi molt o&ï;r &s;i
+                     o&ï;e, </seg>
+                  <lb/>
+                  <seg n="24" facs="#BNF_Fr412_F51r_B_L28">&et; qi molt entend&r;e &s;i entende. </seg>
+               </p>
+            </div2>
+         </div1>
+         <div1 type="chapter" n="2">
+            <div2 type="section" n="2.1">
+               <p>
+                 
+                  <lb/>
+                  <seg n="25" facs="#BNF_Fr412_F51r_B_L29"><hi rend="initiale_filigranee">A</hi>l ten&s; qe
+                        <persName ref="#jesus">&N;o&s;tre &S2;ires</persName>
+                     fu mis en </seg>
+                  <lb/>
+                  <seg n="26" facs="#BNF_Fr412_F51r_B_L30">croiz, e&s;toit un&s; che&v;alier&s; qui </seg>
+                  <lb/>
+                  <seg n="27" facs="#BNF_Fr412_F51r_B_L31"><persName ref="#longin"
+                           >&L;ongin&s;</persName> e&s;toit apelez, qi par le </seg>
+                  <lb/>
+                  <seg n="28" facs="#BNF_Fr412_F51r_B_L32">&com;mandement <persName ref="#pilate"
+                           >&P;ilate</persName> feri <persName ref="#jesus"
+                           >&N;o&s;tre &S2;igno&r;</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="29" facs="#BNF_Fr412_F51r_B_L33"><persName ref="#jesus"
+                           >&J;e&s;u&sp;&C;ri&s;t</persName> el co&s;t&é;
+                     d&acute;une lance si &com; &v;ous </seg>
+                  <lb/>
+                  <seg n="30" facs="#BNF_Fr412_F51r_B_L34">l&acute;a&v;ez o&ï; dire plui&s;eurs foiz
+                     &et;&sp;retraire. </seg>
+                  <lb/>
+                  <seg n="31" facs="#BNF_Fr412_F51r_B_L35"><hi rend="lettre_rubriquee">Q</hi>ant cil
+                        <persName ref="#longin">&L;ongi&s;</persName> ot
+                     ein&s;i <persName ref="#jesus">&N;o&s;tre
+                        &S2;eigno&r;</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="32" facs="#BNF_Fr412_F51r_B_L36">na&v;r&é;, &et; il &v;it le&s; &s;igne&s; &et;
+                     les miracles </seg>
+                  <lb/>
+                  <seg n="33" facs="#BNF_Fr412_F51r_B_L37">qi a&v;enoient, po&r;ce qe <persName
+                        ref="#jesus">&D;ameldex</persName> e&s;toit </seg>
+                  <lb/>
+                  <seg n="34" facs="#BNF_Fr412_F51r_B_L38">penez &et; tra&v;elliez en la croiz, &et; il
+                     &v;it le </seg>
+                  <lb/>
+                  <seg n="35" facs="#BNF_Fr412_F51r_B_L39">&s;oleil qi en e&s;toit o&s;curciz. <hi
+                        rend="lettre_rubriquee">E</hi>t la terre qi </seg>
+                  <lb/>
+                  <seg n="36" facs="#BNF_Fr412_F51r_B_L40">en e&s;toit me&v;e &et; crollee, &s;i crut en
+                        <persName ref="#jesus">&N;o&s;tre</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="37" facs="#BNF_Fr412_F51r_B_L41">&S2;igno&r; &et; bati &s;a coupe, &et; di&s;t a
+                     haute&s; &v;oiz &colon; </seg>
+                  <lb/>
+                  <seg n="38" facs="#BNF_Fr412_F51r_B_L42">&laquo;Certe&s; ci&s;t e&s;t li fuiz
+                     &D;eu.&raquo; Ap&r;ré&s; ce, il lai&s;&s;a </seg>
+                  <lb/>
+                  <seg n="39" facs="#BNF_Fr412_F51r_B_L43">toute che&v;alerie, si &com;menca a ap&r;end&r;e </seg>
+                  <lb/>
+                  <seg n="40" facs="#BNF_Fr412_F51r_B_L44">le&s; &com;mandemenz <persName ref="#jesus"
+                           >&N;o&s;tre &S2;igno&r;</persName> &et; a retenir </seg>
+                  <lb/>
+                  <seg n="41" facs="#BNF_Fr412_F51r_B_L45">de la di&v;init&é; <persName ref="#jesus"
+                           >&J;e&s;u&sp;&C;ri&s;t</persName>, &et; tant fu
+                     ap&r;is </seg>
+                  <lb/>
+                  <seg n="42" facs="#BNF_Fr412_F51r_B_L46">&et; enseigni&é;&s; de la de&v;ine &v;oie qe il
+                     &s;o&s;fri </seg>
+                  <pb n="51v"
+                     facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84259980/f112/full/full/0/native.jpg"/>
+                  <!-- Paris, BnF, Français 412, feuillet 51, verso -->
+                  <cb type="C"/>
+                  <!-- Paris, BnF, Français 412, feuillet 51, verso, colonne C -->
+                  <lb/>
+                  <seg n="43" facs="#BNF_Fr412_F51v_C_Ll">touz a&sp;&D;ieu. <hi rend="lettre_rubriquee"
+                        >I</hi>l fai&s;oit aumo&s;nes &et; <hi rend="lettre_rubriquee">&s;</hi>i
+                     te-</seg>
+                  <lb/>
+                  <seg n="44" facs="#BNF_Fr412_F51v_C_L2">noit &s;on co&r;s en chae&s;te, &et; &s;i gardoit
+                     &s;i &s;a </seg>
+                  <lb/>
+                  <seg n="45" facs="#BNF_Fr412_F51v_C_L3">&con;&s;ience purement qe la ou il e&s;toit en </seg>
+                  <lb/>
+                  <seg n="46" facs="#BNF_Fr412_F51v_C_L4">terre, menoit il cele&s;tiel &v;ie, &et;
+                     &pbarre-par; ab&s;tin&e-n;nce </seg>
+                  <lb/>
+                  <seg n="47" facs="#BNF_Fr412_F51v_C_L5">e&s;toit il &s;i atemp&r;ez q&acute;il e&s;toit
+                     &s;i ao&r;nez en-</seg>
+                  <lb/>
+                  <seg n="48" facs="#BNF_Fr412_F51v_C_L6">&v;ers <persName ref="#jesus"
+                           >&N;o&s;tre &S2;igno&r;</persName> qe il a&v;oit
+                     &v;eraie re-</seg>
+                  <lb/>
+                  <seg n="49" facs="#BNF_Fr412_F51v_C_L7">&v;erance a&sp;&D;eu. <hi rend="lettre_rubriquee"
+                        >I</hi>l a&v;oit &v;iarre plain et </seg>
+                  <lb/>
+                  <seg n="50" facs="#BNF_Fr412_F51v_C_L8">biaut&é; atemp&r;ee, &et; ao&r;nee &v;eue en tout </seg>
+                  <lb/>
+                  <seg n="51" facs="#BNF_Fr412_F51v_C_L9">bien, &et; pai&s;iule &s;ens, &et; humele
+                     &s;apience. </seg>
+                  <lb/>
+                  <seg n="52" facs="#BNF_Fr412_F51v_C_L10"><hi rend="lettre_rubriquee">C</hi>il <persName
+                        ref="#longin">&L;ongin&s;</persName> qi &s;i e&s;toit
+                     ame&s;urez en toz </seg>
+                  <lb/>
+                  <seg n="53" facs="#BNF_Fr412_F51v_C_Ll1">bien&s; mena &s;einte &v;ie &et; religieu&s;e en </seg>
+                  <lb/>
+                  <seg n="54" facs="#BNF_Fr412_F51v_C_L12"><placeName ref="#cesaree"
+                        >&C;e&s;aire</placeName>, &et; par <seg type="number">XXVIII</seg> anz
+                     con&v;erti molt </seg>
+                  <lb/>
+                  <seg n="55" facs="#BNF_Fr412_F51v_C_Ll3">de genz &et; reto&r;na de mal&v;e&s;e creance,
+                     &et; </seg>
+                  <lb/>
+                  <seg n="56" facs="#BNF_Fr412_F51v_C_Ll4">&s;i le&s; enlumina de la &v;oie de &v;erit&é;
+                     &et; de&s;-</seg>
+                  <lb/>
+                  <seg n="57" facs="#BNF_Fr412_F51v_C_Ll5">fendi les &s;acrefices des &i;doles &et; &s;i
+                     &s;ema ﻿&pbarre-par; </seg>
+                  <lb/>
+                  <seg n="58" facs="#BNF_Fr412_F51v_C_Ll6">mein&s; liu&s; le&s; &com;mandemenz de &D;eu par </seg>
+                  <lb/>
+                  <seg n="59" facs="#BNF_Fr412_F51v_C_Ll7">&s;a parole. <hi rend="lettre_rubriquee"
+                     >Q</hi>ant ce &v;it <persName ref="#octave"
+                        >&O;cta&v;ie&s;</persName> &et; o&ï; dire, </seg>
+                  <lb/>
+                  <seg n="60" facs="#BNF_Fr412_F51v_C_Ll8">qi &s;ire&s; e&s;toit de ﻿&pbarre-par; ceuz de
+                        <placeName ref="#rome">&R;ome</placeName> de la &con;tree, </seg>
+                  <lb/>
+                  <seg n="61" facs="#BNF_Fr412_F51v_C_Ll9">si &com;manda con li amena&s;t &et;
+                     mou&s;tra&s;t. </seg>
+                  <lb/>
+                  <seg n="62" facs="#BNF_Fr412_F51v_C_L20">Qant il fu &v;enuz de&v;ant lui, &s;i li di&s;t </seg>
+                  <lb/>
+                  <seg n="63" facs="#BNF_Fr412_F51v_C_L2l"><persName ref="#octave"
+                           >&O;cta&v;ies</persName> &laquo;&Com;ment a&s; tu
+                     non &quest;&raquo; Lo&r;s li re&s;p&o-n;-</seg>
+                  <lb/>
+                  <seg n="64" facs="#BNF_Fr412_F51v_C_L22">di <persName ref="#longin"
+                           >sain&s;<!-- Attention dans le cas de deux balises qui s'enchainent bien penser à rajouter une espace, soit via une entité, sans dans l'une des deux balises -->
+                        &L;ongi&s;</persName> &colon; &laquo;&J;e sui
+                     cre&s;tien&s; &et; &s;i &s;a-</seg>
+                  <lb/>
+                  <seg n="65" facs="#BNF_Fr412_F51v_C_L23">ches bien qe ﻿&pbarre-par; le p&r;emerain don de
+                     grace </seg>
+                  <lb/>
+                  <seg n="66" facs="#BNF_Fr412_F51v_C_L24">l&acute;<choice>
+                        <orig>en reichir</orig>
+                        <reg>enreichir</reg>
+                     </choice>
+                     <persName ref="#jesus">&N;o&s;tre &S2;igno&r;
+                        &J;e&s;u&sp;&C;ri&s;t</persName>.&raquo; </seg>
+                  <lb/>
+                  <seg n="67" facs="#BNF_Fr412_F51v_C_L25"><hi rend="lettre_rubriquee">D</hi>ont li di&s;t
+                        <persName ref="#octave">&O;cta&v;ie&s;</persName>
+                     &colon; &laquo;Cil qi de&v;ant toi </seg>
+                  <lb/>
+                  <seg n="68" facs="#BNF_Fr412_F51v_C_L26">furent, ne furent mie &s;ainti ﻿&pbarre-par;
+                     ce&s;t n&o-m; </seg>
+                  <lb/>
+                  <seg n="69" facs="#BNF_Fr412_F51v_C_L27">m&é;&s; di moi &com;ment tu ie&s; apelez.&raquo;
+                     Li ami&s; </seg>
+                  <lb/>
+                  <seg n="70" facs="#BNF_Fr412_F51v_C_L28">&D;ui li re&s;pondi &colon; &laquo;&J;e &s;ui
+                        <seg cert="low">&D;y&s;autie</seg>.&raquo; Il li deman-</seg>
+                  <lb/>
+                  <seg n="71" facs="#BNF_Fr412_F51v_C_L29">da &colon; &laquo;&I;e&s; tu fran&s; hom ou
+                     &s;erz &quest;&raquo; <persName ref="#longin"><hi
+                              rend="lettre_rubriquee">S</hi>ain&s;</persName>
+                     &L;on-</seg>
+                  <lb/>
+                  <seg n="72" facs="#BNF_Fr412_F51v_C_L30">gi&s; li re&s;pondi &colon; &laquo;&J;e e&s;toie
+                     de&v;ant &s;erz au </seg>
+                  <lb/>
+                  <seg n="73" facs="#BNF_Fr412_F51v_C_L31">pechi&é;, me&s; li piuz <persName ref="#jesus"
+                           >&s;ire&s;
+                        &J;e&s;u&sp;&C;riz</persName> m&acute;en </seg>
+                  <lb/>
+                  <seg n="74" facs="#BNF_Fr412_F51v_C_L32">a deli&v;r&é; &pbarre-par; la mort q&acute;il
+                     &s;offri en la &s;einte </seg>
+                  <lb/>
+                  <seg n="75" facs="#BNF_Fr412_F51v_C_L33">croiz &et; &pbarre-par; la douce grace de &s;on
+                     co&s;t&é; qe </seg>
+                  <lb/>
+                  <seg n="76" facs="#BNF_Fr412_F51v_C_L34">&j;e li&sp;ao&v;ir. <hi rend="lettre_rubriquee"
+                        >P</hi>&r;emiere&m-en;t m&acute;en deli&v;ra </seg>
+                  <lb/>
+                  <seg n="77" facs="#BNF_Fr412_F51v_C_L35">&pbarre-par;&sp;ia&v;e &et; puis ﻿&pbarre-par;
+                     &s;on &s;anc, &et; &s;erai en &s;a﻿ &pbarre-par;-</seg>
+                  <lb/>
+                  <seg n="78" facs="#BNF_Fr412_F51v_C_L36">durable gloire &s;e&sp;&j;e puis
+                     &pbarre-per;se&v;erer &et; <choice>
+                        <abbr>est<hi rend="sup">e</hi></abbr>
+                        <expan>est<ex>re</ex></expan>
+                     </choice>
+                  </seg>
+                  <lb/>
+                  <seg n="79" facs="#BNF_Fr412_F51v_C_L37">en&sp;confe&s;&s;ion &et; en bones
+                     oe&v;re&s;.&raquo; <persName ref="#octave">Li
+                        p&r;e&v;oz</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="80" facs="#BNF_Fr412_F51v_C_L38">li di&s;t &colon; &laquo;<hi
+                        rend="lettre_rubriquee">E</hi>t po&r; qele ochoi&s;on &v;eni&s; tu cha
+                     &quest;&raquo; </seg>
+                  <lb/>
+                  <seg n="81" facs="#BNF_Fr412_F51v_C_L39"><persName ref="#longin"><hi
+                              rend="lettre_rubriquee">L</hi>i hom &D;ieu</persName> li
+                     re&s;pondi &colon; &laquo;&J;e fui che&v;aliers </seg>
+                  <lb/>
+                  <seg n="82" facs="#BNF_Fr412_F51v_C_L40">au &s;iecle &et; o&r; &s;ui che&v;aliers
+                        <persName ref="#jesus">&N;o&s;tre
+                        &S2;igno&r;</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="83" facs="#BNF_Fr412_F51v_C_L4l"><persName ref="#jesus"
+                           >&J;e&s;u&sp;&C;ri&s;t</persName>.&raquo; <persName
+                        ref="#octave">Li p&r;e&v;oz</persName> li di&s;t
+                     &colon; &laquo;&E;t qi te gieta &et; </seg>
+                  <lb/>
+                  <seg n="84" facs="#BNF_Fr412_F51v_C_L42">o&s;ta de&sp;la che&v;alerie &quest;&raquo; Il
+                     li re&s;pondi &colon; &laquo;<hi rend="lettre_rubriquee">&J;</hi>e <choice>
+                        <abbr>p<hi rend="sup">i</hi>ai</abbr>
+                        <expan>p<ex>ri</ex>ai</expan>
+                     </choice>
+                  </seg>
+                  <lb/>
+                  <seg n="85" facs="#BNF_Fr412_F51v_C_L43">me&s; freres q&acute;il prei&s;&s;ent ma
+                     &s;u&s;tance &et; </seg>
+                  <lb/>
+                  <seg n="86" facs="#BNF_Fr412_F51v_C_L44">ma gari&s;on, &et; &j;e gariroie mame.&raquo; Il
+                     le mo-</seg>
+                  <lb/>
+                  <seg n="87" facs="#BNF_Fr412_F51v_C_L45">troierent &et; &s;i me donerent po&r; ce&s;te
+                     cho-</seg>
+                  <lb/>
+                  <seg n="88" facs="#BNF_Fr412_F51v_C_L46">&s;e <seg type="number">CX</seg> ca&s;cun an, qe
+                     &j;e de&s;pendoie &et; donoie </seg>
+                  <cb n="D"/>
+                  <!-- Paris, BnF, Français 412, feuillet 51, verso, colonne D -->
+                  <lb/>
+                  <seg n="89" facs="#BNF_Fr412_F51v_D_L1">a<hi rend="lettre_rubriquee">l</hi> po&v;res
+                        <persName ref="#jesus">&N;o&s;tre &S2;eigno&r;
+                        &J;e&s;u&sp;&C;ri&s;t</persName>, <hi
+                        rend="lettre_rubriquee">E</hi>t o&r; p&r;i </seg>
+                  <lb/>
+                  <seg n="90" facs="#BNF_Fr412_F51v_D_L2">&j;e <persName ref="#jesus">&N;o&s;tre
+                           &S2;igno&r;</persName> q&acute;il mo&s;t de la che&v;alerie de </seg>
+                  <lb/>
+                  <seg n="91" facs="#BNF_Fr412_F51v_D_L3">ce&s;t siecle, &et; si me doin&s;t
+                     l&acute;e&s;&pbarre-per;it&sp;el che&v;alerie. </seg>
+                  <lb/>
+                  <seg n="92" facs="#BNF_Fr412_F51v_D_L4"><hi rend="lettre_rubriquee">L</hi>o&r;s li di&s;t
+                        <persName ref="#octave">li p&r;e&v;oz</persName>
+                     &colon; &laquo;O&r; uren ca &et; &s;i &s;acrefie </seg>
+                  <lb/>
+                  <seg n="93" facs="#BNF_Fr412_F51v_D_L5">anoz dex, &s;i com hauz hom doit faire &et; bien </seg>
+                  <lb/>
+                  <seg n="94" facs="#BNF_Fr412_F51v_D_L6">nez de&sp;la terre, &et; &s;i meni&v;e de lo&r;
+                     &s;acrefice </seg>
+                  <lb/>
+                  <seg n="95" facs="#BNF_Fr412_F51v_D_L7">po&r; ce qe tu aie&s; pai&s;ible &v;ie, &et; qe
+                     &j;e ne te </seg>
+                  <lb/>
+                  <seg n="96" facs="#BNF_Fr412_F51v_D_L8">face trop &s;offrir de&sp;peine&s;.&raquo;
+                        <persName ref="#longin"><roleName/><hi rend="lettre_rubriquee">S</hi>ain&s;
+                           &L;ongi&s;</persName> li </seg>
+                  <lb/>
+                  <seg n="97" facs="#BNF_Fr412_F51v_D_L9">re&s;pondi &colon; &laquo;Nu&s; ne puet bien
+                     &s;er&v;ir a <seg type="number">II</seg> &s;ig-</seg>
+                  <lb/>
+                  <seg n="98" facs="#BNF_Fr412_F51v_D_L10">no&r;&s;, &et; <persName ref="#jesus">li mien&s;
+                        &D;ex</persName> e&s;t molt &con;traires au </seg>
+                  <lb/>
+                  <seg n="99" facs="#BNF_Fr412_F51v_D_L11">tien. Car <persName ref="#jesus">li mien&s;
+                        &D;ex</persName> maine le&s; home&s; a </seg>
+                  <lb/>
+                  <seg n="100" facs="#BNF_Fr412_F51v_D_L12">&v;ie &pbarre-par;durable, &et; &s;i e&s;t &D;ex
+                     &et; meneres de cha-</seg>
+                  <lb/>
+                  <seg n="101" facs="#BNF_Fr412_F51v_D_L13">e&s;te, &et; de piti&é; &et; d&acute;umilit&é;,
+                     &et; d&acute;atemp&r;ance </seg>
+                  <lb/>
+                  <seg n="102" facs="#BNF_Fr412_F51v_D_L14">&et; de toutes boene&s; meur&s; &et; li tien diu
+                     &s;ont </seg>
+                  <lb/>
+                  <seg n="103" facs="#BNF_Fr412_F51v_D_L15">molt &con;traire a&sp;lui, car il aiment tote
+                     ma-</seg>
+                  <lb/>
+                  <seg n="104" facs="#BNF_Fr412_F51v_D_L16">lice, a&v;arice, felonie, &et; o&r;gueil,
+                     l&acute;aurai &j;e </seg>
+                  <lb/>
+                  <seg n="105" facs="#BNF_Fr412_F51v_D_L17">donqes les oe&v;re&s; <persName ref="#jesus"
+                           >&N;o&s;tre &S2;igno&r;</persName> a faire &et; </seg>
+                  <lb/>
+                  <seg n="106" facs="#BNF_Fr412_F51v_D_L18">a &s;er&v;ir la, po&r; le&s; &i;doles ao&r;er qi
+                     &v;aines </seg>
+                  <lb/>
+                  <seg n="107" facs="#BNF_Fr412_F51v_D_L19">&et; fau&s;e&s; &s;ont, &et; po&r; la leur les
+                     oe&v;re&s; a &D;eu </seg>
+                  <lb/>
+                  <seg n="108" facs="#BNF_Fr412_F51v_D_L20">a faire.&raquo; <persName ref="#octave"
+                           >Li p&r;e&v;oz</persName> li di&s;t &colon;
+                        &laquo;<hi rend="lettre_rubriquee">D</hi>onc &s;ont &con;traire </seg>
+                  <lb/>
+                  <seg n="109" facs="#BNF_Fr412_F51v_D_L21">&N;o&s;tre &D;eu &et; te&s; dex e&s;t <seg
+                        cert="low">&v;i&s;tes</seg> toz &s;eul.&raquo; Li </seg>
+                  <lb/>
+                  <seg n="110" facs="#BNF_Fr412_F51v_D_L22"><persName ref="#longin">&s;einz
+                           hom</persName> respondi &colon; &laquo;&V;o&s;tre deu &s;ont
+                     encom-</seg>
+                  <lb/>
+                  <seg n="111" facs="#BNF_Fr412_F51v_D_L23">b&r;ier de tout bien &et; damage de piti&é;,
+                     &et; damp-</seg>
+                  <lb/>
+                  <seg n="112" facs="#BNF_Fr412_F51v_D_L24">nement &et; confondement de &v;irginit&é;, &et; </seg>
+                  <lb/>
+                  <seg n="113" facs="#BNF_Fr412_F51v_D_L25">deliz de geule &et; de &v;entre &et; de&s;ir
+                     d&acute;a&v;arice </seg>
+                  <lb/>
+                  <seg n="114" facs="#BNF_Fr412_F51v_D_L26">&et; tr&é;&s;&sp;to&r;nemenz d&acute;umilit&é;,
+                     &et; dui&s;eur &et; me-</seg>
+                  <lb/>
+                  <seg n="115" facs="#BNF_Fr412_F51v_D_L27">neur d&acute;o&r;gueil, &et; pollution&s; &et;
+                     conchiem&e-n;z </seg>
+                  <lb/>
+                  <seg n="116" facs="#BNF_Fr412_F51v_D_L28">de pure pen&s;ee &et; dame, &et;
+                     po&r;&sp;pen&s;ement </seg>
+                  <lb/>
+                  <seg n="117" facs="#BNF_Fr412_F51v_D_L29">de laide&s; ﻿&pbarre-par;oles, &et; tele e&s;t
+                     la doctrine &et; li en-</seg>
+                  <lb/>
+                  <seg n="118" facs="#BNF_Fr412_F51v_D_L30">&s;eignemenz de&s; deables qe &v;oz aore&s; e&s;
+                     &i;do-</seg>
+                  <lb/>
+                  <seg n="119" facs="#BNF_Fr412_F51v_D_L31">le&s;, &et; &s;e tu &com;mande&s; &j;e te dirai
+                     le&s; oe&v;res </seg>
+                  <lb/>
+                  <seg n="120" facs="#BNF_Fr412_F51v_D_L32">de mon &D;eu &et; lez &com;mandem&e-n;z de
+                     crestient&é;.&raquo; </seg>
+               </p>
+            </div2>
+            <div2 type="section" n="2.2">
+               <p>
+                  <lb/>
+                  <seg n="121" facs="#BNF_Fr412_F51v_D_L33"><persName ref="#octave"><hi
+                              rend="initiale_filigranee">O</hi>ta&v;es</persName>
+                     li&sp;re&s;pondi &colon; &laquo;<hi rend="lettre_rubriquee">T</hi>u a&s; molt
+                     &pbarre-par;l&é; </seg>
+                  <lb/>
+                  <seg n="122" facs="#BNF_Fr412_F51v_D_L34">&et; &s;i n&acute;a&s; nule cho&s;e dite qi
+                     &s;oit e&s;-</seg>
+                  <lb/>
+                  <seg n="123" facs="#BNF_Fr412_F51v_D_L35">table, &v;ien a&v;ant &et; &s;i &s;acrefie </seg>
+                  <lb/>
+                  <seg n="124" facs="#BNF_Fr412_F51v_D_L36">a noz dex, &et; &s;i meni&v;e de lo&r;
+                     &s;acrefices, &et; </seg>
+                  <lb/>
+                  <seg n="125" facs="#BNF_Fr412_F51v_D_L37">te&s; dex le te &pbarre-par;donra, po&r; ce
+                    <!-- q-->&qbarre-que; tu le fera&s; par </seg>
+                  <lb/>
+                  <seg n="126" facs="#BNF_Fr412_F51v_D_L38">be&s;oing. <hi rend="lettre_rubriquee">&J;</hi>e
+                     &v;oi bien qe tu ne pue&s; mie la </seg>
+                  <lb/>
+                  <seg n="127" facs="#BNF_Fr412_F51v_D_L39">paine &s;o&s;frir de&v;ant
+                     l&acute;ab&s;tinence.&raquo; <persName ref="#longin"><hi
+                              rend="lettre_rubriquee">S</hi>ain&s;</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="128" facs="#BNF_Fr412_F51v_D_L40"><persName ref="#longin"
+                           >&L;ongi&s;</persName> li re&s;pondi &colon;
+                     &laquo;P&r;e&v;oz, &s;e&sp;tu &v;oloies de </seg>
+                  <lb/>
+                  <seg n="129" facs="#BNF_Fr412_F51v_D_L41">moi o&ï;r la &v;erit&é;. &T;u &s;eroie&s;
+                     ancoi&s; cre&s;ti&e-n;s </seg>
+                  <lb/>
+                  <seg n="130" facs="#BNF_Fr412_F51v_D_L42">&et; &s;i le&sp;te ﻿&pbarre-par;donroit tes
+                     roi&s;, po&r; ce qe tu cou-</seg>
+                  <lb/>
+                  <seg n="131" facs="#BNF_Fr412_F51v_D_L43">noi&s;teroies &pbarre-par; &v;erit&é; qe il
+                     &s;eroit rois toz </seg>
+                  <lb/>
+                  <seg n="132" facs="#BNF_Fr412_F51v_D_L44">poi&s;&s;ans &et; pardurable&s;.&raquo;
+                        &laquo;<hi rend="lettre_rubriquee">A</hi> donc&raquo;, fu <persName
+                        ref="#octave">li <!--p-->&pbarre-pre;&v;oz</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="133" facs="#BNF_Fr412_F51v_D_L45">molt airiez &et; &s;i li di&s;t &colon;
+                     &laquo;Aportez moi cha me&s; </seg>
+                  <lb/>
+                  <seg n="134" facs="#BNF_Fr412_F51v_D_L46">tenailles &et; &s;i li traie&s; tre&s;toz les
+                     den&s;, &et; &s;i li </seg>
+                  <pb n="52r"
+                     facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84259980/f113/full/full/0/native.jpg"/>
+                  <!-- Paris, BnF, Français 412, feuillet 52, recto -->
+                  <cb type="A"/>
+                  <!-- Paris, BnF, Français 412, feuillet 52, recto, colonne A -->
+                  <lb/>
+                  <seg n="135" facs="#BNF_Fr412_F52r_A_Ll">trenc<hi rend="lettre_rubriquee">h</hi>ies la
+                     langue <hi rend="lettre_rubriquee">&p;</hi>o&r; ce q&acute;il a&sp;bla&s;m&é;
+                     l&acute;em-</seg>
+                  <lb/>
+                  <seg n="136" facs="#BNF_Fr412_F52r_A_L2">&pbarre-per;eo&r;, &et; ne molt noz dex
+                     ao&r;er.&raquo; Lo&r;s &v;indr&e-n;t </seg>
+                  <lb/>
+                  <seg n="137" facs="#BNF_Fr412_F52r_A_L3">li &s;er&j;ant &s;i li &s;achierent toz le&s;
+                     den&s;, &et; li </seg>
+                  <lb/>
+                  <seg n="138" facs="#BNF_Fr412_F52r_A_L4">trenchierent la langue &pbarre-par;&sp;le
+                     &com;mandement </seg>
+                  <lb/>
+                  <seg n="139" facs="#BNF_Fr412_F52r_A_L5">del p&r;e&v;o&s;t. <persName ref="#longin"
+                              ><hi rend="lettre_rubriquee">L</hi>i &s;einz
+                        hom</persName> &s;o&s;fri tout ﻿&pbarre-par; la </seg>
+                  <lb/>
+                  <seg n="140" facs="#BNF_Fr412_F52r_A_L6">grant foi q&acute;il a&v;oit en <persName
+                        ref="#jesus">&N;o&s;tre &S2;igno&r;</persName>, &et;
+                     &s;i </seg>
+                  <lb/>
+                  <seg n="141" facs="#BNF_Fr412_F52r_A_L7">di&s;t au <persName ref="#octave"
+                           >p&r;e&v;o&s;t</persName> &colon; &laquo;Se tu croiz
+                     qe li diu qe tu </seg>
+                  <lb/>
+                  <seg n="142" facs="#BNF_Fr412_F52r_A_L8">ao&r;e&s; &s;oient &v;rai &D;ieu &quest;
+                     &J;&acute;ai moi aler &j;e le&s; de-</seg>
+                  <lb/>
+                  <seg n="143" facs="#BNF_Fr412_F52r_A_L9">froi&s;&s;erai toz &et; &j;a ne
+                     &s;aideront.&raquo; <persName ref="#octave"><hi
+                              rend="lettre_rubriquee">L</hi>i
+                        <!--p - Attention à ne pas dédoubler la lettre quand vous utilisez une entité-->&pbarre-pre;&v;oz</persName> li </seg>
+                  <lb/>
+                  <seg n="144" facs="#BNF_Fr412_F52r_A_Ll0">di&s;t chetif &colon; &laquo;&T;u a&s; &s;i
+                     gran&s; to&r;menz &s;o&s;ferz &et; </seg>
+                  <lb/>
+                  <seg n="145" facs="#BNF_Fr412_F52r_A_Ll1">&s;ou&s;tenuz. &P;o&r;qoi ne te &s;eco&r;t &et;
+                     aide <persName ref="#jesus">&J;e&s;u</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="146" facs="#BNF_Fr412_F52r_A_Ll2">&C;riz li tuen&s; &D;ex.&raquo; <persName
+                        ref="#longin"><hi rend="lettre_rubriquee">S</hi>ain&s;
+                        &L;ongi&s;</persName> li re&s;pondi &colon; </seg>
+                  <lb/>
+                  <seg n="147" facs="#BNF_Fr412_F52r_A_Ll3">&laquo;O tu fo&r;&s; del &s;en, dont ne &v;oi&s;
+                     tu &com; granz </seg>
+                  <lb/>
+                  <seg n="148" facs="#BNF_Fr412_F52r_A_Ll4">to&r;menz tu m&acute;a&s; fait &s;o&s;frir &et;
+                     &s;i ne me </seg>
+                  <lb/>
+                  <seg n="149" facs="#BNF_Fr412_F52r_A_Ll5">p&r;iez &v;eintre. <hi rend="lettre_rubriquee"
+                        >&J;</hi>&acute;ai moi b&r;i&s;ier &et; depecier </seg>
+                  <lb/>
+                  <seg n="150" facs="#BNF_Fr412_F52r_A_Ll6">te&s; dex, &et; &s;&acute;il me pueent mal faire
+                     ne gre-</seg>
+                  <lb/>
+                  <seg n="151" facs="#BNF_Fr412_F52r_A_Ll7">&v;er, &j;e croirai q&acute;il sont &v;erais
+                     dex, &et; se il </seg>
+                  <lb/>
+                  <seg n="152" facs="#BNF_Fr412_F52r_A_Ll8">ne me pueent farre mal. <hi
+                        rend="lettre_rubriquee">T</hi>u croiz qe li </seg>
+                  <lb/>
+                  <seg n="153" facs="#BNF_Fr412_F52r_A_Ll9">mien&s; &D;ex e&s;t &v;erai&s; &s;ire&s; &et;
+                     &v;erai&s; &D;ex.&raquo; Lo&r;&s; </seg>
+                  <lb/>
+                  <seg n="154" facs="#BNF_Fr412_F52r_A_L20">li di&s;t <persName ref="#octave">li
+                           p&r;e&v;oz</persName> &colon; &laquo;O&r; &v;a a&v;ant &et;
+                     &s;i fai a&sp;ta &v;o-</seg>
+                  <lb/>
+                  <seg n="155" facs="#BNF_Fr412_F52r_A_L21">lent&é; &et; &s;i en aie&s; poe&s;te.&raquo;
+                  </seg>
+               </p>
+            </div2>
+            <div2 type="section" n="2.3">
+               <p>
+                  <lb/>
+                  <seg n="156" facs="#BNF_Fr412_F52r_A_L22"><hi rend="initiale_filigranee">L</hi>o&r;&s;
+                     pri&s;t <persName ref="#longin">&s;einz
+                        &L;ongi&s;</persName> une coignie-</seg>
+                  <lb/>
+                  <seg n="157" facs="#BNF_Fr412_F52r_A_L23">&s;i, &v;int el temple, &s;i com&sp;b&r;i&s;a
+                     tou-</seg>
+                  <lb/>
+                  <seg n="158" facs="#BNF_Fr412_F52r_A_L24">tes le&s; &i;doles &et; le&s; auteu&s; &et;
+                     totes </seg>
+                  <lb/>
+                  <seg n="159" facs="#BNF_Fr412_F52r_A_L25">le&s; &i;mage&s; de pierre &et; tre&s;toz le&s;
+                     &v;ai&s;&s;eau&s; </seg>
+                  <lb/>
+                  <seg n="160" facs="#BNF_Fr412_F52r_A_L26">en qoi on fai&s;oit le&s; &s;acrefices, &et;
+                     tanto&s;t </seg>
+                  <lb/>
+                  <seg n="161" facs="#BNF_Fr412_F52r_A_L27"><persName ref="#demons">li deable</persName> qi
+                     e&s; &i;mage&s; manoient &et; habi-</seg>
+                  <lb/>
+                  <seg n="162" facs="#BNF_Fr412_F52r_A_L28">toient &s;&acute;<choice>
+                        <orig>en foirent</orig>
+                        <reg>enfoirent</reg>
+                     </choice>. <hi rend="lettre_rubriquee">L</hi>i un&s; entra au <persName
+                        ref="#octave">p&r;e-</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="163" facs="#BNF_Fr412_F52r_A_L29">&v;o&s;t el&sp;co&r;&s;, &et; li autre entrerent
+                     en touz </seg>
+                  <lb/>
+                  <seg n="164" facs="#BNF_Fr412_F52r_A_L30">cel&s; qi la e&s;toient &et; qi le &s;er&v;ice
+                     del t&e-m;ple </seg>
+                  <lb/>
+                  <seg n="165" facs="#BNF_Fr412_F52r_A_L3l">fai&s;oient, &et; &s;i di&s;oient <persName
+                        ref="#demons">li deable</persName> dedenz al&s; &colon; </seg>
+                  <lb/>
+                  <seg n="166" facs="#BNF_Fr412_F52r_A_L32">&laquo;&P;o&r;qoi e&s;t &v;enuz <persName
+                        ref="#longin">&s;einz
+                        &L;ongi&s;</persName> de&v;ant eu-</seg>
+                  <lb/>
+                  <seg n="167" facs="#BNF_Fr412_F52r_A_L33">re &et; de&v;ant tenz &quest; &P;o&r; noz geter
+                     fo&r;&s; de noz </seg>
+                  <lb/>
+                  <seg n="168" facs="#BNF_Fr412_F52r_A_L34">me&s;ons &et; de noz habitacles &quest;&raquo;,
+                     dont &s;e le&s;&s;oi-</seg>
+                  <lb/>
+                  <seg n="169" facs="#BNF_Fr412_F52r_A_L35">ent cheoir a&s; p&r;ez del <persName
+                        ref="#longin">&s;aint home</persName> &et; &s;i li </seg>
+                  <lb/>
+                  <seg n="170" facs="#BNF_Fr412_F52r_A_L36">di&s;oient &colon; &laquo;<hi
+                        rend="lettre_rubriquee">N</hi>oz &s;a&v;on&s; bien qe tu ies &s;erz </seg>
+                  <lb/>
+                  <seg n="171" facs="#BNF_Fr412_F52r_A_L37">au grant &D;eu.&raquo; <hi
+                        rend="lettre_rubriquee">E</hi>t <persName ref="#longin"
+                           >&s;ein&s;
+                        &L;ongi&s;</persName> lor di&s;t &colon; &laquo;Po&r; </seg>
+                  <lb/>
+                  <seg n="172" facs="#BNF_Fr412_F52r_A_L38">qele ochoi&s;on habitez &v;oz dedenz le&s;
+                     &i;do-</seg>
+                  <lb/>
+                  <seg n="173" facs="#BNF_Fr412_F52r_A_L39">les &et; dedenz le&s; &i;mage&s; &quest;&raquo;
+                        <persName ref="#demons">Li deable</persName> li re&s;pon-</seg>
+                  <lb/>
+                  <seg n="174" facs="#BNF_Fr412_F52r_A_L40">dirent &colon; &laquo;<hi
+                        rend="lettre_rubriquee">N</hi>oz tro&v;on&s; &i;mage&s; de pierre es-</seg>
+                  <lb/>
+                  <seg n="175" facs="#BNF_Fr412_F52r_A_L41">lius &et; e&s;crites ou li non&s;
+                        de&sp;<persName ref="#jesus">&J;e&s;u</persName>
+                     n&acute;e&s;t mie </seg>
+                  <lb/>
+                  <seg n="176" facs="#BNF_Fr412_F52r_A_L42">apelez ne li &s;ignes de la croiz qe &v;&oz;
+                     ao&r;es </seg>
+                  <lb/>
+                  <seg n="177" facs="#BNF_Fr412_F52r_A_L43">ni e&s;t pa&s; &et; cil qi &j;u&j;enent, il
+                     &s;acrefient </seg>
+                  <lb/>
+                  <seg n="178" facs="#BNF_Fr412_F52r_A_L44">&et; ao&r;ent en noz non&s;. Ein&s;i
+                     arre&s;ton&s; noz </seg>
+                  <lb/>
+                  <seg n="179" facs="#BNF_Fr412_F52r_A_L45">la ou li non&s; de&sp;<persName ref="#jesus"
+                           >&J;e&s;u</persName> n&acute;e&s;t mie apelez, &et;
+                     &s;i </seg>
+                  <lb/>
+                  <seg n="180" facs="#BNF_Fr412_F52r_A_L46">e&s;t no&s;tre habitation&s;, &et; no&s;tre
+                     demorance, </seg>
+                  <cb type="B"/><!-- Paris, BnF, Français 412, feuillet 52, recto, colonne B -->
+                  <lb/>
+                  <seg n="181" facs="#BNF_Fr412_F52r_B_Ll"><hi rend="lettre_rubriquee">&e;</hi>t po&r; ce te
+                     p&r;ion&s; noz <hi rend="lettre_rubriquee">b</hi>iau&s; &s;ire <choice>
+                        <abbr>q<hi rend="sup">i</hi></abbr>
+                        <expan>q<ex>ui</ex></expan>
+                     </choice> ies </seg>
+                  <lb/>
+                  <seg n="182" facs="#BNF_Fr412_F52r_B_L2">hom de &D;ieu, qe tu ne noz trebuche&s; ne </seg>
+                  <lb/>
+                  <seg n="183" facs="#BNF_Fr412_F52r_B_L3">en&v;oie&s; en ab&i;&s;me.&raquo; <hi
+                        rend="lettre_rubriquee">Q</hi>ant il &o-n;t ce dit </seg>
+                  <lb/>
+                  <seg n="184" facs="#BNF_Fr412_F52r_B_L4"><persName ref="#longin"
+                           >&s;einz
+                        &L;ongi&s;</persName> &pbarre-par;la au pueple qi&sp;la
+                     e&s;toit a&s;-</seg>
+                  <lb/>
+                  <seg n="185" facs="#BNF_Fr412_F52r_B_L5">&s;amblez &et; &s;i&sp;lo&r;&sp;di&s;t &colon;
+                     &laquo;Qe &v;&oz; en&s;amble &v;ole<choice><abbr></abbr><expan><ex>z</ex></expan>
+                     </choice>
+                  </seg>
+                  <lb/>
+                  <seg n="186" facs="#BNF_Fr412_F52r_B_L6">&v;&oz; qe ci&s;t &s;oient &v;o&s;tre dieu &et;
+                     &v;olez le&s; &v;&oz; </seg>
+                  <lb/>
+                  <seg n="187" facs="#BNF_Fr412_F52r_B_L7">ao&r;er, <hi rend="lettre_rubriquee">o</hi>u
+                     &v;olez &v;oz qe &j;e le&s; enchace par </seg>
+                  <lb/>
+                  <seg n="188" facs="#BNF_Fr412_F52r_B_L8">le non <persName ref="#jesus"
+                           >&N;o&s;tre &S2;igno&r;
+                        &J;e&s;u&sp;&C;ri&s;t</persName>. &V;oz poez
+                     &v;e-</seg>
+                  <lb/>
+                  <seg n="189" facs="#BNF_Fr412_F52r_B_L9">oir &v;o&s;tre <persName ref="#octave"
+                     >p&r;e&v;o&s;t</persName> qi par la &v;<choice>
+                        <abbr></abbr>
+                        <expan><ex>er</ex></expan>
+                     </choice>tu de &D;eu </seg>
+                  <lb/>
+                  <seg n="190" facs="#BNF_Fr412_F52r_B_Ll0">e&s;cume &et; gi&s;t toz e&s;tenduz de&v;ant
+                     me&s; </seg>
+                  <lb/>
+                  <seg n="191" facs="#BNF_Fr412_F52r_B_Ll1">piez.&raquo; <hi rend="lettre_rubriquee"
+                     >L</hi>o&r;&s; &com;menca toz li pueple&s; a&sp;crier </seg>
+                  <lb/>
+                  <seg n="192" facs="#BNF_Fr412_F52r_B_Ll2">a une &v;oiz &colon; &laquo;<hi
+                        rend="lettre_rubriquee">L</hi>i &D;ex de&s; cre&s;tien&s; e&s;t gran&s; </seg>
+                  <lb/>
+                  <seg n="193" facs="#BNF_Fr412_F52r_B_Ll3">&D;ex. <hi rend="lettre_rubriquee">N</hi>oz te
+                     p&r;ion&s; biau&s; douz &s;ire <!--q-->&qbarre-que; tu </seg>
+                  <lb/>
+                  <seg n="194" facs="#BNF_Fr412_F52r_B_Ll4">ne lai&s;&s;es plu&s; <persName ref="#demons"
+                        >le&s; deable&s;</persName> arre&s;ter en </seg>
+                  <lb/>
+                  <seg n="195" facs="#BNF_Fr412_F52r_B_Ll5">ce&s;te cit&é; po&r; le pueple
+                     deco&v;ire.&raquo; <hi rend="lettre_rubriquee">Q</hi>ant </seg>
+                  <lb/>
+                  <seg n="196" facs="#BNF_Fr412_F52r_B_Ll6"><persName ref="#longin"
+                           >&s;ainz
+                        &L;ongi&s;</persName> o&ï; ce, &s;i re&s;garda &v;er&s;
+                     le </seg>
+                  <lb/>
+                  <seg n="197" facs="#BNF_Fr412_F52r_B_Ll7">ciel, &et; &s;i di&s;t &colon; &laquo;<hi
+                        rend="lettre_rubriquee">B</hi>iau&s; <persName ref="#jesus">&s;ire
+                           &D;ex
+                        &J;e&s;u&sp;&C;riz</persName>, re-</seg>
+                  <lb/>
+                  <seg n="198" facs="#BNF_Fr412_F52r_B_Ll8">garde moi ﻿&pbarre-par; ta grant piti&é;. <hi
+                        rend="lettre_rubriquee">&J;</hi>e croi bi&e-n; </seg>
+                  <lb/>
+                  <seg n="199" facs="#BNF_Fr412_F52r_B_Ll9">qe tu moz toz tens &et; qe tu me dones </seg>
+                  <lb/>
+                  <seg n="200" facs="#BNF_Fr412_F52r_B_L20">ancoi&s; qe &j;e te demant. Et o&r; te pri &j;e
+                     &pbarre-par; ﻿</seg>
+                  <lb/>
+                  <seg n="201" facs="#BNF_Fr412_F52r_B_L2l">ta grant mi&s;erico&r;de, qe tu &com;mandes </seg>
+                  <lb/>
+                  <seg n="202" facs="#BNF_Fr412_F52r_B_L22"><persName ref="#demons">le&s;
+                        deable&s;</persName> i&s;&s;ir fo&r;&s; de cez home&s; qe tu </seg>
+                  <lb/>
+                  <seg n="203" facs="#BNF_Fr412_F52r_B_L23">fo&r;ma&s; &et; fei&s;, po&r; ce qe te&s; non&s;
+                     &et; ta po-</seg>
+                  <lb/>
+                  <seg n="204" facs="#BNF_Fr412_F52r_B_L24">e&s;tez en &s;oit e&s;&s;auci&é; &et; loee del
+                     pueple </seg>
+                  <lb/>
+                  <seg n="205" facs="#BNF_Fr412_F52r_B_L25">qi ci e&s;t a&s;&s;ambl&é;.&raquo; </seg>
+               </p>
+            </div2>
+            <div2 type="section" n="2.4">
+               <p>
+                  <lb/>
+                  <seg n="206" facs="#BNF_Fr412_F52r_B_L26"><hi rend="initiale_filigranee">Q</hi><hi
+                        rend="lettre_rubriquee">u</hi>ant li <persName ref="#longin"
+                           >&s;einz hom</persName> ot ein&s;i dix </seg>
+                  <lb/>
+                  <seg n="207" facs="#BNF_Fr412_F52r_B_L27">dit &et; p&r;oie a&sp;&N;o&s;tre &S2;eignor, </seg>
+                  <lb/>
+                  <seg n="208" facs="#BNF_Fr412_F52r_B_L28"><persName ref="#demons">li deable</persName> qi
+                     en&sp;ceau&s; e&s;toient </seg>
+                  <lb/>
+                  <seg n="209" facs="#BNF_Fr412_F52r_B_L29">&s;&acute;e&s;crierent &et; plain&s;trent a
+                     haute&s; &v;oiz </seg>
+                  <lb/>
+                  <seg n="210" facs="#BNF_Fr412_F52r_B_L30">&et; &s;i le&s;&s;ierent le&s; co&r;&s; de ceuz
+                     ou&sp;il e&s;toi&e-n;t </seg>
+                  <lb/>
+                  <seg n="211" facs="#BNF_Fr412_F52r_B_L3l">entre, &s;i &s;&acute;en ﻿&pbarre-par;tirent,
+                     &et; cil furent gari &et; </seg>
+                  <lb/>
+                  <seg n="212" facs="#BNF_Fr412_F52r_B_L32">&s;ane del grant to&r;ment qe li deable </seg>
+                  <lb/>
+                  <seg n="213" facs="#BNF_Fr412_F52r_B_L33">lo&r; a&v;oient fait &s;o&s;frir, &et; lor&s; ot <choice>
+                        <abbr>g<hi rend="sup">u</hi>nt</abbr>
+                        <expan>g<ex>ra</ex>nt</expan>
+                     </choice>
+                  </seg>
+                  <lb/>
+                  <seg n="214" facs="#BNF_Fr412_F52r_B_L34">&j;oie﻿ &pbarre-por;&sp;toute la cit&é; &et; li
+                     pueple&s; qi la&sp;e&s;toit </seg>
+                  <lb/>
+                  <seg n="215" facs="#BNF_Fr412_F52r_B_L35">a&s;&s;amblez &s;e &con;&v;erti &et; crut en
+                        <persName ref="#jesus">&N;o&s;tre
+                     &S2;ig-</persName></seg>
+                  <lb/>
+                  <seg n="216" facs="#BNF_Fr412_F52r_B_L36">no&r;. <hi rend="lettre_rubriquee"
+                     >A</hi>pr&é;&s; ce non mie lonctanz <persName ref="#octave"
+                           >&O;cta-</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="217" facs="#BNF_Fr412_F52r_B_L37">&v;ies <persName ref="#octave">li
+                           tr&é;&s; feel&s; p&r;e&v;oz</persName> qe <persName
+                        ref="#longin">li &s;einz hom</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="218" facs="#BNF_Fr412_F52r_B_L38">a&v;oit deli&v;r&é; <persName ref="#demons">del
+                        deable</persName>, si com &v;oz a-</seg>
+                  <lb/>
+                  <seg n="219" facs="#BNF_Fr412_F52r_B_L39">&v;ez o&ï; &et; entendu, le fi&s;t rep&r;endre
+                     &et; ame-</seg>
+                  <lb/>
+                  <seg n="220" facs="#BNF_Fr412_F52r_B_L40">ner de&v;ant lui &et; &s;i li di&s;t &colon;
+                        &laquo;<hi rend="lettre_rubriquee">D</hi>ont ne &s;e&s; tu </seg>
+                  <lb/>
+                  <seg n="221" facs="#BNF_Fr412_F52r_B_L41">qe toute&s; le&s; genz de&sp;la&sp;cit&é; &s;e
+                     de&pbarre-por;tent &et; </seg>
+                  <lb/>
+                  <seg n="222" facs="#BNF_Fr412_F52r_B_L42">de&s;to&r;nent &pbarre-par; les
+                     enchantere&s;&s;es ar&s; de&s; </seg>
+                  <lb/>
+                  <seg n="223" facs="#BNF_Fr412_F52r_B_L43">cre&s;tien&s; q&acute;il ne &s;acrefient ne
+                     ao&r;ent a </seg>
+                  <lb/>
+                  <seg n="224" facs="#BNF_Fr412_F52r_B_L44">noz dex ne a&sp;noz &i;doles si &com;&sp;il
+                     &s;oloient. <hi rend="lettre_rubriquee">E</hi>t </seg>
+                  <lb/>
+                  <seg n="225" facs="#BNF_Fr412_F52r_B_L45">&s;e li rois le &s;a&v;oit ﻿&pbarre-par;&sp;nule
+                     maniere, il </seg>
+                  <lb/>
+                  <seg n="226" facs="#BNF_Fr412_F52r_B_L46">noz feroit mo&r;ir a&sp;grant doleur &et; la </seg>
+                  <pb n="52v"
+                     facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b84259980/f114/full/full/0/native.jpg"/>
+                  <!-- Paris, BnF, Français 412, feuillet 52, verso -->
+                  <cb type="C"/><!-- Paris, BnF, Français 412, feuillet 52, verso, colonne C -->
+                  <lb/>
+                  <seg n="227" facs="#BNF_Fr412_F52v_C_Ll">c&i;t&é;&s; &s;eroit de&s;truite.&raquo; <hi
+                        rend="lettre_rubriquee">L</hi>o&r;s re&s;pondi au </seg>
+                  <lb/>
+                  <seg n="228" facs="#BNF_Fr412_F52v_C_L2"><persName ref="#octave"
+                           >p&r;e&v;o&s;t</persName>
+                     <persName ref="#asfrodisie">&A;&s;frodi&s;ies</persName>,
+                     un&s; me&s;tres de lo&r; lo&i; </seg>
+                  <lb/>
+                  <seg n="229" facs="#BNF_Fr412_F52v_C_L3">qe <persName ref="#longin"
+                           >&s;einz
+                        &L;ongi&s;</persName> a&v;oit deli&v;r&é; <persName
+                        ref="#demons">del deable</persName> qi </seg>
+                  <lb/>
+                  <seg n="230" facs="#BNF_Fr412_F52v_C_L4">durement l&acute;a&v;oit tra&v;elli&é; &et;
+                     gre&v;&é; &colon; &laquo;<hi rend="lettre_rubriquee">&V;</hi>iu&s; </seg>
+                  <lb/>
+                  <seg n="231" facs="#BNF_Fr412_F52v_C_L5">tu recomencier a&sp;tra&v;ellier celui qi noz </seg>
+                  <lb/>
+                  <seg n="232" facs="#BNF_Fr412_F52v_C_L6">a &s;ant&é; donee, &et; de la dolereu&s;e paine
+                     o&s;tes <seg cert="low" type="number">V</seg>
+                  </seg>
+                  <lb/>
+                  <seg n="233" facs="#BNF_Fr412_F52v_C_L7">noz e&s;tion&s; cheu&s;, &et; par&sp;cui &D;ex
+                     a&sp;&s;au&v;ee </seg>
+                  <lb/>
+                  <seg n="234" facs="#BNF_Fr412_F52v_C_L8">toute la cit&é;.&raquo; <persName ref="#octave"
+                           >Li p&r;e&v;oz</persName> li re&s;pondi &et; &s;i li
+                     di&s;t &colon; </seg>
+                  <lb/>
+                  <seg n="235" facs="#BNF_Fr412_F52v_C_L9">&laquo;<hi rend="lettre_rubriquee">Q</hi>an
+                     q&acute;il n&oz; a fait ne fu &s;e fanto&s;me non, </seg>
+                  <lb/>
+                  <seg n="236" facs="#BNF_Fr412_F52v_C_L10">&et; par fanto&s;me noz a&sp;il gabez &et;
+                     e&s;charniz.&raquo; </seg>
+                  <lb/>
+                  <seg n="237" facs="#BNF_Fr412_F52v_C_Ll1"><hi rend="lettre_rubriquee">L</hi>or&s; di&s;t
+                        <persName ref="#asfrodisie"
+                        >&A;&s;frodi&s;ies</persName> au&sp;<persName
+                        ref="#octave">p&r;e&v;o&s;t</persName> &colon;
+                     &laquo;Li &D;ex de&s; </seg>
+                  <lb/>
+                  <seg n="238" facs="#BNF_Fr412_F52v_C_Ll2">cre&s;tiens e&s;t hauz &D;ex de &s;or tote
+                     creature </seg>
+                  <lb/>
+                  <seg n="239" facs="#BNF_Fr412_F52v_C_Ll3">&et;&sp;en&sp;lui n&acute;a boi&s;di&é; ne
+                     fanto&s;me, &et; &s;i te di </seg>
+                  <lb/>
+                  <seg n="240" facs="#BNF_Fr412_F52v_C_Ll4">bien qe tu ne faces nule gre&v;ance a&sp;ce&s;t </seg>
+                  <lb/>
+                  <seg n="241" facs="#BNF_Fr412_F52v_C_Ll5"><persName ref="#longin">&s;eint
+                           home</persName> qi &s;e&s; &s;erz e&s;t, qe pi&s; ne
+                     t&acute;avieg-</seg>
+                  <lb/>
+                  <seg n="242" facs="#BNF_Fr412_F52v_C_Ll6">ne q&acute;a&sp;&v;enu te &s;oit.&raquo; </seg>
+               </p>
+            </div2>
+            <div2 type="section" n="2.5">
+               <p>
+                  <lb/>
+                  <seg n="243" facs="#BNF_Fr412_F52v_C_Ll7"><hi rend="initiale_filigranee">Q</hi>ant
+                        <persName ref="#octave">&O;cta&v;ies
+                        li &pbarre-pre;voz</persName> o&ï; ce, &s;i </seg>
+                  <lb/>
+                  <seg n="244" facs="#BNF_Fr412_F52v_C_Ll8">fu tant dolenz q&acute;il ne &s;ot qe
+                     de&v;e-</seg>
+                  <lb/>
+                  <seg n="245" facs="#BNF_Fr412_F52v_C_L19">nir, &et; par &s;i grant ire
+                     &et;&sp;&pbarre-par; &s;<choice>
+                        <abbr>egn<hi rend="sup">u</hi>r</abbr>
+                        <expan>egn<ex>io</ex>r</expan>
+                     </choice> 
+                  </seg>
+                  <lb/>
+                  <seg n="246" facs="#BNF_Fr412_F52v_C_L20">fo&r;&s;enerie fi&s;t <persName
+                        ref="#asfrodisie">&A;&s;frodi&s;ie</persName> trenchier
+                     la lan-</seg>
+                  <lb/>
+                  <seg n="247" facs="#BNF_Fr412_F52v_C_L2l">gue, dont il a&v;oit <persName ref="#jesus"
+                           >&N;o&s;tre &S2;igno&r;</persName> lo&é;
+                     de&v;<!--a-->&a-n;t </seg>
+                  <lb/>
+                  <seg n="248" facs="#BNF_Fr412_F52v_C_L22">lui. <hi rend="lettre_rubriquee">Q</hi>ant
+                        <persName ref="#longin">&s;einz
+                        &L;ongi&s;</persName> le &v;it &s;i en fu </seg>
+                  <lb/>
+                  <seg n="249" facs="#BNF_Fr412_F52v_C_L23">mout dolenz en &s;on co&r;age, &s;i re&s;garda </seg>
+                  <lb/>
+                  <seg n="250" facs="#BNF_Fr412_F52v_C_L24">&v;ers le ciel, &et; &s;i &s;&acute;en plain&s;t
+                        a&sp;<persName ref="#jesus"><choice>
+                              <abbr>nre</abbr>
+                              <expan>N<ex>ost</ex>re</expan>
+                        </choice> &S2;igno&r;</persName>
+                  </seg>
+                  <lb/>
+                  <seg n="251" facs="#BNF_Fr412_F52v_C_L25">&et; tantost a&v;ugla <persName ref="#octave"
+                           >li p&r;e&v;oz</persName>, &et; li co&r;urent </seg>
+                  <lb/>
+                  <seg n="252" facs="#BNF_Fr412_F52v_C_L26">li oel tout fo&r;s de la te&s;te &pbarre-par; la
+                     grant &v;<choice>
+                        <abbr></abbr>
+                        <expan><ex>er</ex></expan>
+                     </choice>tu
+                  </seg>
+                  <lb/>
+                  <seg n="253" facs="#BNF_Fr412_F52v_C_L27">de&sp;<persName ref="#jesus"
+                           >&N;o&s;tre &S2;igno&r;</persName>. Qant <persName
+                        ref="#asfrodisie">&A;&s;frodi&s;ies</persName> &v;it </seg>
+                  <lb/>
+                  <seg n="254" facs="#BNF_Fr412_F52v_C_L28">q&acute;il e&s;toit ein&s;i a&v;uglez, &s;i
+                     &com;menca a&sp;hau-</seg>
+                  <lb/>
+                  <seg n="255" facs="#BNF_Fr412_F52v_C_L29">te&s; &v;oiz a&sp;crier &colon; &laquo;<hi
+                        rend="lettre_rubriquee">B</hi>iaus &s;ire &D;ex tu ie&s; &j;u-</seg>
+                  <lb/>
+                  <seg n="256" facs="#BNF_Fr412_F52v_C_L30">&s;tes &et;&sp;d&r;oiturier&s; en te&s;
+                     &j;ugemenz.&raquo; Lor&s; </seg>
+                  <lb/>
+                  <seg n="257" facs="#BNF_Fr412_F52v_C_L31">di&s;t <persName ref="#octave">li
+                           p&r;e&v;oz</persName> a <persName ref="#asfrodisie"
+                           >&A;&s;frodi&s;ie</persName> &colon;
+                     &laquo;&B;iau&s; frere p&r;ie </seg>
+                  <lb/>
+                  <seg n="258" facs="#BNF_Fr412_F52v_C_L32"><persName ref="#longin"
+                           >&L;ongin</persName> mon chier &s;igno&r; qe il
+                     p&r;it po&r; </seg>
+                  <lb/>
+                  <seg n="259" facs="#BNF_Fr412_F52v_C_L33">moi car &j;e ai trop mal e&s;ploiti&é;
+                     en&v;er&s; </seg>
+                  <lb/>
+                  <seg n="260" facs="#BNF_Fr412_F52v_C_L34">lui qi &s;erz e&s;t de &D;eu.&raquo; <persName
+                        ref="#asfrodisie"><hi rend="lettre_rubriquee"
+                           >A</hi>&s;frodi&s;ie</persName> li resp&o-n;-</seg>
+                  <lb/>
+                  <seg n="261" facs="#BNF_Fr412_F52v_C_L35">di &colon; &laquo;Donc ne te di&s;oie &j;e bien
+                     qe tu ne fei&s;-</seg>
+                  <lb/>
+                  <seg n="262" facs="#BNF_Fr412_F52v_C_L36">&s;e&s; mal au &s;erf &D;eu qe mal&s; ne
+                     t&acute;en a&v;e-</seg>
+                  <lb/>
+                  <seg n="263" facs="#BNF_Fr412_F52v_C_L37">ni&s;t. <hi rend="lettre_rubriquee">O</hi>r
+                     pue&s; tu bien &v;eoir la grant </seg>
+                  <lb/>
+                  <seg n="264" facs="#BNF_Fr412_F52v_C_L38">poi&s;&s;ance de&sp;lui, &et; la grant
+                     &s;igno&r;ie, car </seg>
+                  <lb/>
+                  <seg n="265" facs="#BNF_Fr412_F52v_C_L39">il me fait &pbarre-par;ler qi pechieres &s;ui
+                     &et; &s;i ai la </seg>
+                  <lb/>
+                  <seg n="266" facs="#BNF_Fr412_F52v_C_L40">langue trenchi&é;.&raquo; <persName
+                        ref="#octave"><hi rend="lettre_rubriquee">L</hi>i
+                           p&r;e&v;oz</persName> li di&s;t &colon; &laquo;<seg cert="low"
+                              xml:lang="lat">&H;<choice>
+                           <abbr>abia<hi rend="sup">9</hi></abbr>
+                           <expan>abia<ex>us</ex></expan>
+                        </choice></seg>
+                  </seg>
+                  <lb/>
+                  <seg n="267" facs="#BNF_Fr412_F52v_C_L41">dol&s; amis &j;e n&acute;ai mie tant &s;eulenent </seg>
+                  <lb/>
+                  <seg n="268" facs="#BNF_Fr412_F52v_C_L42">le&s; &j;ol&s; ﻿&pbarre-per;du&s;, car me&s;
+                     cuer&s; &et; me&s; <choice>
+                        <abbr>ent<hi rend="sup">a</hi>l</abbr>
+                        <expan>ent<ex>ra</ex>l-</expan>
+                     </choice></seg>
+                  <lb/>
+                  <seg n="269" facs="#BNF_Fr412_F52v_C_L43">les &s;ont en&s;i grant doleur qa poi qe </seg>
+                  <lb/>
+                  <seg n="270" facs="#BNF_Fr412_F52v_C_L44">&j;e ne muir.&raquo; <persName ref="#longin"
+                              ><hi rend="lettre_rubriquee">S</hi>ain&s;
+                        &L;ongiz</persName> re&s;pondi au </seg>
+                  <lb/>
+                  <seg n="271" facs="#BNF_Fr412_F52v_C_L45"><persName ref="#octave"
+                           >p&r;e&v;o&s;t</persName> &colon; &laquo;<hi
+                        rend="lettre_rubriquee">S</hi>e tu &v;iu&s; a&v;oir mi&s;erico&r;de </seg>
+                  <lb/>
+                  <seg n="272" facs="#BNF_Fr412_F52v_C_L46">&et; que &j;e p&r;oie <persName ref="#jesus"
+                           >&N;o&s;tre &S2;eigno&r;</persName> q&acute;il te
+                     ga-</seg>
+                  <cb type="D"/><!-- Paris, BnF, Français 412, feuillet 52, verso, colonne D -->
+                  <lb/>
+                  <seg n="273" facs="#BNF_Fr412_F52v_D_Ll">ri&s;&s;e ap&r;&é;&s; ma mo&r;t. <hi
+                        rend="lettre_rubriquee">D</hi>onc me fai to&s;t &s;ou-</seg>
+                  <lb/>
+                  <seg n="274" facs="#BNF_Fr412_F52v_D_L2">frir la&sp;mo&r;t &et; le martyre po&r;
+                     l&acute;amo&r; de &N;o-</seg>
+                  <lb/>
+                  <seg n="275" facs="#BNF_Fr412_F52v_D_L3">&s;tre &S2;eigno&r; <persName ref="#jesus"
+                           >&J;e&s;u&sp;&C;ri&s;t</persName>, &et; &j;e ai tele
+                     fianc&é; en </seg>
+                  <lb/>
+                  <seg n="276" facs="#BNF_Fr412_F52v_D_L4"><persName ref="#jesus">&N;o&s;tre
+                           &S2;igno&r;
+                        &J;e&s;u&sp;&C;ri&s;t</persName> qe il te garira &s;e
+                     &j;e li </seg>
+                  <lb/>
+                  <seg n="277" facs="#BNF_Fr412_F52v_D_L5">dep&r;i.&raquo; <hi rend="lettre_rubriquee"
+                        >L</hi>o&r;&s; &com;omanda <persName ref="#octave"
+                           >&O;cta&v;ies
+                        li p&r;e&v;oz</persName> con </seg>
+                  <lb/>
+                  <seg n="278" facs="#BNF_Fr412_F52v_D_L6">li trencha&s;t le chief, &et; qant <persName
+                        ref="#longin">li &s;einz hom</persName> ot </seg>
+                  <lb/>
+                  <seg n="279" facs="#BNF_Fr412_F52v_D_L7">faite &s;ori&s;on a <persName ref="#jesus"
+                           >&N;o&s;tre &S2;eigno&r;</persName>, tele &con;
+                     a&sp;lui plot. </seg>
+                  <lb/>
+                  <seg n="280" facs="#BNF_Fr412_F52v_D_L8">Il reciut martyre &et; rendi l&acute;ame qe li
+                     &s;eint </seg>
+                  <lb/>
+                  <seg n="281" facs="#BNF_Fr412_F52v_D_L9">angele empo&r;terent en ﻿&pbarre-par;adis &et;
+                     mainte-</seg>
+                  <lb/>
+                  <seg n="282" facs="#BNF_Fr412_F52v_D_Ll0">nant &s;e le&s;&s;a <persName ref="#octave"
+                           >li <!--p-->&pbarre-pre;&v;oz</persName> chaoir toz
+                     e&s;tenduz </seg>
+                  <lb/>
+                  <seg n="283" facs="#BNF_Fr412_F52v_D_Ll1">de&v;ant le co&r;s <persName ref="#longin"
+                           >del &s;eint martyr</persName>, si &com;menca </seg>
+                  <lb/>
+                  <seg n="284" facs="#BNF_Fr412_F52v_D_Ll2">molt tend&r;ement a&sp;plo&r;er
+                     &et;&sp;a&sp;dire &colon; &laquo;&J;e ai </seg>
+                  <lb/>
+                  <seg n="285" facs="#BNF_Fr412_F52v_D_Ll3">pechi&é; biau&s; &s;ire. &J;e ai pechi&é; &s;i
+                     re&con;noi&s; &et; re-</seg>
+                  <lb/>
+                  <seg n="286" facs="#BNF_Fr412_F52v_D_Ll4">gehis ma felonie.&raquo; <hi
+                        rend="lettre_rubriquee">E</hi>t tanto&s;t reco&v;ra il </seg>
+                  <lb/>
+                  <seg n="287" facs="#BNF_Fr412_F52v_D_Ll5">lumiere &et; &v;it au&s;&s;i cler &com;me
+                     de&v;ant, &et; </seg>
+                  <lb/>
+                  <seg n="288" facs="#BNF_Fr412_F52v_D_Ll6">fu plu&s; &s;ainz de&sp;toz &s;e&s; memb&r;es
+                     q&acute;il n&acute;a-</seg>
+                  <lb/>
+                  <seg n="289" facs="#BNF_Fr412_F52v_D_Ll7">&v;oit onqes e&s;t&é;. <hi
+                        rend="lettre_rubriquee">P</hi>uis p&r;i&s;t le cor&s; del <persName
+                           ref="#longin">&s;<choice>
+                              <abbr>ait</abbr>
+                              <expan>ai<ex>n</ex>t</expan>
+                        </choice></persName>
+                  </seg>
+                  <lb/>
+                  <seg n="290" facs="#BNF_Fr412_F52v_D_Ll8">martyr i&s;nielement, &s;i l&acute;envolepa &et;
+                     mi&s;t </seg>
+                  <lb/>
+                  <seg n="291" facs="#BNF_Fr412_F52v_D_Ll9">en biau&s; d&r;a&s; molt blan&s;, &s;i
+                     l&acute;en&s;e&v;eli en </seg>
+                  <lb/>
+                  <seg n="292" facs="#BNF_Fr412_F52v_D_L20">la cit&é;, &et; fi&s;t toz li pueple&s; &s;i
+                     grant fe&s;te </seg>
+                  <lb/>
+                  <seg n="293" facs="#BNF_Fr412_F52v_D_L2l">com l&acute;en&sp;doit faire d&acute;un &s;eint
+                     martyr, &et; </seg>
+                  <lb/>
+                  <seg n="294" facs="#BNF_Fr412_F52v_D_L22"><persName ref="#octave">li
+                          <!-- p-->&pbarre-pre;&v;oz</persName> crut fermement en <persName
+                             ref="#jesus">&N;o&s;tre &S2;<choice>
+                              <abbr>ign</abbr>
+                              <expan>ign<ex>or</ex></expan>
+                           </choice></persName>
+                  </seg>
+                  <lb/>
+                  <seg n="295" facs="#BNF_Fr412_F52v_D_L23">&et; ala toz le&s; &j;o&r;&s; de &s;a &v;ie
+                     p&r;eechier &et; anonc&é; </seg>
+                  <lb/>
+                  <seg n="296" facs="#BNF_Fr412_F52v_D_L24">le non de <persName ref="#jesus"
+                           >&J;e&s;u&sp;&C;ri&s;t</persName>, ce a&v;int en
+                        <placeName ref="#cesaree">&C;e&s;aire</placeName> q&qbarre-que; </seg>
+                  <lb/>
+                  <seg n="297" facs="#BNF_Fr412_F52v_D_L25">&j;e &v;oz ai cont&é; &et; dit, es di&s;iemes
+                     kalendes </seg>
+                  <lb/>
+                  <seg n="298" facs="#BNF_Fr412_F52v_D_L26">de decemb&r;e. <hi rend="lettre_rubriquee"
+                        >A</hi> donc fu l&acute;ame <persName ref="#longin">del
+                           &s;aint</persName> mar-</seg>
+                  <lb/>
+                  <seg n="299" facs="#BNF_Fr412_F52v_D_L27">tyr en paradiz, po&r;tee a&v;ec la &com;paignie </seg>
+                  <lb/>
+                  <seg n="300" facs="#BNF_Fr412_F52v_D_L28">de&s; angeles, ou &D;ex noz doin&s;t
+                     &pbarre-par;&v;enir <choice>
+                        <abbr>q<hi rend="sup">i</hi></abbr>
+                        <expan>q<ex>'il</ex></expan>
+                     </choice>
+                  </seg>
+                  <lb/>
+                  <seg n="301" facs="#BNF_Fr412_F52v_D_L29">&v;it &et; regne el &s;iecle de toz &s;iecles.
+                        <hi rend="lettre_rubriquee">A</hi>men. </seg>
+               </p>
+            </div2>
+         </div1>
+      </body>
+   </text>
+</TEI>

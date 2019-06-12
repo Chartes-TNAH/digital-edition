@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- encodage XML TEI maitrisé, quelques petites erreurs de détails avec un balisage parfois de mise en page et une note redondante avec le système des index mis en place -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Edition numérique des lettres de George Sand à Sainte-Beuve </title>
+            <respStmt>
+               <resp>Encodé par</resp>
+               <persName>
+                  <forename>Victoria</forename>
+                  <surname>Le Fourner</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Edition numérique réalisée dans le cadre d'une évaluation du master TNAH de l'ENC</p>
+         </publicationStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>Lettres à Alfred de Musset et à Sainte-Beuve</title>
+                  <author>George Sand</author>
+
+               </titleStmt>
+               <publicationStmt>
+
+                  <publisher>Calmann Lévy, </publisher>
+                  <publisher>Ancienne maison Michel Lévy frères</publisher>
+                  <authority resp="contibutor">Rocheblave, Samuel-Élie</authority>
+                  <pubPlace>3, rue Auber Paris</pubPlace>
+                  <date when-iso="1897">1897</date>
+               </publicationStmt>
+               <seriesStmt>
+                  <title>Lettres à Alfred de Musset et à Sainte-Beuve </title>
+                  <biblScope unit="volume" n="2">Livre II</biblScope>
+                  <biblScope unit="letter" from="1" to="6">Lettres 1 à 6</biblScope>
+                  <biblScope unit="page" from="98" to="107">pp.98-107</biblScope>
+               </seriesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <!-- bien -->
+      <profileDesc>
+         <correspDesc ref="#Sand_Sainte-Beuve">
+            <correspAction type="sent">
+               <persName ref="#Sand">George Sand</persName>
+               <date when="1833"/>
+               <settlement ref="#Paris">Paris</settlement>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#Sainte-Beuve">Sainte-Beuve</persName>
+            </correspAction>
+         </correspDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="Paris">
+                  <placeName ref="https://www.wikidata.org/wiki/Q90">Paris</placeName>
+                  <region>Ile-de-France</region>
+                  <country>France</country>
+               </place>
+            </listPlace>
+         </settingDesc>
+         <particDesc>
+            <!-- Bien pour les notices d'autorité -->
+            <listPerson>
+               <person xml:id="Hugo">
+                  <persName ref="https://data.bnf.fr/fr/11907966/victor_hugo/"><forename type="main"
+                        >Victor </forename>
+                     <forename>Marie </forename>
+                     <surname>Hugo </surname></persName>
+                  <birth><date when-iso="1802-02-26">1802-02-26</date></birth>
+                  
+                  <death><date when-iso="1885-05-22">1885-05-22</date></death>
+                  <occupation>Auteur et homme politique</occupation>
+               </person>
+               <person xml:id="Bonnaire">
+                  <persName ref="http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/17245"
+                        ><forename type="main">Florestan </forename>
+                     <forename>Charles </forename>
+                     <surname>Bonnaire </surname></persName>
+                  <birth><date when-iso="1803-08-10">1803-08-10</date></birth>
+                  <death><date when-iso="1878-08-23">1878-08-23</date></death>
+                  <occupation>Notaire et associé de ses frères pour la Revue des Deux
+                     Mondes. </occupation>
+                  <occupation when="1844">Député du Cher</occupation>
+                  <note>Dans l'édition de Calmann Lévy, l'orthographe Stariston apparait. Il s'agit
+                     d'une mauvaise lecture de l'écriture manuscrite, que nous avons choisit de
+                     laisser puisque c'est ici une édition de l'édition de Calmann Lévy et non pas
+                     des lettres manuscrites. Il faut donc lire Florestan.</note>
+               </person>
+
+               <person xml:id="Planche">
+                  <persName ref="https://data.bnf.fr/fr/12409565/gustave_planche/"><forename
+                        type="main">Gustave </forename>
+                     <surname>Planche </surname></persName>
+                  <birth><date when-iso="1808-02-16">1808-02-16</date></birth>
+                  <death><date when-iso="1857-09-18">1857-09-18</date></death>
+                  <occupation>Critique littéraire</occupation>
+               </person>
+               <person xml:id="Jouffroy">
+                  <persName ref="https://data.bnf.fr/fr/11909073/theodore_jouffroy/"><forename
+                        type="main">Théodores </forename><forename>Simon </forename>
+                     <surname>Jouffroy </surname></persName>
+                  <birth><date when-iso="1796-07-06">1796-07-06</date></birth>
+                  <death><date when-iso="1942-03-01">1842-03-01</date></death>
+                  <occupation>Philosophe, écrivain et homme politique. Professeur au Collège de
+                     France</occupation>
+               </person>
+               <person xml:id="Musset">
+                  <persName ref="https://data.bnf.fr/fr/11917290/alfred_de_musset/"><forename
+                        type="main">Alfred </forename> <forename>Louis Charles 
+                        </forename><nameLink>de </nameLink>
+                     <surname>Musset </surname></persName>
+                  <birth><date when-iso="1810-12-11">1810-12-11</date></birth>
+                  <death><date when-iso="1857-05-02">1857-05-02</date></death>
+                  <occupation>Poète et dramaturge</occupation>
+                  <note>George Sand rencontre pour la première fois Alfred de Musset le 17 juin
+                     1833, lors d'un dîner organisé par François Buloz</note>
+               </person>
+               <person xml:id="Dumas_fils">
+                  <persName ref="https://data.bnf.fr/fr/11901062/alexandre_dumas/"><forename
+                        type="main">Alexandre </forename>
+                     <surname>Dumas </surname>
+                     <genName>fils </genName></persName>
+                  <birth><date when-iso="1824-07-27">1824-07-27</date></birth>
+                  <death><date when-iso="1895-11-27">1895-11-27</date></death>
+                  <occupation>Romancier et dramaturge</occupation>
+               </person>
+               <person xml:id="David">
+                  <persName ref="https://data.bnf.fr/fr/12457814/pierre-jean_david_d_angers/"
+                        ><forename type="main">Pierre </forename><forename>Jean </forename>
+                     <surname>David </surname> <surname type="unused">d'Angers</surname></persName>
+                  <birth><date when-iso="1788-03-12">1788-03-12</date></birth>
+                  <death><date when-iso="1856-01-05">1856-01-05</date></death>
+                  <occupation>Statuaire et portraitiste</occupation>
+                  <note>Il a réalisé une série de portraits en plâtre de personnalités : des
+                     littéraires, dont Sand, des artistes, des scientifiques, des hommes politiques.
+                     Un fondeur réalisait ensuite les médaillons en bronze.</note>
+               </person>
+               <person xml:id="Allart_de_Meritens">
+                  <persName ref="https://data.bnf.fr/fr/12367161/hortense_allart_de_meritens/"
+                        ><forename type="main">Hortense </forename>-<forename type="unused"
+                        > Thérèse-Sigismonde-Sophie-Alexandrine </forename>
+                     <surname>Allart de Méritens </surname> </persName>
+                  <birth><date when-iso="1801-09-07">1801-09-07</date></birth>
+                  <death><date when-iso="1879-02-28">1879-02-28</date></death>
+                  <occupation>Ecrivaine et essayiste</occupation>
+               </person>
+               <person xml:id="Sainte-Beuve">
+                  <persName ref="https://data.bnf.fr/fr/11923412/charles-augustin_sainte-beuve/"
+                        ><forename type="main">Charles </forename>
+                     <forename>Augustin </forename>
+                     <surname>Sainte-Beuve </surname> </persName>
+                  <birth><date when-iso="1804-12-23">1804-12-23</date></birth>
+                  <death><date when-iso="1869-10-13">1869-10-13</date></death>
+                  <occupation>Critique littéraire et écrivain</occupation>
+               </person>
+               <person xml:id="Sand">
+                  <persName ref="https://data.bnf.fr/fr/11923601/george_sand/"><addName
+                        type="pseudonym">George Sand </addName><forename type="main"
+                        >Amantine </forename>
+                     <forename type="unused">Aurore </forename>
+                     <forename type="unused">Lucile </forename>
+                     <surname>Dupin </surname></persName>
+                  <birth><date when-iso="1804-07-01">1804-07-01</date></birth>
+                  <death><date when-iso="1876-06-08">1876-06-08</date></death>
+                  <occupation>Romancière, dramaturge, épistolière, critique littéraire et
+                     journaliste française</occupation>
+               </person>
+               <listRelation>
+                  <relation xml:id="Sand_Sainte-Beuve" type="personal" name="friendship"
+                     mutual="#Sainte-Beuve #Sand"/>
+
+               </listRelation>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>https://gallica.bnf.fr/ark:/12148/bpt6k9669345b/f1.item</p>
+         </projectDesc>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter" n="1">
+            <head>I</head>
+            <opener><dateline><placeName ref="#Paris">Paris</placeName>, <date when-iso="1833-01-25"
+                     >25 janvier 1833</date>.</dateline></opener>
+
+            <p>Serai-je bien indiscrète si je vous demande deux places pour la première
+               représentation de <ref target="n2"><hi>Lucrèce Borgia (2)</hi></ref>? Vous êtes l'ami de
+                  <persName ref="#Hugo">Victor Hugo</persName>, et nous sommes, mon <persName
+                  ref="#Sand">pseudonyme</persName> et moi, ses fervents admirateurs. Il ne peut pas
+               vous refuser, et il ne doit pas nous repousser de la foule qui veut son triomphe.</p>
+            <p>Si je suis importune, cependant, dites-le-moi, mais venez me le dire vous-même. J'en
+               subirai l'arrêt avec plus de résignation.</p>
+         </div>
+         <div type="letter" n="2">
+            <head>II</head>
+
+            <opener><dateline><placeName ref="#Paris">Paris</placeName>, <date when-iso="1833-01-28"
+                     >28 janvier 1833</date>.</dateline></opener>
+
+            <p>Je vous remercie, monsieur, de ne m'avoir pas oubliée pour ces places de théâtre ;
+               mais ce que je désire le plus, c'est de vous voir. Voulez-vous venir jeudi à onze
+               heures du matin ? car c'est jeudi le <ref target="n2">jour (2)</ref> de la représentation, je crois, et
+               je suis forcée de sortir à midi. J'ai si rarement le plaisir de vous recevoir, que je
+               ne veux pas le perdre encore cette fois.</p>
+
+         </div>
+
+         <div type="letter" n="3">
+            <head>III</head>
+
+            <opener><dateline><placeName ref="#Paris">Paris</placeName>, <date when-iso="1833-02-18"
+                     >18 février 1833</date>.</dateline></opener>
+
+            <p>Vous êtes venu me voir, aujourd'hui, monsieur, et je n'y étais pas ; et vous venez si
+               rarement ! Vous avez demandé à <persName ref="#Planche">M. Planche</persName> à
+               quelles heures il fallait venir pour me trouver. Il faut venir à toutes les heures
+               que vous voudrez ; j'y serai toujours pour vous, tant que j'y serai réellement ; et,
+               quand réellement je n'y serai pas, il ne faudra pas me compter votre carte pour une
+               visite ; il faudra revenir le lendemain. </p>
+            <p>Il faut surtout que vous ne me haïssiez pas : car moi, je désire beaucoup votre
+               amitié. Cela est peut-être ridicule à vous dire, mais quand on se sent dans le vrai,
+               on ne recule pas devant la crainte des fausses interprétations. D'ailleurs ce n'est
+               pas vous, qui comprenez si bien la pensée de toutes choses, qui pouvez être un
+               mauvais juge de la mienne. </p>
+         </div>
+
+         <div type="letter" n="4">
+            <head>IV</head>
+
+            <opener><dateline><placeName ref="#Paris">Paris</placeName>, <date when-iso="1833-03-07"
+                     >7 mars 1833</date>.</dateline></opener>
+
+            <p>Mon cher <persName ref="#Sainte-Beuve">Sainte-Beuve</persName>, j'aurais été bien
+               heureuse de vous voir aujourd'hui, quand vous êtes venu. Serez-vous assez bon pour
+               revenir bientôt ? Je suis dans un grand redoublement de douleur. Je ne vous ennuirai
+               pas à vous dire mes causes de chagrin ; mais je vous verrai, ce sera beaucoup : on a
+               besoin d'amitié quand on souffre. Voici un commencement d'épreuve pour la vôtre.</p>
+
+            <closer><date when-iso="1833-03-06">Mercredi soir</date>.</closer>
+         </div>
+
+         <div type="letter" n="5">
+            <head>V</head>
+
+            <opener><dateline><placeName ref="#Paris">Paris</placeName>, <date when-iso="1833-03-11"
+                     >11 mars 1833</date>.</dateline></opener>
+
+            <p>Sauf à passer pour une écriveuse comme <persName ref="#Allart_de_Meritens">madame
+                  A...</persName>, je veux vous faire l'injure d'un billet. Je ne vous ai pas assez
+               dit l'impression que m'a faite votre livre. Vous savez comme on est gêné par la
+               figure des gens quand on a de l'admiration à leur exprimer. Votre livre est beau, je
+               ne vous dirai pas pourquoi ; je ne le sais pas bien, et <hi 
+                  >juger</hi> n'est pas mon état. Mais il m'a pénétré le cœur comme eût fait le
+               récit d'une vie douloureuse et puissante, dite avec des mots simples et profonds, une
+               âme recueillie, et des idées graves et saintes. Comme vous valez mieux que moi, mon
+               ami ! comme vous êtes plus jeune, plus vertueux et plus heureux! Après avoir écouté
+                     <hi><ref target="n1">Lélia (1)</ref></hi>
+               , vous m'avez dit une chose qui m'a fait
+               de la peine : vous m'avez dit que vous aviez peur de moi. Chassez cette idée-là, je
+               vous en prie, et ne confondez pas trop l'homme avec la souffrance. C'est la
+               souffrance que vous avez entendue, mais vous savez bien comme en réalité l'homme se
+               trouve souvent au-dessous, et par conséquent moins poétique, moins méchant et moins
+               damné que son démon. Vous êtes plus près de la nature des anges ; tendez-moi donc la
+               main et ne me laissez pas à Satan. Faites ma paix avec Dieu, vous qui croyez toujours
+               et qui priez souvent. </p>
+            <p>Dites-moi le soir que vous pourrez me donner, afin que j'aie l'autre moitié de mon
+               manuscrit. Vos encouragements me donneront la force d'achever. Vraiment c'est une
+               chose triste que ce livre, et s'il pouvait me faire concevoir l'<hi 
+                  >ennui de mon ennui</hi>, ce serait le seul bien dont il fût capable. Mais
+               travaillez au vôtre afin qu'il serve de contre-poison, et détruise vite l'effet du
+               mien sur les estomacs débiles, et commencez par moi ; lisez-le-moi bientôt. Et ne
+               croyez pas trop à tous mes airs sataniques : je vous jure que c'est <hi
+                  >un genre</hi> que je me donne. A propos, réflexion faite, je ne
+               veux pas que vous m'ameniez <persName ref="#Musset">Alfred de Musset</persName>. Il
+               est très dandy, nous ne nous conviendrions pas, et j'avais plus de curiosité que
+               d'intérêt à le voir. Je pense qu'il est imprudent de satisfaire toutes ses
+               curiosités, et meilleur d'obéir à ses sympathies. A la place de celui-là, je veux
+               donc vous prier de m'amener <persName ref="#Dumas_fils">Dumas</persName> en l'art de
+               qui j'ai trouvé de l'âme, abstraction faite du talent. Il m'en a témoigné le désir,
+               vous n'aurez donc qu'un mot à lui dire de ma part : mais venez avec lui la première
+               fois, car les premières fois me sont toujours fatales.<ref target="n5">(Note de <persName ref="#Sainte-Beuve">Sainte-Beuve</persName> (5).)
+            </ref></p>
+
+            <closer><date when-iso="1833-03-10">Dimanche soir.</date></closer>
+         </div>
+
+         <div type="letter" n="6">
+            <head>VI</head>
+            <opener><dateline><placeName ref="#Paris">Paris</placeName>, <date when-iso="1833-04"
+                     >avril 1833</date>.</dateline></opener>
+
+            <p>Mon ami, je recevrai <persName ref="#Jouffroy">M. Jouffroy</persName> de votre main.
+               Quelque peu disposée que je sois à m'entourer de figures nouvelles, je vaincrai cette
+               première suggestion de ma sauvagerie, et je trouverai, sans doute, dans la personne
+               recommandée par vous si chaleureusement toutes les qualités qui méritent l'estime. </p>
+            <p>Prévenez-le, je vous prie, de mon extérieur sec et froid, de la paresse insurmontable
+               et de l'ignorance honteuse qui me rendent silencieuse la plupart du temps, afin qu'il
+               ne prenne pas pour de l'impertinence ce qui est chez moi une habitude, un travers,
+               mais non pas une malveillante intention. J'ai vu, à la figure de <persName
+                  ref="#Jouffroy">M. Jouffroy</persName>, qu'il pouvait avoir l'âme belle et
+               l'esprit bien fait, mais je lui reconnaîtrai peut-être la possession de ces choses
+               (très rares et très estimables à coup sûr) sans une très grande admiration. Il y a
+               des hommes qui viennent au monde tout faits et qui n'ont pas de lutte à soutenir
+               contre les écueils où les autres s'engagent et se choquent : ils passent au travers
+               sans savoir seulement qu'ils existent, et parfois ils s'étonnent de voir tant de
+               débris flotter autour d'eux. Je crains un peu ces hommes vertueux de naissance. Je
+               les apprécie bien comme de belles fleurs et de beaux fruits, mais je ne sympathise
+               pas avec eux ; ils m'inspirent une sorte de jalousie mauvaise et chagrine ; car,
+               après tout, pourquoi ne suis-je pas comme eux? Je suis auprès d'eux dans la situation
+               des bossus qui haïssent les hommes bien faits ; les bossus sont généralement puérils
+               et méchants, mais les hommes bien faits ne sont-ils pas insolents, fats et cruels
+               envers les bossus? </p>
+            <p>Au reste, tout ceci doit être pris par vous d'une façon plutôt générale qu'applicable
+               absolument à <persName ref="#Jouffroy">M. Jouffroy</persName>. Je ne prétends pas le
+               juger sans le connaître ; je ne veux pas négliger de le connaître par la seule
+               crainte de le trouver trop régulièrement bon. Vous me dites de lui des choses qui
+               s'accordent fort bien avec l'idée que j'en ai, et qui me confirment dans une opinion
+               que j'ai de tous les hommes, c'est qu'il n'y a pas de confiance entière possible à
+               réaliser : les gens qu'on estime, on les craint, et on risque d'en être abandonné et
+               méprisé en se montrant à eux tel qu'on est ; les gens qu'on n'estime pas
+               comprendraient mieux, mais ils trahissent. </p>
+            <p>Cela est triste ; mais ce qui prouve que c'est vrai, c'est que, cela même, il
+               faudrait le penser et ne pas le dire. </p>
+            <p>Or, cette idée de solitude éternelle qui vous saisit et vous serre au sein des plus
+               vives et des plus saintes affections, c'est une idée très sombre et très difficile à
+               accepter. Tant qu'elle m'a semblé nouvelle, elle m'a fait désespérer : je commence à
+               l'admettre, j'en parle encore comme d'une chose étonnante et rude, comme on parlait
+               du choléra huit jours encore après le choléra, et bientôt, sans doute, je m'en tairai
+               comme d'une chose triviale et de mauvais goût ; je n'en souffrirai peut-être plus.
+               Quand on consent à vieillir, on vieillit si vite. </p>
+            <p>Je dis donc que <persName ref="#Jouffroy">M. Jouffroy</persName> doit être bon,
+               candide, inexpérimenté pour un certain ordre d'idées où j'ai vécu et creusé, où vous
+               avez creusé aussi, quoique beaucoup moins avant que moi. Par exemple, je me suis dit
+               : « Est-ce qu'il ne serait pas permis de manger de la chair humaine ? » Vous vous
+               êtes dit : « Il y a peut-être des gens qui se demandent si l'on peut manger de la
+               chair humaine. » Et <persName ref="#Jouffroy">M. Jouffroy</persName> s'est dit : «
+               L'idée n'est jamais venue à aucun homme de manger de la chair humaine. » Pourtant il
+               y a des peuplades entières qui en mangent, et qui n'en sont peut-être pas plus mal
+               avec Dieu pour cela. </p>
+            <p>Moi, je ne m'estime pas, car, après m'être adressé de semblables questions, je ne les
+               ai pas résolues et j'en suis restée là ; <persName ref="#Jouffroy">M.
+                  Jouffroy</persName>, n'ayant pas appris que ces questions existent, n'a pas grand
+               mérite à les nier; mais vous qui, ayant songé à tout et peut-être goûté à des choses
+               immondes comme font les chimistes, avez déclaré que la chair humaine est mauvaise et
+               malsaine, et vous êtes décidé à vivre d'aliments choisis, apparemment vous avez le
+               discernement, c'est-à-dire, dans le sens moral, la lumière et la force. Vous voyez
+               que je m'explique très froidement et sans engouement ni prévention le cas extrême que
+               je fais de vous, préférablement à beaucoup d'autres qui me ressemblent ou ne me
+               ressemblent pas. </p>
+            <closer><salute>— Bonsoir, mon ami.</salute>
+               <salute>Tout à vous.</salute>
+               <date>Mardi soir.</date></closer>
+
+            <postscript>
+               <label>P.-S.</label>
+               <p>— Passez-moi tout ce bavardage. C'est pour me dédommager de ne point dîner avec
+                  vous demain chez <persName ref="#Bonnaire"><ref target="n3">Stariston (3)</ref></persName>, comme on me l'avait promis. Vous n'y serez
+                  pas, et j'aurais l'air d'insulter les autres si je n'y allais pas après avoir
+                  consenti.</p>
+               <p>Pouvez-vous me donner <hi><ref target="n4">Joseph
+                              Delorme (4)</ref></hi>
+                  , votre
+                  volume de critique et votre médaillon par <persName ref="#David">David</persName>
+                  ? Ce sont bien des demandes. Mais quand on est décidé à vivre retiré, il faut
+                  s'entourer de bonnes choses et de bonnes pensées.</p>
+            </postscript>
+         </div>
+
+      </body>
+      <back>
+         <div>
+            <note xml:id="n1"><bibl source="https://fr.wikisource.org/wiki/L%C3%A9lia,_de_George_Sand">1. <hi>
+               Lélia</hi></bibl> est un roman lyrique de <persName ref="#Sand">George Sand</persName> paru en <date when-iso="1833"
+                  >1833</date> chez Henri Dupuy.
+            </note>
+            <note xml:id="n2"><bibl source="https://fr.wikisource.org/wiki/Lucr%C3%A8ce_Borgia">2.<hi>Lucrèce Borgia</hi></bibl>, pièce de théâtre écrite par <persName ref="#Hugo">Victor Hugo</persName>,  a été
+               représentée pour la première fois le <date when-iso="1833-02-02">samedi 2 février 1833</date>.</note>
+            <note xml:id="n3">3. Lire "<persName ref="#Bonnaire">Florestan</persName>"</note>
+            <note xml:id="n4">4. <bibl source="https://fr.wikisource.org/wiki/Vie,_Po%C3%A9sies_et_Pens%C3%A9es_de_Joseph_Delorme">
+               <hi>Vie, Poésies et Pensées de Joseph
+                  Delorme</hi></bibl>, publié en <date when-iso="1829-04">avril
+                     1829</date> et présenté par <persName ref="#Sainte-Beuve"
+                        >Sainte-Beuve</persName>, par peur de l'échec,comme la vie et l'oeuvre d'un
+               ami prétendu, mort de phtisie quelques mois auparavavent.  </note>
+            <note xml:id="n5">5. Elle entendait par
+               là que, les premières fois, elle était toujours embarrassée, silencieuse, et ne
+               laissant point à ceux dont elle faisait cas l'impression qu'elle aurait voulu.</note>
+         </div>
+      </back>
+   </text>
+</TEI>

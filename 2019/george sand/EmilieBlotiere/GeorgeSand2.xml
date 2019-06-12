@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <!--j'indique ici toutes les informations liées à la source qui apparaissent dans l'OCR Gallica mais non visible dans l'ouvrage-->
+      <fileDesc>
+         <titleStmt>
+            <title>Correspondance: <date>1812-1876</date> Volume I.<date> 1812-1836 </date>George
+               Sand</title>
+            <author><surname>Sand,</surname><name>George</name>(1804-1876)</author>
+            <editor>
+               <name>C.Lévy</name>
+               <placeName>Paris</placeName>
+               <date>1883-1884</date>
+            </editor>
+            <respStmt>
+               <resp>Encodage réalisé dans le cadre d'un devoir noté du M2 TNAH</resp>
+               <persName>
+                  <forename>Emilie</forename>
+                  <surname>Blotière</surname>
+               </persName>
+               <note>Encodage des lettres I à VI du premier volume</note>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>
+               <name>Bibliothèque nationale de France</name>
+               <date when="2007-10-15">15/10/2007</date>
+               <idno type="URI">https://catalogue.bnf.fr/ark:/12418/cb31293789z</idno>
+            </distributor>
+            <availability>
+               <p>Droits:domaine public</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <extent>6 vol. ; gr. in-18</extent>
+               <extent>Nombre total de vues : 417</extent>
+               <lang>français</lang>
+               <sponsor>Bibliothèque nationale de France</sponsor>
+               <idno type="URI">ark:/12148/bpt6k2065433</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <bibl>Collection : Bibliothèque contemporaine </bibl>
+               <category>
+                  <catDesc>monographie imprimée</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+         <projectDesc>
+            <p>L'encodage s'attache à transcrire les lettres et non le livre imprimé lui-même, il
+               s'agit d'un balisage descriptif visant à étudier les relations entre George Sand et
+               sa mère au fil des ans et ses liens familiaux.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Le texte affiché peut comporter un certain nombre d'erreurs. En effet, le mode texte
+               de ce document a été généré de façon automatique par un programme de reconnaissance
+               optique de caractères (OCR). Le taux de reconnaissance estimé pour ce document est de
+               96 %.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <abstract>
+            <p>L'encodage concerne les six premières lettres du premier volume de la correspondance
+               de George Sand dont cinq s'adressent à sa maman et une à Monsieur Caron, un proche de
+               la famille.</p>
+         </abstract>
+         <textDesc n="correspondance domestique informelle">
+            <channel mode="w"/>
+            <constitution type="single"/>
+            <derivation type="original"/>
+            <domain type="domestic"/>
+            <factuality type="fact"/>
+            <interaction type="inapplicable"/>
+            <preparedness>spontanée</preparedness>
+            <purpose type="inform" degree="high"/>
+         </textDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <!--regroupe les pièces situées avant le début du texte lui-même s'agissant de la page de titre de l'ouvrage-->
+         <titlePage>
+            <docTitle>
+               <titlePart>CORRESPONDANCE GEORGE SAND</titlePart>
+               <titlePart>Volume 1</titlePart>
+               <titlePart>QUATRIEME EDITION</titlePart>
+            </docTitle>
+            <docDate>1812-1876</docDate>
+            <docEdition>
+               <stamp type="mark">tampon de l'éditeur Calmann Lévy écrit en abbréviations :C.
+                  L.</stamp><lb/>
+               <name> CALMANN LEVY, EDITEUR </name><lb/>
+               <addName rend="smallcaps"> ANCIENNE MAISON MICHEL LEVY FRERES,</addName><lb/>
+               <address>
+                  <addrLine>PARIS</addrLine>
+                  <lb/>
+                  <addrLine> 3, RUE AUBER, 3</addrLine>
+                  <lb/>
+               </address>
+               <date when-iso="1883">1883</date><lb/>
+            </docEdition>
+            <imprimatur>Droits de reproduction et de traduction réservés</imprimatur>
+            <lb/>
+         </titlePage>
+         <!--Au sein de l'index, j'ai intégré les balises <addName> et <note> afin de rapprocher les différents noms ou surnoms d'un même personnage et 
+            indiquer leur relations avec l'auteur.  -->
+         <index n="personnages">
+            <term xml:id="Madame_Maurice_Dupin">MADAME DUPIN<addName> maman</addName><note> Mère de
+                  George Sand</note></term>
+            <term xml:id="vieux_Dupin"> Dupin<addName> M. Dupin de Francueil</addName><note> Père de
+                  George Sand</note></term>
+            <term xml:id="Aurore_Dupin"> Aurore_Dupin<addName> Nom de jeune fille de George
+                  Sand</addName></term>
+            <term xml:id="madame_Dupin_de_Francueil"> Dupin de Francueil<note> Arrière grand-mère de
+                  George Sand</note></term>
+            <term xml:id="Caron">Caron<addName> Le père Latreille</addName><note> vieil ami de George
+                  Sand</note></term>
+            <term xml:id="George_Sand"> George Sand</term>
+            <term xml:id="M_Maurice">M.Maurice<addName> Maurice</addName><note> Fils de George
+                  Sand</note></term>
+            <term xml:id="les_deux_Casimirs"> LES DEUX CASIMIRS<note> George Sand et son premier mari
+                  Casimir Dudevant</note></term>
+            <term xml:id="Casimir">Casimir<addName> baron_Dudevant</addName><note> Mari de George
+                  Sand</note></term>
+            <term xml:id="Maurice">Maurice<note> Fils de George Sand</note></term>
+            <term xml:id="Caroline">Caroline</term>
+            <term xml:id="Oscar">Oscar<addName> Oscar Cazamajou</addName></term>
+            <term xml:id="Oscar_Cazamajou">Oscar Cazamajou<addName> Oscar</addName></term>
+            <term xml:id="Madame_Cazamajou">Madame Cazamajou</term>
+            <term xml:id="Coltilde">Clotilde</term>
+            <term xml:id="Vincent">Vincent</term>
+            <term xml:id="Fanchon">Fanchon</term>
+            <term xml:id="baron_Dudevant">baron_Dudevant</term>
+            <term xml:id="M_Defos">M. Defos</term>
+            <term xml:id="le_père_Latreille">Le père Latreille<addName> Caron</addName></term>
+         </index>
+         <index n="lieux">
+            <term xml:id="Nohant">Nohant</term>
+            <term xml:id="Châtre">Châtre</term>
+            <term xml:id="Indre">(Indre)</term>
+            <term xml:id="Paris">Paris</term>
+            <term xml:id="Pyrénées">Pyrénées</term>
+            <term xml:id="Châteauroux">Châteauroux</term>
+            <term xml:id="Vincennes">Vincennes</term>
+            <term xml:id="Espagne">Espagne</term>
+            <term xml:id="Nérac">Nérac</term>
+            <term xml:id="Cauterets">Cauterets</term>
+            <term xml:id="montagnes_de_Cauterets_et_de_Saint_Sauveur">montagnes de Cauterets et de
+               Saint-Sauveur</term>
+            <term xml:id="Bordeaux">Bordeaux</term>
+            <term xml:id="Barèges">Barèges</term>
+            <term xml:id="Lot_et_Garonne">Lot et Garonne</term>
+            <term xml:id="Lourdes">Lourdes</term>
+            <term xml:id="casacade_de_Gavarnie">cascade de Gavarnie</term>
+            <term xml:id="Loup">Loup</term>
+            <term xml:id="Bagnères">Bagnères</term>
+            <term xml:id="Gavarnie">Gavarnie</term>
+            <term xml:id="la_grotte_du_Loup">La grotte du Loup</term>
+            <term xml:id="Espeluches">Especluches</term>
+            <term xml:id="bois_de_Boulogne">bois de Boulogne</term>
+         </index>
+      </front>
+      <body>
+         <div type="letter" xml:id="I">
+            <head rend="center">
+               <title style="align">I</title>
+               <title type="main"> A <persName ref="#Madame_Maurice_Dupin"> MADAME MAURICE DUPIN<note
+                        n="1" target="I" place="bottom"><persName ref="#Aurore_Dupin"> Mademoiselle
+                           Aurore Dupin</persName> avait alors huit
+                  ans,</note></persName><lb/><!--j'ai choisi de ne pas reprendre la numérotation des notes telle qu'elle apparait dans l'édition, à savoir par page. 
+                           Cet encodage ne s'attache pas à retranscrire la forme de l'édition. Les notes sont donc numérotées selon l'ordre dans lequel 
+                           elles apparraissent par lettre et non par page-->
+               </title>
+               <title type="sub"> QUI ALLAIT QUITTER <placeName ref="#Nohant">NOHANT<note n="2"
+                        target="I" place="bottom"> Propriété de<persName
+                           ref="#madame_Dupin_de_Francueil"> Madame Dupin de Francueil</persName>,
+                        puis de <persName ref="#George_Sand">George Sand</persName>, près la
+                           <placeName ref="#Châtre">Châtre</placeName><placeName ref="#Indre"
+                           >(Indre)</placeName>.</note></placeName>
+               </title>
+            </head>
+            <opener>
+               <date>1812.</date>
+            </opener>
+            <p>Que j'ai de regret de ne pouvoir te dire adieu ! Tu vois combien j'ai
+               de chagrin de te quitter. Adieu pense à moi, et sois sûre que je ne t'oublierai
+               point.</p>
+            <closer>
+               <signed rend="right">Ta fille.</signed>
+               <salute rend="indent"> Tu mettras la réponse derrière le portrait du vieux <persName
+                     ref="#vieux_Dupin">Dupin.</persName>
+                  <note n="3" target="I" place="bottom">Portrait au pastel de <persName
+                        ref="#M_Dupin_de_Francueil"><choice>
+                           <abbr> M.</abbr>
+                           <expan> Monsieur </expan>
+                        </choice> Dupin de Francueil</persName>, qui se trouve dans le salon de
+                        <placeName ref="#Nohant"> Nohant.</placeName></note>
+               </salute>
+            </closer>
+         </div>
+         <div type="letter" xml:id="II">
+            <head><title type="main">A LA MÊME, <lb/>A <placeName ref="#Paris">PARIS</placeName></title></head>
+            <opener>
+               <dateline>
+                  <placeName ref="#Nohant"> Nohant.</placeName><date when="1815-02-24">24 février
+                     1815</date>
+               </dateline>
+            </opener>
+            <p>
+               <emph>Oh! oui</emph>, chère <persName ref="#Madame_Maurice_Dupin">maman</persName>,
+                  <emph>je t'embrasse; je t'attends, je te désire et je meurs d'impatience de te
+                  voir ici.</emph> Mon Dieu, comme tu es inquiète de moi ! Rassure- toi, chère
+               petite <persName ref="#Madame_Maurice_Dupin">maman</persName>. Je me porte à
+               merveille. Je profite du beau temps. Je me promène, je cours, je vas, je viens, je
+               m'amuse, je mange bien, dors mieux et pense à toi plus encore.</p>
+            <closer>
+               <salute rend="indent"> Adieu, chère <persName ref="#Madame_Maurice_Dupin"
+                     >maman</persName>; ne sois donc point inquiète. Je t'embrasse de tout mon cœur. </salute>
+               <signed rend="right">AURORE<note n="1" target="II" place="bottom">Mademoiselle
+                        <persName ref="#Aurore_Dupin">Aurore Dupin</persName> avait alors onze
+                     ans</note></signed>. </closer>
+         </div>
+         <div type="letter" xml:id="III">
+            <head rend="align">
+               <title type="main">A M.CARON.A <placeName ref="#Paris"/>PARIS</title></head>
+            <opener>
+               <dateline>
+                  <placeName ref="#Nohant"> Nohant,</placeName>
+                  <date when="1832-11-21">21 novembre 1832.</date>
+               </dateline>
+            </opener>
+            <p> J'ai reçu votre envoi, mon petit <persName ref="Caron"
+                  >Caron</persName>, et je vous remercie de votre extrême obligeance. Toutes mes
+               commissions sont faites le mieux du monde, et vous êtes gentil comme <persName
+                  ref="#le_pere_Latreille">le père Latreille<note n="1" target="III" place="bottom"
+                     >Vieil ami et correspondant de la
+               famille</note></persName>.</p>
+            <p> Vous m'avez envoyé assez de guimauve pour faire pousser deux millions
+               de dents; comme j'espère que mon héritier<note n="1" target="III" place="end"
+                     ><persName ref="#Maurice">Maurice</persName>, son fils, qui avait alors quatre
+                  mois.</note>en aura pas tout à fait autant, j'ai fait deux bouteilles de sirop
+               dont vous vous lécherez les barbes si vous vous dépêchez de venir à <placeName
+                  ref="#Nohant">Nohant</placeName>; car mon petit n'est pas disposé à vous en
+               laisser beaucoup. Au reste, votre envoi a fait bon effet, puisque nous avons <num
+                  type="cardinal">deux</num> grandes dents. Vous seriez amoureux de lui maintenant:
+               il est beau comme vous, et leste comme son <persName ref="#baron_Dudevant"
+                  >père</persName>. J'aimerais autant tenir une grenouil<del>l</del>e, elle ne
+               sauterait pas mieux.</p><!--le caractère l est illisible dans l'édition, j'ai choisi de l'indiquer mais de la corriger pour plus de lisibilité-->
+            <closer>
+               <salute rend="indent"> Adieu, mon petit père. Nous vous embrassons et sommes vos bons
+                  amis.</salute>
+               <signed>
+                  <persName ref="#les_deux_Casimirs" rend="right">LES DEUX CASIMIRS</persName>
+                  <note n="2" target="II" place="bottom">Nom de François-Casimir Dudevant, son mari.</note>.
+               </signed>
+            </closer>
+
+         </div>
+         <div type="letter" xml:id="IV">
+            <head><title type="main">A <persName ref="#Madame_Dupin">MADAME MAURICE DUPIN</persName>, A<placeName
+                  ref="#Paris">PARIS</placeName></title></head>
+            <opener rend="left">
+               <date> Je ne sais pas la date.<lb/>Nous sommes le deuxième<lb/> dimanche de
+                     carême<lb/><note n="1" target="III" place="bottom">C’était le <date> 17 mars
+                        1824</date></note>.</date>
+            </opener>
+            <p> Je suis enchantée d’apprendre que vous vous portiez mieux, chère
+               petite <persName ref="#Madame_Maurice_Dupin"> maman</persName>, et j’espère bien qu’à
+               l’heure où j’écris, vous êtes, tout fait guérie; du moins je le désire de tout mon
+               coeur, et, si je le pouvais, je vous rendrais vos quinze ans, chose qui vous ferait
+               grand plaisir, ainsi qu’à bien d’autres.</p>
+            <p>C’est un grand embarras que vous avez pris de sevrer un gros garçon
+               comme <persName ref="Oscar">Oscar<note n="1" place="end"> Cazamajou, neveu de
+                        <persName ref="George_Sand">George Sand.</persName></note></persName>, et
+               vous avez rendu à <persName ref="Caroline">Caroline<note n="2" place="foot">
+                     <persName ref="#Madame_Cazamajou">Madame Cazamajou</persName>, soeur aînée de
+                        <persName ref="#George_Sand">George Sand</persName>.</note></persName> un
+               vrai service de mère. Le mien n’a plus besoin de nourrice, il est sevré. c’est
+               peut-être un peu tôt; mais il préfère la soupe et l’eau et le vin à tout, et, comme
+               il ne cherche pas à teter, mon lait a diminué, sans que ni lui ni moi nous en
+               apercevions. Il est superbe de graisse et de fraicheur; il a des couleurs très vives,
+               l’air très décidé, et le caractère <hi rend="italic">idem</hi>. Il n’a toujours que
+               six dents; mais il s’en sert bien pour manger du pain, des oeufs, de la galette, de
+               la viande, enfin tout ce qu’il peut attraper. Il mord, comme un petit chien, les
+               mains qui l’ennuient en voulant le coiffer, etc. Il pose très bien ses pieds pour
+               marcher, mais il est encore trop jeune pour courir après <persName ref="#Oscar">Oscar
+               </persName>: dans un an ou deux, ils se battront pour leurs joujoux.</p>
+            <p>J’espère, ma chère <persName ref="#Madame_Maurice_Dupin"/>maman, que le
+               désir que vous me témoignez de nous avoir, et que nous partageons, sera bientôt
+               rempli. Nous espérons faire une petite fugue vers Pâques, pour présenter <persName
+                  ref="#M_Maurice">M. Maurice</persName> à son grand-papa, qui ne le connait pas
+               encore et qui désire bien le voir, comme vous pensez. Je veux lui faire une surprise.
+               Je ne lui parlerai de rien dans mes lettres et je lui enverrai <persName
+                  ref="#Maurice">Maurice</persName> sans dire qui il est. Nous, nous serons derrière
+               la porte pour jouir de son erreur. Mais j'ai tort de vous dire cela, car je veux vous
+               en faire autant. Ainsi n'attendez pas que je vous prévienne de mon arrivée. </p>
+            <closer>
+               <salute>Adieu, ma chère <persName ref="#Madame_Maurice_Dupin">maman</persName>;
+                  donnez-moi encore de vos nouvelles. Je vous embrasse de tout mon coeur,<persName
+                     ref="#Casimir">Casimir</persName> en fait autant; pour <persName ref="#Maurice"
+                     >Maurice</persName>, quand on veut l’embrasser, il tourne la tête et présente
+                  son derrière; j'espère que vous le corrigerez de cette mauvaise habitude.</salute>
+            </closer>
+         </div>
+         <div type="letter" xml:id="V">
+            <head><title type="main">A LA MÊME </title></head>
+            <opener>
+               <dateline>
+                  <placeName ref="#Nohant"> Nohant </placeName>
+                  <date when="1825-06-29">, 29 juin l825.</date>
+               </dateline>
+            </opener>
+            <p>Vous devez me trouver bien paresseuse, ma chère petite <persName
+                  ref="#Madame_Maurice_Dupin">maman</persName>, et je le suis en effet. Je mène une
+               vie si active, que je ne me sens le courage de rien, le soir en rentrant, et que je
+               m'endors aussitôt que je reste un instant en place.</p>
+            <p> Ce sont là de bien mauvaises raisons, j'en conviens; mais, du moment
+               que nous sommes tous bien portants, quelles nouvelles à vous donner de notre
+               tranquille pays, où nous vivons en gens plus tranquilles encore; voyant peu de
+               personnes et nous occupant de soins champêtres, dont la description ne vous amuserait
+               guère? J'ai reçu des nouvelles de <persName ref="#CLotilde">Clotilde</persName><note
+                  n="1" target="V" place="bottom">Clotilde bâche, née Maréchal, cousine de <persName
+                     ref="#George_Sand">George Sand.</persName></note>, qui m'a dit que vous vous
+               portiez bien; c'est-ce qui me rassurait sur votre compte et contribuait à mon silence
+               puisque j'étais sans inquiétude.</p>
+            <p>Si vous eussiez effectué le projet de venir à <placeName ref="#Nohant">
+                  Nohant</placeName>, nous aurions dans ce moment le chagrin de vous quitter. Je
+               pars dans huit jours pour les <placeName ref="#Pyrénées">Pyrénées</placeName>. J'ai
+               eu le bonheur d'avoir ici pendant quelques jours, deux aimables soeurs, mes amies
+               intimes de couvent, qui se rendent aux mêmes eaux, avec leur père, et un vieil ami
+               fort gai et fort aimable. En quittant <placeName ref="#Châteauxroux"
+                  >Châteauroux</placeName>, elles n'ont pu se dispenser de venir passer quelques
+               jours à <placeName ref="#Nohant">Nohant</placeName>, qui était devenu pour moi un
+               lieu de délices par la présence de ces bonnes amies. Je les ai reconduites un bout de
+               chemin et ne les ai quittées qu'avec la promesse de les rejoindre bientôt.</p>
+            <p>Nous allons donc entreprendre un petit voyage de cent quarante lieues
+               d'une traite. C'est peu pour vous qui faites le voyage d'<placeName ref="#Espagne"
+                  >Espagne</placeName> comme celui de<placeName ref="#Vincennes"
+                  >Vincennes</placeName> mais c'est beaucoup pour <persName ref="#Maurice"
+                  >Maurice</persName>, qui aura demain deux ans. J'espère néanmoins qu'il ne s'en
+               apercevra pas, à en juger par celui de <placeName ref="#Nohant">Nohant</placeName>,
+               qu'il trouve trop court à son gré. D'ailleurs, nous ne voyagerons que le jour et en
+               poste. Nous sommes donc dans l'horreur des paquets. Nous emmenons <persName
+                  ref="#Fanchon">Fanchon</persName><note n="2" place="end">Femme de chambre</note>et
+                  <persName ref="#Vincent">Vincent</persName><note n="3" place="bottom"
+                  >Cocher</note> qui est fou de joie de voyager sur le siège de la voiture.Pour moi,
+               je suis enchantée de revoir les <placeName ref="#Pyrénées">Pyrénées</placeName>, dont
+               je ne me souviens guère, mais dont on me fait de si belles descriptions. Ne manquez
+               pas de nous donner de vos nouvelles car il semble qu'on soit plus inquiet quand on
+               est plus éloigné.</p>
+            <closer>
+               <salute rend="indent">Adieu, ma chère <persName ref="#Madame_Maurice_Dupin"
+                     >maman</persName>; je vous embrasse tendrement et vous désire une bonne santé
+                  et du plaisir surtout; car, chez vous comme chez moi, l'un ne va guère sans
+                  l'autre. <persName ref="#Maurice">Maurice</persName>est grand comme père et mère
+                  et beau comme un Amour.<persName ref="#Casimir">Casimir</persName>vous embrasse de
+                  tout son coeur.Pour moi, je me porte très bien, sauf un reste de toux et de
+                  crachement de sang qui passeront, j'espère, avec les eaux. <lb/>Nous resterons
+                  deux mois au plus aux eaux; de là, nous irons à <placeName ref="#Nérac"
+                     >Nérac</placeName> chez le papa<note n="1" place="end">le <persName
+                        ref="#baron_Dudevant">baron Dudevant</persName>, beau-père de <persName
+                        ref="#George_Sand">George Sand</persName></note>où nous demeurerons tout
+                  l'hiver. Au mois de mars ou d'avril, nous serons à <placeName ref="#Nohant"
+                     >Nohant</placeName>, où nous vous attendrons avec ma tante et <persName
+                     ref="#Coltilde">Clotilde</persName>.</salute>
+            </closer>
+         </div>
+         <div type="letter" xml:id="VI">
+            <head><title type="main">A LA MÊME </title></head>
+            <opener>
+               <dateline>
+                  <placeName ref="#Bagnères"> Bagnères </placeName>
+                  <date when="1825-08-28"> 28 août 1825 </date>
+               </dateline>
+               <salute>Ma chère petite <persName ref="#Madame_Maurice_Dupin">maman</persName>,</salute>
+            </opener>
+            <lb/>
+            <p>J'ai reçu votre aimable lettre à <placeName ref="#Cauterets">Cauterets</placeName>,
+               et je n'ai pu y répondre tout de suite pour mille raisons. La première, c'est que
+                  <persName ref="#Maurice">Maurice</persName> venait d'être sérieusement malade, ce
+               qui m'avait donné beaucoup d’inquiétude et d'embarras.</p>
+            <p>Il est parfaitement guéri depuis quelques jours que nous sommes ici et
+               que nous avons retrouvé le soleil et la chaleur.Il a repris tout à fait appétit,
+               sommeil, gaieté et embonpoint. Aussitôt qu'il a été hors de danger, j'ai profité de
+               sa convalescence pour courir les <placeName
+                  ref="#montagnes_de_Cauterets_et_de_Saint_Sauveur">montagnes de Cauterets et de
+                  Saint-Sauveur</placeName>, que je n'avais pas eu le temps de voir. Je n'ai donc
+               pas eu une journée à moi pour écrire à qui que ce soit; tout le monde m'en veut et je
+               m'en veux à moi-même. Mais, après avoir fait, presque tous les jours, des courses de
+               huit, dix, douze et quatorze lieues à cheval, j'étais tellement fatiguée, que je ne
+               songeais qu'à dormir, encore quand <persName ref="#Maurice">Maurice</persName> me le
+               permettait. Aussi j'ai été fort souffrante de la poitrine, et j'ai eu des toux
+               épouvantables; mais je ne me suis point arrêtée à ces misères, et, en continuant des
+               exercices violents, j'ai retrouvé ma santé et un appétit qui effraye nos compagnons
+               de voyage les plus voraces.</p>
+            <p>Je suis dans un tel enthousiasme des <placeName ref="#Pyrénées"
+                  >Pyrénées</placeName>, que je ne vais plus rêver et parler, toute ma vie, que
+               montagnes, torrents, grottes et précipices. Vous connaissez ce beau pays, mais pas si
+               bien que moi, j'en suis sûre; car beaucoup des merveilles que j'ai vues, sont
+               enfouies dans des chaînes de montagnes où les voitures et même les chevaux n'ont
+               jamais pu pénétrer. Il faut marcher à pic des heures entières dans des gravats qui
+               s'écroulent à tout instant, et sur des roches aiguës où on laisse ses souliers et
+               partie de ses pieds.</p>
+            <p>A <placeName ref="#Cauterets">Cauterets</placeName>, on a une manière
+               de gravir les rochers fort commode. Deux hommes vous portent sur une chaise attachée
+               à un brancard, et sautent ainsi de roche en roche au-dessus de précipices sans fond,
+               avec une adresse, un aplomb et une promptitude qui vous rassurent pleinement et vous
+               font braver tous les dangers; mais, comme ils sentent le bouc d'une lieue et que très
+               souvent on meurt de froid après une ou deux heures de l'après-midi, surtout au haut
+               des montagnes, j'aimais mieux marcher. Je sautais comme eux d'une pierre à l'autre,
+               tombant souvent et me meurtrissant les jambes, riant quand même de mes désastres et
+               de ma maladresse.</p>
+            <p>Au reste, je ne suis pas la seule femme qui fasse des actes de courage.
+               Il semble que le séjour des <placeName ref="#Pyrénées">Pyrénées</placeName> inspire
+               de l'audace aux plus timides, car les compagnes de mes expéditions en faisaient
+               autant. Nous avons été à la fameuse <placeName ref="#cascade_de_Gavarnie">cascade de
+                  Gavarnie</placeName>, qui est la merveille des <placeName ref="#Pyrénées"
+                  >Pyrénées</placeName>. Elle tombe d'un rocher de douze cents toises de haut,
+               taillé à pic comme une muraille. Près de la cascade, on voit un pont de neige, qu'à
+               moins de toucher, on ne peut croire l'ouvrage de la nature; l'arche, qui a dix ou
+               douze pieds de haut, est parfaitement faite et on croit voir des coups de truelle sur
+               du plâtre.</p>
+            <p>Plusieurs des personnes qui étaient avec nous (car on est toujours fort
+               nombreux dans ces excursions) s'en sont retournées, convaincues qu’elles venaient de
+               voir un ouvrage de maçonnerie. Pour arriver à ce prodige, et pour en revenir, nous
+               avons fait douze lieues à cheval sur un sentier de trois pieds de large, au bord d'un
+               précipice qu'en certains en droits on appelle l'échelle, et dont on ne voit pas le
+               fond. Ce n'est pourtant pas là ce qu'il y a de plus dangereux; car les chevaux y sont
+               accoutumés et passent à une ligne du bord, sans broncher. Ce qui m'étonne bien
+               davantage dans ces chevaux de montagne, c'est leur aplomb sur des escaliers de
+               rochers qui ne présentent à leurs pieds que des pointes tranchantes et polies.</p>
+            <p>J'en avais un fort laid, comme ils le sont tous, mais à qui j'ai fait
+               faire des choses qu'on n'exigerait que d'une chèvre galopant toujours dans les
+               endroits les plus effrayants, sans glisser ni faire un seul faux pas, et sautant de
+               roche en roche en descendant.J'avoue que je ne supposais pas que cela fut possible et
+               que je ne me serais jamais cru le courage de me fier à lui avant que j'eusse éprouvé
+               ses moyens.</p>
+            <p>Nous avons été hier à six lieues d'ici à cheval, pour visiter les
+               grottes de Lourdes. Nous sommes entrés à plat ventre dans celle du <placeName
+                  ref="#Loup>">Loup</placeName>. Quand, on s’est bien fatigué pour arriver à un trou
+               d'un pied de haut, qui ressemble à la retraite d'un blaireau, j'avoue que l'on se
+               sent un peu découragé. J'étais avec mon mari et deux autres jeunes gens avec qui nous
+               nous étions liées à <placeName ref="#Cauterets">Cauterets</placeName> et que nous
+               avons retrouvés à <placeName ref="#Bagnères">Bagnères</placeName>, ainsi qu'une
+               grande partie de notre aimable et nombreuse société bordelaise. Nous avons eu le
+               courage de nous enfoncer dans cette tanière, et, au bout d'une minute, nous, nous
+               sommes trouvés dans un endroit beaucoup plus spacieux, c'est-à-dire que nous pouvions
+               nous tenir debout sans chapeau et que nos épaules n'étaient qu'un peu froissées à
+               droite et à gauche.</p>
+            <p>Après avoir fait cent cinquante pas dans cette agréable position,
+               tenant chacun une lumière et ôtant bottes et souliers, pour ne pas glisser sur le
+               marbre mouillé et raboteux, nous sommes arrivés au puits naturel, que nous n'avons
+               pas vu, malgré tous nos flambeaux, parce que le roc disparaît tout à coup sous les
+               pieds, et l'on ne trouve plus qu'une grotte si obscure et si élevée, qu'on ne
+               distingue ni le haut ni le fond.</p>
+            <p>Nos guides <damage>arrachèrent</damage> des roches avec beaucoup
+               d'effort et les lancèrent dans l'obscurité; c'est alors que nous jugeâmes de la
+               profondeur du gouffre : le bruit de la pierre frappant le roc fut comme un coup de
+               canon, et, retombant dans l'eau comme un coup de tonnerre, y causa une agitation
+               épouvantable. Nous entendîmes pendant quatre minutes l'énorme masse d'eau ébranlée,
+               frapper le roc avec une fureur et un bruit effrayant qu'on aurait pu prendre tantôt
+               pour le travail de faux-monnayeurs, tantôt pour les voix rauques et bruyantes des
+               brigands. Ce bruit, qui part des entrailles de la terre, <damage>joint</damage> à
+               l'obscurité et à tout ce que l'intérieur d'une caverne a de sinis- tre, aurait pu
+               glacer des coeurs moins aguerris que les nôtres.</p>
+            <p>Mais nous avions joué à <placeName ref="#Gavarnie">Gavarnie</placeName>
+               avec les crânes des templiers, nous avions passé sur le pont de neige quand nos
+               guides nous criaient qu'il allait s'écrouler. <placeName ref="#la_grotte_du_Loup">La
+                  grotte du Loup</placeName> n'était qu'un jeu d’enfant. Nous y passâmes près d'une
+               heure, et nous revînmes chargés de fragments des pierres que nous avions lancées dans
+               le gouffre. Ces pierres, que je vous montrerai, sont toutes remplies de parcelles de
+               fer et de plomb qui brillent comme des paillettes.</p>
+            <p>En sortant de <placeName ref="#la_grotte_du_Loup">la grotte du
+                  Loup</placeName>, nous entrâmes dans <hi rend="it">las Espeluces</hi>. Notre
+               savant cousin, <persName ref="#M_Defos"> M. Defos</persName><note n="1" place="end">
+                  Cousin éloigné de George Sand</note>, vous dira que ce nom patois vient du
+               latin.</p>
+            <p>Nous trouvâmes l'entrée de ces grottes admirable; j'étais seule en
+               avant, je fus ravie de me trouver dans une salle magnifique soutenue par d'énormes
+               masses de rochers qu'on aurait pris pour des piliers d’architecture gothique, le plus
+               beau <damage>pays</damage>du monde, le torrent d'un bleu d'azur, les prairies d'un
+               vert éclatant, un premier cercle de montagnes couvertes de bois épais, et un second,
+               à l'horizon, d'un bleu ten- dre qui se confondait avec le ciel, toute cette belle
+               nature éclairée par le soleil couchant, vue du haut d'une montagne, au travers de ces
+               noires arcades de rochers, derrière moi la sombre ouverture des grottes : j'étais
+               transportée.</p>
+            <p>Je parcourus ainsi deux ou trois de ces péristyles, communiquant les
+               uns aux autres par des portiques cent fois plus imposants et plus majestueux que tout
+               ce que feront les efforts des hommes.</p>
+            <p>Nos compagnons arrivèrent et nous nous enfonçâmes encore dans les
+               détours d'un labyrinthe étroit et humide, nous aperçûmes au-dessus de nos têtes une
+               salle magnifique, où notre guide ne se souciait guère de nous conduire. Nous le
+               forçâmes de nous mener à ce second étage. Ces messieurs se déchaussèrent et
+               grimpèrent assez adroitement; pour moi, j'entrepris l'escalade.</p>
+            <p>Je passai sans frayeur sur le taillant d'un marbre glissant, au-dessous
+               duquel était une profonde excavation. Mais quand il fallut enjamber sur un trou que
+               l'obscurité rendait très effrayant, n'ayant aucun appui ni pour mes pieds, ni pour
+               mes mains, glissant de tous côtés, je sentis mon courage chanceler. Je riais, mais
+               j'avoue que j'avais peur. Mon <persName ref="#baron_Dudevant">mari</persName>
+               m’attacha deux ou trois foulards autour du corps et me soutint ainsi pendant que les
+               autres me tiraient par les mains. Je ne sais ce que devinrent mes jambes pendant ce
+               temps-là. Quand je fus en haut, je m’assurai que mes mains (dont je souffre encore)
+               n’étaient pas restées dans les leurs, et je fus payée de mes efforts par l'admiration
+               que j’éprouvai.</p>
+            <p>La descente ne fut pas moins périlleuse, et le guide nous dit, en
+               sortant, qu'il avait depuis bien des années conduit des étrangers aux <placeName
+                  ref="#Espeluches"><foreign xml:lang="es" rend="italic"
+                  >Especluches</foreign></placeName>, mais qu'aucune femme n'avait gravi le second
+               étage. Nous nous amusâmes beaucoup à ses dépens en lui reprochant de ne pas balayer
+               assez souvent les appartements dont il avait l'inspection.</p>
+            <p>Nous rentrâmes à <placeName ref="#Lourdes">Lourdes</placeName> dans un
+               état de saleté impossible à décrire; je remontai à cheval avec mon<persName
+                  ref="#baron_Dudevant">mari</persName>, et, nos jeunes gens prenant la route de
+                  <placeName ref="#Bordeaux">Bordeaux</placeName>, nous prîmes tous deux celle de
+                  <placeName ref="#Bagnères">Bagnères</placeName>. Nous eûmes, pendant dix lieues,
+               une pluie à verse et nous sommes rentrés ici à dix heures du soir, trempés jusqu’aux
+               os et mourant de faim. Nous ne nous en portons que mieux aujourd'hui.</p>
+            <p>Nous sommes dans l'enchantement de deux chevaux arabes que nous avons
+               achetés, et qui seront les plus beaux que l'on ait jamais vus au <placeName
+                  ref="#bois_de_Boulogne">bois de Boulogne</placeName>.</p>
+            <p>Voilà une lettre éternelle, ma chère <persName
+                  ref="#Madame_Maurice_Dupin">maman</persName>;mais vous me demandez des détails et
+               je vous obéis avec d'autant plus de plaisir que je cause avec vous. <persName
+                  ref="#Coltilde">Clotilde</persName> m'en demande aussi; mais je n'ai guère le
+               temps de lui écrire aujourd'hui, et demain recommencent mes courses. Veuillez
+               l'embrasser pour moi, lui faire lire cette lettre si elle peut l'amuser, et lui dire
+               que, dans huit à dix jours, je serai chez mon beau-père et j’aurai le loisir de lui
+               écrire.</p>
+            <p>Adressez-moi donc de vos nouvelles chez lui, près de <placeName
+                  ref="#Nérac">Nérac</placeName>
+               <placeName ref="#Lot_et_Garonne">(Lot-et-Garonne)</placeName>.J'en attends avec
+               impatience, <emph>je suis si loin, si loin de vous et de tous les miens! Adieu, ma
+                  chère <persName ref="#Madame_Maurice_Dupin">maman</persName>. <persName
+                     ref="#Maurice">Maurice</persName> est gentil à croquer!</emph>
+               <persName ref="#Casimir">Casimir</persName> se repose, dans ces courses dont je vous
+               parle, de celles qu'il a faites sans moi à <placeName ref="#Cauterets"
+                  >Cauterets</placeName>; il a été à la chasse sur les plus hautes montagnes, il a
+               tué des aigles, des perdrix blanches et des <hi rend="it">isards</hi> ou chamois,
+               dont il vous fera voir les dépouilles; pour moi, je vous porte du cristal de roche.
+               Je vous porterais du barège de <placeName ref="#Barèges">Barèges</placeName> même,
+               s'il était un peu moins gros et moins laid.</p>
+            <closer>
+               <salute rend="indent">Adieu, chère <persName ref="#Madame_Maurice_Dupin"
+                     >maman</persName>; je vous embrasse de tout mon cœur.</salute>
+               <salute rend="indent">Veuillez, quand, vous lui écrirez, embrasser mille fois ma
+                     <persName ref="#Coltilde">soeur</persName> pour moi, lui dire que je suis bien
+                  loin de l'oublier; que cette lettre que je vous écris et une à mon frère sont les
+                  seules que j'aie eu le temps d'écrire aux <placeName ref="#Pyrénées"
+                     >Pyrénées</placeName>, mais que, quand je serai à <placeName ref="#Guillery"
+                        >Guillery <note n="1" target="VI" place="bottom"> Propriété du <persName
+                           ref="#baron_Dudevant">baron Dudevant</persName>, près de <placeName
+                           ref="#Nérac">Nérac.</placeName></note></placeName> je lui écrirai tout de
+                  suite. Nous comptons y rester jusqu'au mois de janvier; de là, aller passer le
+                  carnaval à <placeName ref="#Bordeaux">Bordeaux</placeName>, et enfin retourner
+                  avec le printemps à <placeName ref="#Nohant">Nohant</placeName>, où nous vous
+                  attendrons avec ma tante.</salute></closer>
+         </div>
+      </body>
+   </text>
+</TEI>
